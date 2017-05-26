@@ -21,16 +21,34 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Descripci\363n completa}{section.2.4}% 21
 \BOOKMARK [2][-]{subsection.2.4.2}{Atributos importantes}{section.2.4}% 22
 \BOOKMARK [2][-]{subsection.2.4.3}{Trayectorias del Caso de Uso}{section.2.4}% 23
-\BOOKMARK [1][-]{section.2.5}{CU5.1 Generar credencial}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.5}{CU3.2 Pr\351stamo Interbibliotecario}{chapter.2}% 24
 \BOOKMARK [2][-]{subsection.2.5.1}{Descripci\363n completa}{section.2.5}% 25
 \BOOKMARK [2][-]{subsection.2.5.2}{Atributos importantes}{section.2.5}% 26
 \BOOKMARK [2][-]{subsection.2.5.3}{Trayectorias del Caso de Uso}{section.2.5}% 27
-\BOOKMARK [1][-]{section.2.6}{CU5.3 Reponer credencial}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.6}{CU3.4 Consultar Pr\351stamo Interbibliotecario}{chapter.2}% 28
 \BOOKMARK [2][-]{subsection.2.6.1}{Descripci\363n completa}{section.2.6}% 29
 \BOOKMARK [2][-]{subsection.2.6.2}{Atributos importantes}{section.2.6}% 30
 \BOOKMARK [2][-]{subsection.2.6.3}{Trayectorias del Caso de Uso}{section.2.6}% 31
-\BOOKMARK [2][-]{subsection.2.6.4}{IU5.00 RegStudent}{section.2.6}% 32
-\BOOKMARK [2][-]{subsection.2.6.5}{IU5.01 creacionCredencial}{section.2.6}% 33
-\BOOKMARK [2][-]{subsection.2.6.6}{IU5.02 Reposici\363nCredencial}{section.2.6}% 34
-\BOOKMARK [2][-]{subsection.2.6.7}{IU5.01 creacionCredencial}{section.2.6}% 35
-\BOOKMARK [1][-]{section.2.7}{Catalogo de Mensajes}{chapter.2}% 36
+\BOOKMARK [1][-]{section.2.7}{CU3.8 Generar multa}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.7.1}{Descripci\363n completa}{section.2.7}% 33
+\BOOKMARK [2][-]{subsection.2.7.2}{Atributos importantes}{section.2.7}% 34
+\BOOKMARK [2][-]{subsection.2.7.3}{Trayectorias del Caso de Uso}{section.2.7}% 35
+\BOOKMARK [2][-]{subsection.2.7.4}{IU3.2 Formulario}{section.2.7}% 36
+\BOOKMARK [2][-]{subsection.2.7.5}{IU3.2a Formato}{section.2.7}% 37
+\BOOKMARK [2][-]{subsection.2.7.6}{IU3.4 Consultar Prestamo Interbibliotecario}{section.2.7}% 38
+\BOOKMARK [2][-]{subsection.2.7.7}{IU3.4a Resultado Consulta Pr\351stamo Interbibliotecario}{section.2.7}% 39
+\BOOKMARK [2][-]{subsection.2.7.8}{IU3.8 Generar multa}{section.2.7}% 40
+\BOOKMARK [2][-]{subsection.2.7.9}{IU3.8a Confirmar multa}{section.2.7}% 41
+\BOOKMARK [1][-]{section.2.8}{CU5.1 Generar credencial}{chapter.2}% 42
+\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n completa}{section.2.8}% 43
+\BOOKMARK [2][-]{subsection.2.8.2}{Atributos importantes}{section.2.8}% 44
+\BOOKMARK [2][-]{subsection.2.8.3}{Trayectorias del Caso de Uso}{section.2.8}% 45
+\BOOKMARK [1][-]{section.2.9}{CU5.3 Reponer credencial}{chapter.2}% 46
+\BOOKMARK [2][-]{subsection.2.9.1}{Descripci\363n completa}{section.2.9}% 47
+\BOOKMARK [2][-]{subsection.2.9.2}{Atributos importantes}{section.2.9}% 48
+\BOOKMARK [2][-]{subsection.2.9.3}{Trayectorias del Caso de Uso}{section.2.9}% 49
+\BOOKMARK [2][-]{subsection.2.9.4}{IU5.00 RegStudent}{section.2.9}% 50
+\BOOKMARK [2][-]{subsection.2.9.5}{IU5.01 creacionCredencial}{section.2.9}% 51
+\BOOKMARK [2][-]{subsection.2.9.6}{IU5.02 Reposici\363nCredencial}{section.2.9}% 52
+\BOOKMARK [2][-]{subsection.2.9.7}{IU5.01 creacionCredencial}{section.2.9}% 53
+\BOOKMARK [1][-]{section.2.10}{Catalogo de Mensajes}{chapter.2}% 54
