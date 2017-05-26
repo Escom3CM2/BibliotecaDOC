@@ -54,9 +54,11 @@
 
 		\UCpaso Se conecta a la base de datos. \Trayref{A}.
 
-		\UCpaso Despliega la \IUref{IU4.6}{Listado de estudiantes} ó \IUref{IU4.8}{Lista de docentes}.
+		\UCpaso Despliega la \IUref{IU4.6}{Lista de estudiantes} ó \IUref{IU4.8}{Lista de docentes}.
 
-		\UCpaso[\UCactor] Elige el lector a eliminar y da click en el \IUbutton{Eliminar}\label{CU4.1EliminarLector}
+		\UCpaso[\UCactor] Elige el lector a eliminar 
+
+		\UCpaso[\UCactor] Da click en el butón \IUbutton{Eliminar}\label{CU4.1EliminarLector}
 
 		\UCpaso Válida que el lector a eliminar cumpla las reglas de negocio: 
 				
@@ -72,7 +74,9 @@
 
 		\UCpaso Solicita contraseña del bibliotecario.
 
-		\UCpaso[\UCactor] Ingresa la contraseña y oprime el botón \IUbutton{Aceptar}.
+		\UCpaso[\UCactor] Ingresa la contraseña.
+
+		\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
 
 		\UCpaso El sistema valida contraseña con base a la Regla de negocio \BRref{RN4.15}{Contraseña del bibliotecario} \Trayref{D}.
 
@@ -82,7 +86,7 @@
 
 		\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
 
-		\UCpaso Redirige a la pantalla \IUref{UI4.6}{Listado de alumnos} ó pantalla \IUref{UI4.8}{Listado de docentes}.		
+		\UCpaso Redirige a la pantalla \IUref{IU4.6}{Listado de alumnos} ó pantalla \IUref{IU4.8}{Listado de docentes}.		
 	\end{UCtrayectoria}
 
 
@@ -95,7 +99,7 @@
 
 			\UCpaso Muestra el Mensaje \MSGref{MSJ4.5}{Error. Falló al conectarse a la BD.}
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.2ConectarBaseDatos} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.2ConectarBaseDatos} del \UCref{CU4.3}.
 
 		\end{UCtrayectoriaA}	
 
@@ -104,7 +108,7 @@
 		\begin{UCtrayectoriaA}{B.}{El lector tiene multas pendientes}
 			\UCpaso Muestra el Mensaje \MSGref{MSJ4.9}{Error. El lector tiene multas. Favor de pagar su multa.}
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.1EliminarLector} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.1EliminarLector} del \UCref{CU4.3}.
 			
 		\end{UCtrayectoriaA}
 
@@ -113,7 +117,7 @@
 		\begin{UCtrayectoriaA}{C.}{El lector tiene multas pendientes}
 			\UCpaso Muestra el Mensaje \MSGref{MSJ4.10}{Error. El lector tiene material adeudado. Favor de entregar el material.}
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.1EliminarLector} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.1EliminarLector} del \UCref{CU4.3}.
 			
 		\end{UCtrayectoriaA}
 
@@ -122,7 +126,7 @@
 
 			\UCpaso Muestra el Mensaje \item Mensaje \MSGref{MSJ4.11}{Advertencia. Constraseña incorrecta.},
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.3Contrasena} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.3Contrasena} del \UCref{CU4.3}.
 
 		\end{UCtrayectoriaA}
 

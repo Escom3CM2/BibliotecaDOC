@@ -49,13 +49,15 @@
 
 		\UCpaso Despliega el menú de gestión de usuarios. \IUref{IU4.4}{Menú de gestión de usuarios}
 
-		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Lista de Docentes} ó \IUbutton{Lista de estudiante}.\label{CU4.2ConectarBaseDatos}
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Lista de Docentes} ó \IUbutton{Lista de Estudiantes}.\label{CU4.2ConectarBaseDatos}
 
 		\UCpaso Se conecta a la base de datos. \Trayref{A}.
 
-		\UCpaso Despliega la \IUref{IU4.6}{Listado de estudiantes} ó \IUref{IU4.8}{Lista de docentes}.
+		\UCpaso Despliega la \IUref{IU4.6}{Lista de estudiantes} ó \IUref{IU4.8}{Lista de docentes}.
 
-		\UCpaso[\UCactor] Elige el lector a modificar y da click en el \IUbutton{Actualizar}
+		\UCpaso[\UCactor] Elige el lector a modificar
+
+		\UCpaso[\UCactor] Da click en el \IUbutton{Actualizar}
 
 		\UCpaso Despliega la \IUref{IU4.16}{Actualizar informacion del estudiante} ó \IUref{IU4.17}{Actualizar información del docente}.
 
@@ -101,7 +103,7 @@
 
 		\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
 
-		\UCpaso Redirige a la pantalla \IUref{UI4.6}{Listado de alumnos} ó pantalla \IUref{UI4.6}{Listado de docentes}.
+		\UCpaso Redirige a la pantalla \IUref{IU4.6}{Listado de alumnos} ó pantalla \IUref{IU4.8}{Listado de docentes}.
 		
 
 	\end{UCtrayectoria}
@@ -116,7 +118,7 @@
 
 			\UCpaso Muestra el Mensaje \MSGref{MSJ4.5}{Error. Falló al conectarse a la BD.}
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.2ConectarBaseDatos} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.2ConectarBaseDatos} del \UCref{CU4.2}.
 
 		\end{UCtrayectoriaA}	
 
@@ -125,7 +127,7 @@
 		\begin{UCtrayectoriaA}{B.}{El bibliotecario no ha llenado todos los campos}
 			\UCpaso Muestra el Mensaje \MSGref{MSJ4.2}{Error. datos incompletos. Favor de completar todos los campos de entrada.}
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.1FormularioLector} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.1FormularioLector} del \UCref{CU4.2}.
 			
 		\end{UCtrayectoriaA}
 
@@ -134,7 +136,7 @@
 
 			\UCpaso Muestra el Mensaje \item Mensaje \MSGref{MSJ4.3}{Advertencia. Confirma que los datos ingresados sean correctos.},
 			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
-			\UCpaso Continua en el paso \ref{CU4.1FormularioLector} del \UCref{CU4.1}.
+			\UCpaso Continua en el paso \ref{CU4.1FormularioLector} del \UCref{CU4.2}.
 
 		\end{UCtrayectoriaA}
 

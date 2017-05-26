@@ -1,0 +1,190 @@
+% \IUref{IUAdmSucur}{Bibliotecario}
+% \IUref{IUConsDA}{Consultar Lector}
+% Version 1
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU4.4}{Consultar Lector}{
+		El bibliotecario puede consultar informacion del lector(alumno,docente). Y así, conocer en que estado se encuentra el lector. }
+		\UCitem{Versión}{1.0}
+		\UCitem{Estado}{En revisión}
+		\UCitem{Actor}{Bibliotecario.}
+		\UCitem{Propósito}{El bibliotecario podrá visualizar información del lector referente a los prestamos interno y externos, devoluciones, multas.}
+		\UCitem{Entradas}{}
+		\UCitem{Salidas}{
+			
+			\begin{itemize}
+				\item Mensaje \MSGref{MSJ4.1}{Se registro exitosamente.},
+				\item Mensaje \MSGref{MSJ4.2}{Error. datos incompletos. Favor de completar todos los campos de entrada.},
+				\item Mensaje \MSGref{MSJ4.5}{Error. Falló al conectarse a la BD.},
+			\end{itemize}
+		}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item El lector debe de estar registrado en el sistema.
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{Lector modifica su estado en el sistema.}
+		\UCitem{Tipo}{Caso de uso primario.}
+		\UCitem{Autor}{Miguel Ángel Castañeda Sánchez.}
+		\UCitem{Revisor}{---}
+	\end{UseCase}
+	
+	
+%%------------Trayectoria Principal-----------------%%		
+	
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso Despliega la \IUref{IU4.2}{Perfil del bibliotecario}.
+
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Gestión de préstamos}.
+
+		\UCpaso Despliega el menú de gestión de préstamos. \IUref{IU4.10}{Menú de gestión pŕestamos}
+
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Interno} ó \IUbutton{Externo}
+
+		\UCpaso Despliega la \IUref{IU4.11}{Préstamo interno} ó \IUref{IU4.12}{Préstamo externo}.
+
+		\UCpaso[\UCactor] Ingresa el dato en el campo de búsqueda para encontrar al lector. Los campos de búsqueda son:
+			\begin{itemize}
+				\item  Id del lector
+				\item  Nombre
+				\item  Número de boleta del IPN
+				\item  Escuela
+			\end{itemize}
+		\label{CU4.1BuscarLector}
+
+		\UCpaso[\UCactor] Da click en el \IUbutton{Verificar}\label{CU4.2ConectarBaseDatos}
+
+
+		\UCpaso Verifica el ó los campos de los datos con base a la \BRref{RN4.1}{Campos no nulos.} \Trayref{A}.
+
+		\UCpaso Válida el(los) campos de busqueda los formato con base a las reglas de negocio: 
+				
+			\begin{itemize}
+				\item   \BRref{RN4.2}{Formato del número de boleta del IPN.}
+				\item 	\BRref{RN4.3}{Formato del nombre.}
+				\item	\BRref{RN4.24}{Formato del id del lector} 
+				\item	\BRref{RN4.25}{Formato de la escuela} 
+			\end{itemize} 
+		\Trayref{B}.
+
+		\UCpaso Se conecta a la base de datos. \Trayref{C}.
+
+		\UCpaso Despliega la información del lector en la \IUref{IU4.11}{Préstamo interno} ó \IUref{IU4.12}{Préstamo externo}.
+
+		\UCpaso[\UCactor] puede consultar:
+			\begin{itemize}
+				\item Menú de acción
+					\begin{itemize}
+         				\item Préstamo. \Trayref{D}
+ 				        \item Préstamo TT y audiovisuales. \Trayref{E}
+ 				        \item Devoluciones. \Trayref{F} 
+ 				        \item Préstamo interbibliotecario. \Trayref{G}
+    				\end{itemize}
+				\item Devoluciones atrasadas
+					\begin{itemize}
+						\item Devolver libros. \Trayref{H}
+					\end{itemize}
+				\item Tiene multas pendientes
+					\begin{itemize}
+						\item Consultar multas. \Trayref{I}
+						\item Pagar multas. \Trayref{J}
+					\end{itemize}
+			\end{itemize}
+		\label{CU4.3OperacionesLector}
+	\end{UCtrayectoria}
+
+
+
+%%------------Trayectorias Alternativas-----------------%%	
+
+%%------------Trayectoria A-----------------%%
+				
+		\begin{UCtrayectoriaA}{A.}{El bibliotecario no ha llenado todos los campos}
+			\UCpaso Muestra el Mensaje \MSGref{MSJ4.2}{Error. datos incompletos. Favor de completar todos los campos de entrada.}
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Continua en el paso \ref{CU4.1BuscarLector} del \UCref{CU4.4}.
+			
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria B-----------------%%
+		\begin{UCtrayectoriaA}{B.}{El Administrador ha ingresado los datos de manera incorrecta}
+
+			\UCpaso Muestra el Mensaje \item Mensaje \MSGref{MSJ4.3}{Advertencia. Confirma que los datos ingresados sean correctos.},
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Continua en el paso \ref{CU4.1BuscarLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}		
+
+%%------------Trayectoria C-----------------%%
+		\begin{UCtrayectoriaA}{C.}{Error al conectar a la base de datos}
+
+			\UCpaso Muestra el Mensaje \MSGref{MSJ4.5}{Error. Falló al conectarse a la BD.}
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Continua en el paso \ref{CU4.2ConectarBaseDatos} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+
+%%------------Trayectoria D-----------------%%
+		\begin{UCtrayectoriaA}{D.}{Préstamo}
+
+			\UCpaso Inicia CU Préstamo
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria E-----------------%%
+		\begin{UCtrayectoriaA}{E.}{Préstamo TT y audiovisuales}
+
+			\UCpaso Inicia CU Préstamo TT y audiovisuales
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria F-----------------%%
+		\begin{UCtrayectoriaA}{F.}{Devoluciones}
+
+			\UCpaso Inicia CU Devoluciones
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria G----------------%%
+		\begin{UCtrayectoriaA}{G.}{Préstamo interbibliotecario}
+
+			\UCpaso Inicia CU Préstamo interbibliotecario
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria H-----------------%%
+		\begin{UCtrayectoriaA}{H.}{Devolver libros}
+
+			\UCpaso Inicia CU Devolver libros
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}				
+
+%%------------Trayectoria I-----------------%%
+		\begin{UCtrayectoriaA}{I.}{Consultar multas}
+
+			\UCpaso Inicia CU Consultar multas
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria J-----------------%%
+		\begin{UCtrayectoriaA}{J.}{Pagar multas}
+
+			\UCpaso Inicia CU Pagar multas
+			\UCpaso Continua en el paso \ref{CU4.3OperacionesLector} del \UCref{CU4.4}.
+
+		\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.
+
