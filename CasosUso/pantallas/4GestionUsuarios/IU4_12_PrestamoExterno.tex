@@ -1,0 +1,28 @@
+\newpage
+\subsection{IU4.12 Préstamo Externo}
+
+\subsubsection{Objetivo}
+	Pantalla Consulta externa, en esta interfaz el bibliotecario podrá visualizar la información de lector externo como son: los préstamos, devoluciones pendientes y multas que tenga.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Interno} de la pantalla \IUref{IU4.10}{Menú de gestión de préstamos} 
+
+	\IUfig[.7]{4GestionUsuarios/bibliotecario/IU4_12_PrestamoExterno.png}{IU4.12}{Sección para préstamos, devoluciones, multas y reposiciones.}
+
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Verificar}: Manda los datos para buscar al lector en la base de datos.
+		\item \IUbutton{Préstamo}: Envía al CU Préstamo
+		\item \IUbutton{Devoluciones}: Envía al CU Devoluciones
+		\item \IUbutton{Devolver libros}: Envía al CU devolver libros
+		\item \IUbutton{Consultar multas}: Envía al CU consultar multas
+		\item \IUbutton{Pagar multas}: Envía al CU pagar multa
+	\end{itemize}	
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Nombre: Cadena de caracteres del o los nombres del lector, ésta puede incluir letras y espacios. 
+		\item Boleta del alumno: La boleta está compuesta por: Año de ingreso del estudiante(4 dígitos), Número de matrícula de la escuela(2 dígitos) y Número de estudiante(4 dígitos).
+		\item Escuela: La búsqueda por escuela es ingresando una cadena de caracteres por ejemplo: esime, escom ó esit.
+	\end{Citemize}				

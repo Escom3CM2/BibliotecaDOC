@@ -1,0 +1,27 @@
+\newpage
+\subsection{IU4.11 Préstamo Interno}
+
+\subsubsection{Objetivo}
+	Pantalla Consulta interna, en esta interfaz el bibliotecario podrá visualizar la información del lector interno como son los préstamos, devoluciones pendientes y  multas que tenga.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Interno} de la pantalla \IUref{IU4.10}{Menú de gestión de préstamos} 
+
+	\IUfig[.7]{4GestionUsuarios/bibliotecario/IU4_11_PrestamoInterno.png}{IU4.11}{Sección para préstamos, devoluciones, multas y reposiciones.}
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Verificar}: Manda los datos para buscar al lector en la base de datos.
+		\item \IUbutton{Préstamo}: Envía al CU Préstamo
+		\item \IUbutton{Préstamo TT y audiovisuales}: Envía al CU Préstamo TT y audiovisuales
+		\item \IUbutton{Devoluciones}: Envía al CU Devoluciones
+		\item \IUbutton{Préstamo interbibliotecario}: Envía al CU préstamo interbibliotecario
+		\item \IUbutton{Devolver libros}: Envía al CU devolver libros
+		\item \IUbutton{Consultar multas}: Envía al CU consultar multas
+		\item \IUbutton{Pagar multas}: Envía al CU pagar multa
+	\end{itemize}	
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Id del lector: El id lector esta compuesto por dígitos
+	\end{Citemize}

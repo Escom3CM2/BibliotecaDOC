@@ -1,0 +1,31 @@
+\newpage
+\subsection{IU4.16 Actualizar informacion del estudiante}
+
+\subsubsection{Objetivo}
+	Pantalla de actualización de informacion del estudiante, en esta interfaz se podrá actualizar la información del estudiante y tener la información más reciente de dicho lector.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Actualizar} de la pantalla \IUref{IU4.6}{Lista de estudiantes} 
+
+	\IUfig[.8]{4GestionUsuarios/bibliotecario/IU4_16_ActualizarAlumno.png}{IU4.16}{Actualizar información del estudiante.}	
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Actualizar}: Manda los datos para que sean validados y posteriormente se actualiza el registro en la base de datos.
+		\item \IUbutton{Cancelar}: Cancela la operación de actualizar datos del lector.
+	\end{itemize}	
+
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Nombre: Cadena de caracteres del o los nombres del estudiante, ésta puede incluir letras y espacios. 
+		\item Primer apellido: Cadena de caracteres del primer apellido del estudiante, ésta puede incluir letras y espacios. 
+		\item Segundo apellido: Cadena de caracteres del segundo apellido del estudiante, ésta puede incluir letras y espacios. 
+		\item CURP: Cadena de caracteres del CURP del estudiante, ésta debe tener 4 letras, 2 números de año, 2 números de 01-12, 2 números 01-31,1 letra de género, 2 letras estado y 4 dígitos letras y números.. 
+		\item Fecha de nacimiento: La fecha se ingresa en digitos y tiene el siguiente formato Dia(DD)/Mes(MM)/Año (AAAA).
+		\item Dirección: Cadena de caracteres de la dirección del estudiante, ésta puede incluir números, letras, espacios y puntos. 
+		\item Teléfono: Cadena de caracteres del teléfono principal del estudiante, ésta debe incluir sólo números. 
+		\item Semestre: El formato del semestre será elegido desde un menú en el cual se podra elegir la opción que va desde: 1er semestre hasta decimo semestre.
+		\item Email: Cadena de caracteres del email del estudiante, ésta debe tener el formato correcto de un email. 
+		\item Constraseña: La contraseña debe de tener un tamaño mínimo de 8 caracteres y un máximo de 16 caracteres, la cual está compuesta por: Letras mayúsculas, Letras minúsculas, Dígitos y Caracteres no alfanúmericos, es decir, caracteres especiales.
+	\end{Citemize}

@@ -1,0 +1,31 @@
+\newpage
+\subsection{IU4.17 Actualizar información del docente}
+
+\subsubsection{Objetivo}
+	Pantalla de actualización de informacion del docente, en esta interfaz se podrá actualizar la información del docente y tener la información más reciente de dicho lector.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Actualizar} de la pantalla \IUref{IU4.8}{Lista de docentes}.
+
+	\IUfig[.8]{4GestionUsuarios/bibliotecario/IU4_17_ActualizarDocente.png}{IU4.17}{Actualizar información del docente.}	
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Actualizar}: Manda los datos para que sean validados y posteriormente se actualiza el registro en la base de datos.
+		\item \IUbutton{Cancelar}: Cancela la operación de actualizar datos del lector.
+	\end{itemize}	
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Nombre: Cadena de caracteres del o los nombres del docente, ésta puede incluir letras y espacios. 
+		\item Primer apellido: Cadena de caracteres del primer apellido del docente, ésta puede incluir letras y espacios. 
+		\item Segundo apellido: Cadena de caracteres del segundo apellido del docente, ésta puede incluir letras y espacios. 
+		\item CURP: Cadena de caracteres del CURP del docente, ésta debe tener 4 letras, 2 números de año, 2 números de 01-12, 2 números 01-31,1 letra de género, 2 letras estado y 4 dígitos letras y números.. 
+		\item Fecha de nacimiento: La fecha se ingresa en digitos y tiene el siguiente formato Dia(DD)/Mes(MM)/Año (AAAA).
+		\item Dirección: Cadena de caracteres de la dirección del docente, ésta puede incluir números, letras, espacios y puntos. 
+		\item Teléfono: Cadena de caracteres del teléfono principal del docente, ésta debe incluir sólo números. 
+		\item Departamento: El formato del departamento será elegido desde un menú en el cual se podra elegir la opción que va desde:Formación básica, Ciencias e ingeniería de la computación, Ingeniería en sistemas computacionales y Formación integral e institucional. Por mencionar algunas
+		\item Email: Cadena de caracteres del email del docente, ésta debe tener el formato correcto de un email. 
+		\item Constraseña: La contraseña debe de tener un tamaño mínimo de 8 caracteres y un máximo de 16 caracteres, la cual está compuesta por: Letras mayúsculas, Letras minúsculas, Dígitos y Caracteres no alfanúmericos, es decir, caracteres especiales.
+
+	\end{Citemize}		

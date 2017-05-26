@@ -1,0 +1,38 @@
+\newpage
+\subsection{IU4.5 Registrar Estudiante}
+
+\subsubsection{Objetivo}
+	Pantalla de Registro de estudiante, en esta interfaz se deberá introducir la información para agregar un nuevo lector a la base de datos. 
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Registrar estudiante} en el menú superior de gestión de usuarios.  \\
+
+	\IUfig[.8]{4GestionUsuarios/bibliotecario/IU4_5_RegistrarAlumno.png}{IU4.5}{Registrar Estudiante.}
+
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Guardar}: Manda los datos para que sean validados y posteriormente registrados en la base de datos.
+		\item \IUbutton{Limpiar}: Borra la información ingresada en los campos del formulario.  
+	\end{itemize}
+
+
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Número de boleta del IPN:La boleta está compuesta por: Año de ingreso del estudiante(4 dígitos), Número de matrícula de la escuela(2 dígitos) y Número de estudiante(4 dígitos).
+		\item Nombre: Cadena de caracteres del o los nombres del estudiante, ésta puede incluir letras y espacios. 
+		\item Primer apellido: Cadena de caracteres del primer apellido del estudiante, ésta puede incluir letras y espacios. 
+		\item Segundo apellido: Cadena de caracteres del segundo apellido del estudiante, ésta puede incluir letras y espacios. 
+		\item CURP: Cadena de caracteres del CURP del estudiante, ésta debe tener 4 letras, 2 números de año, 2 números de 01-12, 2 números 01-31,1 letra de género, 2 letras estado y 4 dígitos letras y números.. 
+		\item Fecha de nacimiento: La fecha se ingresa en digitos y tiene el siguiente formato Dia(DD)/Mes(MM)/Año (AAAA).
+		\item Dirección: Cadena de caracteres de la dirección del estudiante, ésta puede incluir números, letras, espacios y puntos. 
+		\item Teléfono: Cadena de caracteres del teléfono principal del estudiante, ésta debe incluir sólo números. 
+		\item Semestre: El formato del semestre será elegido desde un menú en el cual se podra elegir la opción que va desde: 1er semestre hasta decimo semestre.
+		\item Email: Cadena de caracteres del email del estudiante, ésta debe tener el formato correcto de un email. 
+		\item Constraseña: La contraseña debe de tener un tamaño mínimo de 8 caracteres y un máximo de 16 caracteres, la cual está compuesta por: Letras mayúsculas, Letras minúsculas, Dígitos y Caracteres no alfanúmericos, es decir, caracteres especiales.
+
+	\end{Citemize}
+
+
+

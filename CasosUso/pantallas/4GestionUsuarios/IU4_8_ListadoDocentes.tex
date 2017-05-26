@@ -1,0 +1,26 @@
+\newpage
+\subsection{IU4.8 Listado de Docentes}
+
+\subsubsection{Objetivo}
+	Pantalla de listado de docentes, en esta interfaz se podrá buscar a los docentes  dados de alta en el sistema, buscandolo por su nombre ó id de lector. Tambien se podrá actulizar la información de dicho usuario y hasta eliminarlo del sistema.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Listado de docentes} en el menú superior de gestión de usuarios.  \\
+
+	\IUfig[.8]{4GestionUsuarios/bibliotecario/IU4_8_ListadoDocentes.png}{IU4.8}{Listado de Docentes.}	
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Actualizar}: Redirecciona a la pantalla \IUref{IU4.17}{Actualizar informacion docente}.
+		\item \IUbutton{Eliminar}: Envia mensaje de confirmación para eliminar al docente del sistema.  
+		\item \IUbutton{Buscar}: Busca al docente tomando como referencia el campo introducido para su búsqueda.  
+		\item \IUbutton{Formación básica }, \IUbutton{Ingenieria en sistemas computacionales}, \IUbutton{Ciencias e ingenieria de la computación} y \IUbutton{Formación integral e institucional}: Muestra a los docentes por sus diferentes áreas de trabajo.
+	\end{itemize}
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Número del lector:El id lector esta compuesto por dígitos
+		\item Nombre: Cadena de caracteres del o los nombres del docente, ésta puede incluir letras y espacios. 
+		\item Primer apellido: Cadena de caracteres del primer apellido del docente, ésta puede incluir letras y espacios. 
+		\item Segundo apellido: Cadena de caracteres del segundo apellido del docente, ésta puede incluir letras y espacios. 
+	\end{Citemize}	

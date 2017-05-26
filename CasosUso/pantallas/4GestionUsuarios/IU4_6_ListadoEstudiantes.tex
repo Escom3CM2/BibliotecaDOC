@@ -1,0 +1,28 @@
+\newpage
+\subsection{IU4.6 Listado de Estudiantes}
+
+\subsubsection{Objetivo}
+	Pantalla de listado de estudiantes, en esta interfaz se podrá buscar a los estudiante  dados de alta en el sistema, buscandolo por su nombre o id de lector. Tambien se podrá actulizar la información de dicho usuario y hasta eliminarlo del sistema.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar click en el botón \IUbutton{Listado de estudiantes} en el menú superior de gestión de usuarios.  \\
+
+	\IUfig[.8]{4GestionUsuarios/bibliotecario/IU4_6_ListadoAlumnos.png}{IU4.6}{Listado de Estudiantes.}	
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \IUbutton{Actualizar}: Redirecciona a la pantalla \IUref{IU4.16}{Actualizar informacion estudiante}.
+		\item \IUbutton{Eliminar}: Envia mensaje de confirmación para eliminar al estudiante del sistema.  
+		\item \IUbutton{Buscar}: Busca al estudiante tomando como referencia el campo introducido para su busqueda.  
+		\item \IUbutton{1er Semestre} hasta \IUbutton{10mo Semestre}: Muestra a los estudiantes registrado en el sistema por categoria de semtres.  
+	\end{itemize}
+
+
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Número del lector:El id lector esta compuesto por dígitos
+		\item Nombre: Cadena de caracteres del o los nombres del estudiante, ésta puede incluir letras y espacios. 
+		\item Primer apellido: Cadena de caracteres del primer apellido del estudiante, ésta puede incluir letras y espacios. 
+		\item Segundo apellido: Cadena de caracteres del segundo apellido del estudiante, ésta puede incluir letras y espacios. 
+	\end{Citemize}
+
