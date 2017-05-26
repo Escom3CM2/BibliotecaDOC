@@ -6,45 +6,52 @@
 %========================================================
 % DescripciÃ³n general del proceso
 %-----------------------------------------------
-\begin{Proceso}{P2.4}{Descartar libros } {
+\begin{Proceso}{P2.3}{Descartar Material} {
   
   %-------------------------------------------
   %Resumen
 
-  Proceso que realiza el \cdtRef{Actor:Bibliotecario}{Bibliotecario} con la finalidad de llevar a cabo el descarte de libros por diversas razones al final de su vida util o por defectos que conlleva a dar de baja un libro del inventario.
-  Se reúnen los libros que se encuentren en algún estado de los siguientes:
+  Proceso que realiza el encargado de \cdtRef{Actor:Procesos_T}{Procesos Técnicos} con la finalidad de llevar a cabo el descarte de Material por diversas razones al final de su vida util o por defectos que conlleva a dar de baja un material del inventario.
+\vspace{5mm}	
+  Se reúnen los libros, materiales audiovisuales, equipo de cómputo o TTs que se encuentren en algún estado de los siguientes:
   -obsolescencia.
   -falta de uso.
   -contaminación y/o mutilación.
-Despues se informa a la oficina de recursos materiales del ipn el problema de libros con eso recibe un formato de la oficina de recursos el cual contiene nombre título autores edición y motivo de descarte por cada isbn se necesita llenar el formato anterior.
-Despues los libros se guardan en una caja y se envían junto con su formato pegado en la caja a recursos materiales del ipn con ello la biblioteca  es informada mediante un acuse de recibo que los libros han sido entregados satisfactoriamente.
+  -extravío.
+Despues se informa a la oficina de \cdtRef{Actor:Recursos_M}{Recursos Materiales} el problema con el material en cuestión, inicia sesión en el sistema, consulta el libro en cuestión y modifica su estado a alguno correcto para que se pueda dar de baja.
+Se genera un formato de material dado de baja.
+Despues los libros se guardan en una caja y se envían junto con su formato pegado en la caja a \cdtRef{Actor:Recursos_M}{Recursos Materiales}, con ello el encargado de \cdtRef{Actor:Procesos_T}{Procesos Técnicos} es informado mediante un acuse de recibo que los libros han sido recibidos satisfactoriamente.
 
 
 
   %-------------------------------------------
   %Diagrama del proceso
 
-  \noindent La Figura \cdtRefImg{P2.4}{Descartar libros} muestra las actividades que se realizan para llevar a cabo el proceso descrito anteriormente.
+  \noindent La Figura \cdtRefImg{P2.3}{Descartar libros} muestra las actividades que se realizan para llevar a cabo el proceso descrito anteriormente.
 
   \Pfig[0.95]{./procesos/C2/Images/GU4_6Descartar.png}{P4.6}{Descartar libros}
 \Pfig[0.95]{./procesos/Ejemplo/Images/PA2_1-SolicitudDeCuenta.png}{P0.1}{Solicitud de cuenta}
 
-} {P4.6:Realizar Descarte de libros}
+} {P2.3:Realizar Descarte de Material}
 
   %-------------------------------------------
   %Elementos del proceso
 
   \UCitem{Actores} { %Actores
-    \cdtRef{Actor:Bibliotecario}{Bibliotecario} .
+    \cdtRef{Actor:Procesos_T}{Procesos Técnicos},
+	\cdtRef{Actor:Recursos_M}{Recursos Materiales}.
   }
 
   \UCitem{Objetivo} { %Objetivo
-	Descartar un libro para darlo de baja del sistema en el inventario.
+	Descartar material innecesario o dañado para la biblioteca.|
   }
 
   \UCitem{Insumos de entrada} { %Insumos de entrada
   	\begin{UClist}
-  		\UCli Recuperacion de los libros para descartar dependiendo de la informacion de el estado de los libros.
+  		\UCli Datos del Formulario \cdtIdRef{F2.8}{Buscar Libro}. 
+  		\UCli Datos del Formulario \cdtIdRef{F2.9}{Buscar Material Audiovisual}.
+		\UCli Datos del Formulario \cdtIdRef{F2.10}{Buscar TT}.
+		\UCli Datos del Formulario \cdtIdRef{F2.11}{Buscar Equipo de Cómputo}. 
      	
     \end {UClist}
   }
@@ -55,15 +62,15 @@ Despues los libros se guardan en una caja y se envían junto con su formato pega
 
   \UCitem{Productos de salida} { %Productos de salida
     \begin{UClist}
-    
-      \UCli Acuse de recibido.
-      \UCli Libros dados de baja del sistema.
-  
+		\UCli \cdtIdRef{D2.7}{Libro dado de baja}
+		\UCli \cdtIdRef{D2.8}{Material Audiovisual dado de baja}.
+		\UCli \cdtIdRef{D2.9}{TT dado de baja}
+		\UCli \cdtIdRef{D2.10}{Equipo de Cómputo dado de baja}
     \end{UClist}
   }
 
   \UCitem{Cliente} { %Cliente
-    \cdtRef{Actor:Bibliotecario}{Bibliotecario}
+    \cdtRef{Actor:Procesos_T}{Procesos Técnicos}
   }
 
   \UCitem{Mecanismo de medición} { %Mecanismo de mediciÃ³n

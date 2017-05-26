@@ -17,6 +17,165 @@
 %====================CELULA2=====================================
 %Introducir los correspondientes a la GESTIÓN DE INVENTARIO
 
+\subsection{D2.1 Libros Escaneados}
+\cdtLabel{D2.1}{}
+
+  Documento que es generado al terminar de escanear todos los libros por parte del encargado de  \cdtRef{Actor:Procesos_T}{Procesos Técnicos} el cual tiene que tener los siguientes datos.
+  
+  \begin{itemize}
+  \item ISBN 
+  \item Título
+  \item Autor(es)
+  \item Editorial
+  \item Edición
+  \item Existencias totales por ISBN
+  \item Precio total de todos los libros por ISBN
+  \item Precio total de los libros que se encuentran en la biblioteca
+  \item Total de libros que se encuentran en la biblioteca
+  \item Precio total de los libros  escaneados
+  \item Total de libros escaneados
+  \end{itemize}
+  
+\subsection{D2.2 Material Audiovisual Escaneado}
+\cdtLabel{D2.2}{}
+
+  Documento que es generado al terminar de escanear todos materiales audiovisuales por parte del encargado de  \cdtRef{Actor:Procesos_T}{Procesos Técnicos} el cual tiene que tener los siguientes datos.
+  
+  \begin{itemize}
+  \item ID 
+  \item Título
+  \item Autor(es)
+  \item Estado
+  \item Duración
+  \item Tipo
+  \item Existencias
+  \item Precio total de audiovisual que coincide con el mismo ID
+  \item Total de Audiovisuales que se encuentran en la biblioteca
+  \item Total de Audiovisuales escaneados
+  \item Precio total de Audiovisuales en la biblioteca
+  \item Precio total de Audiovisuales escaneados
+  \end{itemize}
+  
+ \subsection{D2.2 Equipo de Cómputo Escaneado}
+\cdtLabel{D2.3}{}
+
+  Documento que es generado al terminar de escanear todos los equipos de cómputo por parte del encargado de  \cdtRef{Actor:Procesos_T}{Procesos Técnicos} el cual tiene que tener los siguientes datos.
+  
+  \begin{itemize}
+  \item \# Computadora
+  \item \# Serie de Monitor
+  \item \# Serie de CPU
+  \item \# Serie de Teclado
+  \item \# Serie de Mouse
+  \item Precio total por computadora
+  \item Numero total de computadoras escaneadas
+  \item Número total de Computadoras en la biblioteca
+  \item Precio total de computadoras escaneadas
+  \item Precio total de computadoras en la biblioteca 
+  \end{itemize}
+  
+ \subsection{D2.4 Libros Faltantes}
+\cdtLabel{D2.4}{}
+
+  Documento que es enviado por el \cdtRef{Actor:Servidor_P}{Servidor IPN} una vez que se han consultado los libros faltantes en el inventario. 
+  
+  \begin{itemize}
+  \item ISBN 
+  \item Título
+  \item Autor(es)
+  \item Editorial
+  \item Edición
+  \item Número de Libros Faltantes
+  \item Precio total de libros faltantes por ISBN
+  \item Número total de libros faltantes por ISBN
+  \item Número total de libros faltantes
+  \item Precio total de libros faltanes
+  \end{itemize}
+  
+  \subsection{D2.5 Material Audiovisual Faltante}
+\cdtLabel{D2.5}{}
+
+  Documento que es enviado por el \cdtRef{Actor:Servidor_P}{Servidor IPN} una vez que se han consultado los materiales audiovisuales faltantes en el inventario. 
+  
+  \begin{itemize}
+  \item ID 
+  \item Título
+  \item Autor(es)
+  \item Estado
+  \item Duración
+  \item Cantidad de materiales audiovisuales faltantes por ID
+  \item Cantidad total de materiales audiovisuales faltantes
+  \item Precio total de materiales audiovisuales faltantes por ID
+  \item Precio total de materiales audiovisuales faltantes 
+  \end{itemize}
+  
+  \subsection{D2.6 Equipo de Cómputo Faltante}
+\cdtLabel{D2.6}{}
+
+  Documento que es enviado por el \cdtRef{Actor:Servidor_P}{Servidor IPN} una vez que se han consultado los equipos de cómputo faltantes en el inventario. 
+  
+  \begin{itemize}
+  \item \# Computadora
+  \item \# Serie de Monitor
+  \item \# Serie de CPU
+  \item \# Serie de Teclado
+  \item \# Serie de Mouse
+  \item Precio total por computadora faltante
+  \item Precio total de todas las computadoras faltantes
+  \item Cantidad total de computadoras faltantes
+  \end{itemize}
+  
+  \subsection{D2.7 Libro Dado de Baja}
+\cdtLabel{D2.7}{}
+
+  Documento que es generado por el Sistema para identificar a los libros eliminados.
+  
+  \begin{itemize}
+  \item ID
+  \item Título
+  \item Autor(es)
+  \item Estado
+  \item Disponibilidad
+  \end{itemize}
+  
+  \subsection{D2.8 Material Audiovisual dado de Baja}
+\cdtLabel{D2.8}{}
+
+  Documento que es generado por el Sistema para identificar a los materiales audiovisuales eliminados.
+  
+  \begin{itemize}
+  \item ID
+  \item Título
+  \item Autor(es)
+  \item Estado
+  \item Disponibilidad.
+  \end{itemize}
+  
+   \subsection{D2.9 TT Dado de Baja}
+\cdtLabel{D2.9}{}
+
+  Documento que es generado por el Sistema para identificar a los TTs eliminados.
+  
+  \begin{itemize}
+  \item No. TT
+  \item Título
+  \item Autor(es)
+  \item Fecha de Presentación
+  \item Director(es)
+  \end{itemize}
+
+\subsection{D2.10 Equipo de Cómputo Dado de Baja}
+\cdtLabel{D2.10}{}
+
+  Documento que es generado por el Sistema para identificar a los equipos de cómputo eliminados.
+  
+  \begin{itemize}
+  \item # computadora
+  \item # Serie Monitor
+  \item # Serie CPU
+  \item # Serie Mouse
+  \item # Serie Teclado
+  \end{itemize}
 
 
 %====================CELULA3=====================================
