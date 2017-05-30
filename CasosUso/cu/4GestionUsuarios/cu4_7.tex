@@ -1,0 +1,120 @@
+% \IUref{IUAdmSucur}{Lector}
+% \IUref{IUConsDA}{Perfil del lector}
+% Version 1
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU4.7}{Perfil del Lector}{
+		El lector hace uso de las diferentes funcionalidades que hay en su perfil. Navegar entre las funcionalidades que tiene.}
+		\UCitem{Versión}{1.0}
+		\UCitem{Estado}{En revisión}
+		\UCitem{Actor}{Lector.}
+		\UCitem{Propósito}{El lector hace uso de las diferentes funcionalidades que hay en su perfil.}
+		\UCitem{Entradas}{}
+		\UCitem{Salidas}{
+			
+%%			\begin{itemize}
+%%				\item Mensaje \MSGref{MSJ4.1}{Se registro exitosamente.},
+%%			\end{itemize}
+		}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item El lector debe de estar registrado en el sistema.
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{}
+		\UCitem{Tipo}{Caso de uso primario.}
+		\UCitem{Autor}{Miguel Ángel Castañeda Sánchez.}
+		\UCitem{Revisor}{---}
+	\end{UseCase}
+
+
+
+%%------------Trayectoria Principal-----------------%%		
+	
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso Despliega la \IUref{IU4.18}{Perfil del lector}.\label{CU4.1InicioLector}
+
+		\UCpaso[\UCactor] Da clik en el botón:
+			\begin{itemize}
+				\item 	\IUbutton{Inicio} \Trayref{A}
+				\item 	\IUbutton{Búsqueda de libro} \Trayref{B}
+				\item 	\IUbutton{Reposición de credencial} \Trayref{C}
+				\item 	\IUbutton{Historial de préstamos} \Trayref{D}
+				\item 	\IUbutton{Devoluciones pendientes} \Trayref{E}
+				\item 	\IUbutton{Multas} \Trayref{F}
+				\item 	\IUbutton{Buscar libro} \Trayref{G}
+				\item 	\IUbutton{Salir del sistema} \Trayref{H}
+			\end{itemize}
+
+	\end{UCtrayectoria}
+
+
+%%------------Trayectorias Alternativas-----------------%%	
+%%------------Trayectoria A-----------------%%
+				
+		\begin{UCtrayectoriaA}{A.}{Inicio}
+
+			\UCpaso Continua en el paso \ref{CU4.1InicioLector} del \UCref{CU4.7}.
+		
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria B-----------------%%
+				
+		\begin{UCtrayectoriaA}{B.}{Búsqueda del libro}
+
+			\UCpaso Inicia \UCref{CU3} Búsqueda del libro.
+		
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria C-----------------%%
+				
+		\begin{UCtrayectoriaA}{C.}{Reposición de credencial}
+
+			\UCpaso Inicia \UCref{CU5.3} Reposición de credencial.
+		
+		\end{UCtrayectoriaA}				
+
+%%------------Trayectoria D-----------------%%
+				
+		\begin{UCtrayectoriaA}{D.}{Historial de préstamos}
+
+			\UCpaso Inicia \UCref{CU3} Historial de préstamos
+		
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria E-----------------%%
+				
+		\begin{UCtrayectoriaA}{E.}{Devoluciones pendientes}
+
+			\UCpaso Inicia \UCref{CU3} Devoluciones pendientes.
+		
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria F-----------------%%
+				
+		\begin{UCtrayectoriaA}{F.}{Multas}
+
+			\UCpaso Inicia \UCref{CU3} Multas.
+		
+		\end{UCtrayectoriaA}				
+%%------------Trayectoria G-----------------%%
+				
+		\begin{UCtrayectoriaA}{G.}{Buscar el libro}
+
+			\UCpaso Inicia \UCref{CU3} Buscar el libro.
+		
+		\end{UCtrayectoriaA}
+
+%%------------Trayectoria H-----------------%%
+				
+		\begin{UCtrayectoriaA}{H.}{Salir del sistema}
+
+			\UCpaso Inicia \UCref{CU4.5} Cerrar sesión.
+		
+		\end{UCtrayectoriaA}
+

@@ -1,0 +1,74 @@
+% \IUref{IUAdmSucur}{Bibliotecario, Lector, Jefe de biblioteca, Procesos técnicos}
+% \IUref{IUConsDA}{Cerrar sesión}
+% Version 1
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU4.5}{Cerrar sesión}{
+	Los usuarios(Lector, Bibliocatecario, Jefe de biblioteca y Procesos técnicos) tienes la opción de cerrar la sesión su sesión que este en ese momento para la seguridad de su cuenta.}
+		\UCitem{Versión}{1.0}
+		\UCitem{Estado}{En revisión}
+		\UCitem{Actor}{Bibliotecario, Lector, Jefe de biblioteca y Procesos técnicos}
+		\UCitem{Propósito}{Tener un control de su sesión, cuando el usuario desee cerrar sesión pueda realizar dicha acción}
+		\UCitem{Entradas}{Ninguna}
+		\UCitem{Salidas}{
+			
+			\begin{itemize}
+				\item \MSGref{MSJ4.15}{Advertencia. Quiere salir del sistema y cerrar sesión actual.}
+			\end{itemize}
+		}
+		\UCitem{Precondiciones}{
+			\begin{itemize}
+				\item El usuario debe de estar registrado en el sistema.
+				\item El usuario debe haber iniciado sesión en el sistema.
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{El sistema redirigue a la pantalla de inicio de sesión.}
+		\UCitem{Tipo}{Caso de uso primario.}
+		\UCitem{Autor}{Castillo Huitron Sachiel.}
+		\UCitem{Revisor}{Castañeda Sánchez Miguel Ángel}
+	\end{UseCase}
+
+	%%------------Trayectoria Principal-----------------%%		
+	
+	\begin{UCtrayectoria}{Principal}
+	
+
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Salir del sistema} de la pantalla: 
+			\begin{itemize}
+				\item	\IUref{IU4.2}{Perfil bibliotecario},
+				\item	\IUref{IU4.18}{Perfil lector},
+				\item 	\IUref{IU4.30}{Perfil Jefe de biblioteca} ó
+				\item 	\IUref{IU4.31}{Perfil Procesos técnicos}
+			\end{itemize} 
+		
+		\UCpaso Muestra el Mensaje \MSGref{MSJ4.15}{Advertencia. Quiere salir del sistema y cerrar sesión actual.}\Trayref{A}.
+
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{Si, salir}
+
+		\UCpaso Redirige a la pantalla \IUref{IU4.1}{Login del usuario}. 
+
+	\end{UCtrayectoria}
+
+%%------------Trayectorias Alternativas-----------------%%	
+
+%%------------Trayectoria A-----------------%%
+
+	\begin{UCtrayectoriaA}{A.}{Perfil de procesos tecnicos}
+
+		\UCpaso[\UCactor] Da clik en el botón \IUbutton{No, cancelar}
+
+		\UCpaso Redirige a la pantalla:
+			\begin{itemize}
+				\item	\IUref{IU4.2}{Perfil bibliotecario} 
+				\item	\IUref{IU4.18}{Perfil lector}
+				\item 	\IUref{IU4.30}{Perfil Jefe de biblioteca}
+				\item 	\IUref{IU4.31}{Perfil Procesos técnicos}.
+			\end{itemize}
+
+	\end{UCtrayectoriaA}	
+
+
