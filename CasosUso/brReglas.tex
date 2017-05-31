@@ -13,6 +13,21 @@
 %Reglas de Negocio Celula 1
 %---------------------------------------------------------
 
+\begin{BussinesRule}{RN01}{Campos incompletos.} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:] Todos los campos de entrada obligatorios no deben estar vacíos.
+\end{BussinesRule}
+
+\begin{BussinesRule}{RN02}{Material no registrado.} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:] El sistema verificará que el parámetro de entrada exista en uno y solo un registro de la base de datos.
+\end{BussinesRule}
+
+\begin{BussinesRule}{RN03}{Registros mínimos para reporte.} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:] El sistema verificará que exista al menos un elemento escaneado en lista temporal, de acuerdo a la categoría de elementos para la generación del reporte de elementos escaneados.
+\end{BussinesRule}
+
 \begin{BussinesRule}{R1.2}{Formato general para el registro de un empleado.} 
 
 	\BRitem[Nombre:] Formato del nombre.
