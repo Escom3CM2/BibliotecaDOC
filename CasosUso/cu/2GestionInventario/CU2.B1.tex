@@ -1,0 +1,100 @@
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+	\begin{UseCase}{CU2.B1}{Escanear Códigos de Barras}{
+	   Permite ingresar al sistema el código de barras de un libro, material audiovisual o equipo de cómputo, con el propósito de almacenar una lista de estos elementos escaneados, sirviendo posteriormente para actividades informativas sobre los detalles de los elementos existentes.
+	}
+		\UCitem{Versión}{1}
+		\UCitem{Actor}{Empleado de Procesos Técnicos}
+		\UCitem{Propósito}{Generar una lista con los elementos escaneados.}
+		\UCitem{Entradas}{
+		\begin{itemize}
+		   \item Código de barras del elemento seleccionado.
+		\end{itemize}				
+		}
+		\UCitem{Salidas}{
+			Lista de elementos con los siguientes datos, según sea el caso:
+			\begin{itemize}
+				\item ->LIBRO
+				\item ISBN	
+				\item Titulo	
+				\item Autor(es)	
+				\item Editorial	
+				\item Fecha de Publicación	
+				\item Numero de Páginas	
+				\item Estado
+				\item Precio	
+
+				\item ->TT	
+				\item Número de TT	
+				\item Titulo	
+				\item Autor(es)	
+				\item Fecha de Presentación	
+				\item Director(es)
+	
+				\item ->MATERIAL AUDIOVISUAL
+				\item ID	
+				\item Titulo	
+				\item Autor(es)	
+				\item Duracion	
+				\item Fecha de Publicacion	
+				\item Estado
+				\item Precio
+	
+				\item ->EQUIPO DE CÓMPUTO	
+				\item ID
+				\item Marca
+				\item Modelo
+				\item Estado
+				\item Precio
+		
+			\end{itemize}				
+		}
+		\UCitem{Precondiciones}{ 
+			\begin{itemize}
+				\item Ingresar al sistema con una credencial de procesos técnicos.
+				\item El material a escanear debe haber sido registrado previamente.
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{
+		\begin{itemize}
+		\item Los elementos permanecerán en una lista de elementos escaneados
+		\end{itemize}				
+		}
+		\UCitem{Autor(es)}{
+		\begin{itemize}
+		 \item Tejeda Martínez José Miguel
+		\end{itemize}		 		 
+		}
+
+	\end{UseCase}
+		%-------------------------------------- COMIENZA descripción Trayectoria Principal
+	\begin{UCtrayectoria}{Principal}
+	  \UCpaso[\UCactor] Selecciona el tipo de material (Libro, Audiovisual o Equipo de cómputo) en el menú lateral de la pantalla \IUref{UI2.B1.1}{Inicio}.
+	 \UCpaso[\UCsist]Muestra la interfaz \IUref{UI2.B1.2}{Escanear libro}, en el caso de elegir Libro, la interfaz \IUref{UI2.B1.3}{Escanear equipo audiovisual} en caso de elegir audiovisual o \IUref{UI2.B1.4}{Escanear equipo de cómputo}, en caso de elegir equipo de cómputo.
+	  \UCpaso[\UCactor] Ingresa el código de barras del elemento a escanear.
+	  \UCpaso[\UCactor] Da click en el botón "Agregar".
+	   \UCpaso[\UCsist] Verifica la  \BRref{RN01}{Campos incompletos}.[Trayectoria A]
+	    \UCpaso[\UCsist] Verifica la \BRref{RN02}{Material no registrado}.[Trayectoria B]
+	    \UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ2.1}{Registro exitoso}
+	    \UCpaso[\UCsist] Muestra la información del material correspondiente en la tabla inferior al botón "Agregar".
+	\end{UCtrayectoria}
+
+			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
+		\begin{UCtrayectoriaA}{A}{Campos incompletos}
+			\UCpaso[\UCsist] Enviara el  mensaje en pantalla \MSGref{MSJ2.2}{Datos incompletos. Favor de completar todos los campos de entrada obligatorios.}
+			\UCpaso[\UCsist] Regresa al paso 3 de la trayectoria principal.
+		\end{UCtrayectoriaA}
+		
+		
+		\begin{UCtrayectoriaA}{B}{Material no registrado}
+			\UCpaso[\UCsist] Enviara el mensaje en pantalla \MSGref{MSJ2.3}{El material a escanear no está registrado.}
+			\UCpaso[\UCsist] Regresa al paso 3 de la trayectoria principal, vaciando el campo de texto de entrada.
+		\end{UCtrayectoriaA}	
+		
+		
+		
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

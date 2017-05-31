@@ -34,74 +34,209 @@
 \contentsline {subsection}{\numberline {2.4.1}Descripci\IeC {\'o}n completa}{25}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Atributos importantes}{25}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Trayectorias del Caso de Uso}{25}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}CU3.2 Pr\IeC {\'e}stamo Interbibliotecario}{27}{section.2.5}
+\contentsline {section}{\numberline {2.5}CU2.B1 Escanear C\IeC {\'o}digos de Barras}{27}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Descripci\IeC {\'o}n completa}{27}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Atributos importantes}{27}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Trayectorias del Caso de Uso}{27}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}CU3.4 Consultar Pr\IeC {\'e}stamo Interbibliotecario}{29}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Descripci\IeC {\'o}n completa}{29}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Atributos importantes}{29}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Trayectorias del Caso de Uso}{29}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}CU3.8 Generar multa}{31}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Descripci\IeC {\'o}n completa}{31}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Atributos importantes}{31}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Trayectorias del Caso de Uso}{31}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}IU3.2 Formulario}{33}{subsection.2.7.4}
-\contentsline {subsubsection}{Objetivo}{33}{section*.14}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{33}{section*.15}
-\contentsline {subsubsection}{Salidas}{33}{section*.16}
-\contentsline {subsubsection}{Entradas}{33}{section*.17}
-\contentsline {subsection}{\numberline {2.7.5}IU3.2a Formato}{33}{subsection.2.7.5}
-\contentsline {subsubsection}{Objetivo}{33}{section*.18}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{33}{section*.19}
-\contentsline {subsubsection}{Salidas}{34}{section*.20}
-\contentsline {subsubsection}{Entradas}{34}{section*.21}
-\contentsline {subsection}{\numberline {2.7.6}IU3.4 Consultar Prestamo Interbibliotecario}{35}{subsection.2.7.6}
-\contentsline {subsubsection}{Objetivo}{35}{section*.22}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{35}{section*.23}
-\contentsline {subsubsection}{Salidas}{35}{section*.24}
-\contentsline {subsubsection}{Entradas}{35}{section*.25}
-\contentsline {subsection}{\numberline {2.7.7}IU3.4a Resultado Consulta Pr\IeC {\'e}stamo Interbibliotecario}{35}{subsection.2.7.7}
-\contentsline {subsubsection}{Objetivo}{35}{section*.26}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{35}{section*.27}
-\contentsline {subsubsection}{Salidas}{35}{section*.28}
-\contentsline {subsubsection}{Entradas}{36}{section*.29}
-\contentsline {subsection}{\numberline {2.7.8}IU3.8 Generar multa}{37}{subsection.2.7.8}
-\contentsline {subsubsection}{Objetivo}{37}{section*.30}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{37}{section*.31}
-\contentsline {subsubsection}{Salidas}{37}{section*.32}
-\contentsline {subsubsection}{Entradas}{37}{section*.33}
-\contentsline {subsection}{\numberline {2.7.9}IU3.8a Confirmar multa}{37}{subsection.2.7.9}
-\contentsline {subsubsection}{Objetivo}{37}{section*.34}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{37}{section*.35}
-\contentsline {subsubsection}{Salidas}{38}{section*.36}
-\contentsline {subsubsection}{Entradas}{38}{section*.37}
-\contentsline {section}{\numberline {2.8}CU5.1 Generar credencial}{39}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Descripci\IeC {\'o}n completa}{39}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Atributos importantes}{39}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Trayectorias del Caso de Uso}{39}{subsection.2.8.3}
-\contentsline {section}{\numberline {2.9}CU5.3 Reponer credencial}{40}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Descripci\IeC {\'o}n completa}{40}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Atributos importantes}{40}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}Trayectorias del Caso de Uso}{40}{subsection.2.9.3}
-\contentsline {subsection}{\numberline {2.9.4}IU5.00 RegStudent}{41}{subsection.2.9.4}
-\contentsline {subsubsection}{Objetivo}{41}{section*.38}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{41}{section*.39}
-\contentsline {subsubsection}{Salidas}{41}{section*.40}
-\contentsline {subsubsection}{Entradas}{41}{section*.41}
-\contentsline {subsection}{\numberline {2.9.5}IU5.01 creacionCredencial}{41}{subsection.2.9.5}
-\contentsline {subsubsection}{Objetivo}{41}{section*.42}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{41}{section*.43}
-\contentsline {subsubsection}{Salidas}{41}{section*.44}
-\contentsline {subsubsection}{Entradas}{42}{section*.45}
-\contentsline {subsection}{\numberline {2.9.6}IU5.02 Reposici\IeC {\'o}nCredencial}{43}{subsection.2.9.6}
-\contentsline {subsubsection}{Objetivo}{43}{section*.46}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{43}{section*.47}
-\contentsline {subsubsection}{Salidas}{43}{section*.48}
-\contentsline {subsubsection}{Entradas}{43}{section*.49}
-\contentsline {subsection}{\numberline {2.9.7}IU5.01 creacionCredencial}{44}{subsection.2.9.7}
-\contentsline {subsubsection}{Objetivo}{44}{section*.50}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{44}{section*.51}
-\contentsline {subsubsection}{Salidas}{44}{section*.52}
-\contentsline {subsubsection}{Entradas}{44}{section*.53}
-\contentsline {section}{\numberline {2.10}Catalogo de Mensajes}{45}{section.2.10}
+\contentsline {subsection}{\numberline {2.5.3}Trayectorias del Caso de Uso}{29}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}UI2.B1.1 Inicio para Empleado de Procesos T\IeC {\'e}cnicos}{30}{subsection.2.5.4}
+\contentsline {subsubsection}{Objetivo}{30}{section*.14}
+\contentsline {subsection}{\numberline {2.5.5}UI2.B1.2 Escanear Libro}{30}{subsection.2.5.5}
+\contentsline {subsubsection}{Objetivo}{30}{section*.15}
+\contentsline {subsection}{\numberline {2.5.6}UI2.B1.3 Escanear Material Audiovisual}{30}{subsection.2.5.6}
+\contentsline {subsubsection}{Objetivo}{30}{section*.16}
+\contentsline {subsection}{\numberline {2.5.7}UI2.B1.4 Escanear Equipo de c\IeC {\'o}mputo}{31}{subsection.2.5.7}
+\contentsline {subsubsection}{Objetivo}{31}{section*.17}
+\contentsline {section}{\numberline {2.6}CU2.B2 Generar Reporte de elementos escaneados}{32}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Descripci\IeC {\'o}n completa}{32}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Atributos importantes}{32}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Trayectorias del Caso de Uso}{34}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}UI2.B2.1 Escanear Libro}{36}{subsection.2.6.4}
+\contentsline {subsubsection}{Objetivo}{36}{section*.18}
+\contentsline {subsection}{\numberline {2.6.5}UI2.B2.2 Escanear Material Audiovisual}{36}{subsection.2.6.5}
+\contentsline {subsubsection}{Objetivo}{36}{section*.19}
+\contentsline {subsection}{\numberline {2.6.6}UI2.B2.3 Escanear Equipo de c\IeC {\'o}mputo}{36}{subsection.2.6.6}
+\contentsline {subsubsection}{Objetivo}{37}{section*.20}
+\contentsline {subsection}{\numberline {2.6.7}UI2.B2.4 Reporte de Libros escaneados}{37}{subsection.2.6.7}
+\contentsline {subsubsection}{Objetivo}{37}{section*.21}
+\contentsline {subsection}{\numberline {2.6.8}UI2.B2.5 Reporte de Material Audiovisual escaneado}{37}{subsection.2.6.8}
+\contentsline {subsubsection}{Objetivo}{37}{section*.22}
+\contentsline {subsection}{\numberline {2.6.9}UI2.B2.6 Reporte de Equipo de C\IeC {\'o}mputo escaneado}{38}{subsection.2.6.9}
+\contentsline {subsubsection}{Objetivo}{38}{section*.23}
+\contentsline {section}{\numberline {2.7}CU02 Consultar material}{39}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Descripci\IeC {\'o}n completa}{39}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Atributos importantes}{39}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Trayectorias del Caso de Uso}{41}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}UI2.8 Modificar o eliminar}{43}{subsection.2.7.4}
+\contentsline {subsubsection}{Objetivo}{43}{section*.24}
+\contentsline {subsection}{\numberline {2.7.5}UI2.9 Consultar catalogo del libro}{44}{subsection.2.7.5}
+\contentsline {subsubsection}{Objetivo}{44}{section*.25}
+\contentsline {subsection}{\numberline {2.7.6}UI2.10 Consultar catalogo de TT}{45}{subsection.2.7.6}
+\contentsline {subsubsection}{Objetivo}{45}{section*.26}
+\contentsline {subsection}{\numberline {2.7.7}UI2.11 Consultar catalogo de Material Audiovisual}{46}{subsection.2.7.7}
+\contentsline {subsubsection}{Objetivo}{46}{section*.27}
+\contentsline {subsection}{\numberline {2.7.8}UI2.12 Consultar catalogo de Equipo de c\IeC {\'o}mputo}{47}{subsection.2.7.8}
+\contentsline {subsubsection}{Objetivo}{47}{section*.28}
+\contentsline {section}{\numberline {2.8}CU3.2 Pr\IeC {\'e}stamo Interbibliotecario}{48}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Descripci\IeC {\'o}n completa}{48}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Atributos importantes}{48}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Trayectorias del Caso de Uso}{48}{subsection.2.8.3}
+\contentsline {section}{\numberline {2.9}CU3.4 Consultar Pr\IeC {\'e}stamo Interbibliotecario}{50}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Descripci\IeC {\'o}n completa}{50}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Atributos importantes}{50}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Trayectorias del Caso de Uso}{50}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}CU3.8 Generar multa}{52}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Descripci\IeC {\'o}n completa}{52}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Atributos importantes}{52}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Trayectorias del Caso de Uso}{52}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}IU3.2 Formulario}{54}{subsection.2.10.4}
+\contentsline {subsubsection}{Objetivo}{54}{section*.29}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{54}{section*.30}
+\contentsline {subsubsection}{Salidas}{54}{section*.31}
+\contentsline {subsubsection}{Entradas}{54}{section*.32}
+\contentsline {subsection}{\numberline {2.10.5}IU3.2a Formato}{54}{subsection.2.10.5}
+\contentsline {subsubsection}{Objetivo}{54}{section*.33}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{54}{section*.34}
+\contentsline {subsubsection}{Salidas}{55}{section*.35}
+\contentsline {subsubsection}{Entradas}{55}{section*.36}
+\contentsline {subsection}{\numberline {2.10.6}IU3.4 Consultar Prestamo Interbibliotecario}{56}{subsection.2.10.6}
+\contentsline {subsubsection}{Objetivo}{56}{section*.37}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{56}{section*.38}
+\contentsline {subsubsection}{Salidas}{56}{section*.39}
+\contentsline {subsubsection}{Entradas}{56}{section*.40}
+\contentsline {subsection}{\numberline {2.10.7}IU3.4a Resultado Consulta Pr\IeC {\'e}stamo Interbibliotecario}{56}{subsection.2.10.7}
+\contentsline {subsubsection}{Objetivo}{56}{section*.41}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{56}{section*.42}
+\contentsline {subsubsection}{Salidas}{56}{section*.43}
+\contentsline {subsubsection}{Entradas}{57}{section*.44}
+\contentsline {subsection}{\numberline {2.10.8}IU3.8 Generar multa}{58}{subsection.2.10.8}
+\contentsline {subsubsection}{Objetivo}{58}{section*.45}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{58}{section*.46}
+\contentsline {subsubsection}{Salidas}{58}{section*.47}
+\contentsline {subsubsection}{Entradas}{58}{section*.48}
+\contentsline {subsection}{\numberline {2.10.9}IU3.8a Confirmar multa}{58}{subsection.2.10.9}
+\contentsline {subsubsection}{Objetivo}{58}{section*.49}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{58}{section*.50}
+\contentsline {subsubsection}{Salidas}{59}{section*.51}
+\contentsline {subsubsection}{Entradas}{59}{section*.52}
+\contentsline {section}{\numberline {2.11}CU4.1 Registrar Lector}{60}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Descripci\IeC {\'o}n completa}{60}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Atributos importantes}{60}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}Trayectorias del Caso de Uso}{60}{subsection.2.11.3}
+\contentsline {subsection}{\numberline {2.11.4}IU4.1 Iniciar sesi\IeC {\'o}n}{63}{subsection.2.11.4}
+\contentsline {subsubsection}{Objetivo}{63}{section*.53}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{63}{section*.54}
+\contentsline {subsubsection}{Comandos}{63}{section*.55}
+\contentsline {subsubsection}{Entradas}{63}{section*.56}
+\contentsline {subsection}{\numberline {2.11.5}IU4.2 Perfil del bibliotecario}{64}{subsection.2.11.5}
+\contentsline {subsubsection}{Objetivo}{64}{section*.57}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{64}{section*.58}
+\contentsline {subsubsection}{Comandos}{64}{section*.59}
+\contentsline {subsection}{\numberline {2.11.6}IU4.4 Men\IeC {\'u} de gesti\IeC {\'o}n de usuarios}{65}{subsection.2.11.6}
+\contentsline {subsubsection}{Objetivo}{65}{section*.60}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{65}{section*.61}
+\contentsline {subsubsection}{Comandos}{65}{section*.62}
+\contentsline {subsection}{\numberline {2.11.7}IU4.5 Registrar Estudiante}{66}{subsection.2.11.7}
+\contentsline {subsubsection}{Objetivo}{66}{section*.63}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{66}{section*.64}
+\contentsline {subsubsection}{Comandos}{66}{section*.65}
+\contentsline {subsubsection}{Entradas}{66}{section*.66}
+\contentsline {subsection}{\numberline {2.11.8}IU4.6 Listado de Estudiantes}{68}{subsection.2.11.8}
+\contentsline {subsubsection}{Objetivo}{68}{section*.67}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{68}{section*.68}
+\contentsline {subsubsection}{Comandos}{68}{section*.69}
+\contentsline {subsubsection}{Entradas}{68}{section*.70}
+\contentsline {subsection}{\numberline {2.11.9}IU4.7 Registrar Docente}{69}{subsection.2.11.9}
+\contentsline {subsubsection}{Objetivo}{69}{section*.71}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{69}{section*.72}
+\contentsline {subsubsection}{Comandos}{69}{section*.73}
+\contentsline {subsubsection}{Entradas}{69}{section*.74}
+\contentsline {subsection}{\numberline {2.11.10}IU4.8 Listado de Docentes}{71}{subsection.2.11.10}
+\contentsline {subsubsection}{Objetivo}{71}{section*.75}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{71}{section*.76}
+\contentsline {subsubsection}{Comandos}{71}{section*.77}
+\contentsline {subsubsection}{Entradas}{71}{section*.78}
+\contentsline {subsection}{\numberline {2.11.11}IU4.10 Men\IeC {\'u} de gesti\IeC {\'o}n de pr\IeC {\'e}stamos}{72}{subsection.2.11.11}
+\contentsline {subsubsection}{Objetivo}{72}{section*.79}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{72}{section*.80}
+\contentsline {subsubsection}{Comandos}{72}{section*.81}
+\contentsline {subsection}{\numberline {2.11.12}IU4.11 Pr\IeC {\'e}stamo Interno}{73}{subsection.2.11.12}
+\contentsline {subsubsection}{Objetivo}{73}{section*.82}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{73}{section*.83}
+\contentsline {subsubsection}{Comandos}{73}{section*.84}
+\contentsline {subsubsection}{Entradas}{73}{section*.85}
+\contentsline {subsection}{\numberline {2.11.13}IU4.12 Pr\IeC {\'e}stamo Externo}{74}{subsection.2.11.13}
+\contentsline {subsubsection}{Objetivo}{74}{section*.86}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{74}{section*.87}
+\contentsline {subsubsection}{Comandos}{74}{section*.88}
+\contentsline {subsubsection}{Entradas}{74}{section*.89}
+\contentsline {subsection}{\numberline {2.11.14}IU4.16 Actualizar informacion del estudiante}{75}{subsection.2.11.14}
+\contentsline {subsubsection}{Objetivo}{75}{section*.90}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{75}{section*.91}
+\contentsline {subsubsection}{Comandos}{75}{section*.92}
+\contentsline {subsubsection}{Entradas}{75}{section*.93}
+\contentsline {subsection}{\numberline {2.11.15}IU4.17 Actualizar informaci\IeC {\'o}n del docente}{77}{subsection.2.11.15}
+\contentsline {subsubsection}{Objetivo}{77}{section*.94}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{77}{section*.95}
+\contentsline {subsubsection}{Comandos}{77}{section*.96}
+\contentsline {subsubsection}{Entradas}{77}{section*.97}
+\contentsline {subsection}{\numberline {2.11.16}IU4.18 Perfil del Lector}{79}{subsection.2.11.16}
+\contentsline {subsubsection}{Objetivo}{79}{section*.98}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{79}{section*.99}
+\contentsline {subsubsection}{Comandos}{79}{section*.100}
+\contentsline {subsection}{\numberline {2.11.17}IU4.30 Perfil del Jefe de biblioteca}{80}{subsection.2.11.17}
+\contentsline {subsubsection}{Objetivo}{80}{section*.101}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{80}{section*.102}
+\contentsline {subsubsection}{Comandos}{80}{section*.103}
+\contentsline {subsection}{\numberline {2.11.18}IU4.31 Perfil de Procesos T\IeC {\'e}nicos}{81}{subsection.2.11.18}
+\contentsline {subsubsection}{Objetivo}{81}{section*.104}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{81}{section*.105}
+\contentsline {subsubsection}{Comandos}{81}{section*.106}
+\contentsline {section}{\numberline {2.12}CU4.2 Actualizar Lector}{82}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Descripci\IeC {\'o}n completa}{82}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Atributos importantes}{82}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Trayectorias del Caso de Uso}{83}{subsection.2.12.3}
+\contentsline {section}{\numberline {2.13}CU4.3 Eliminar Lector}{85}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Descripci\IeC {\'o}n completa}{85}{subsection.2.13.1}
+\contentsline {subsection}{\numberline {2.13.2}Atributos importantes}{85}{subsection.2.13.2}
+\contentsline {subsection}{\numberline {2.13.3}Trayectorias del Caso de Uso}{85}{subsection.2.13.3}
+\contentsline {section}{\numberline {2.14}CU4.4 Consultar Lector}{88}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}Descripci\IeC {\'o}n completa}{88}{subsection.2.14.1}
+\contentsline {subsection}{\numberline {2.14.2}Atributos importantes}{88}{subsection.2.14.2}
+\contentsline {subsection}{\numberline {2.14.3}Trayectorias del Caso de Uso}{88}{subsection.2.14.3}
+\contentsline {section}{\numberline {2.15}CU4.5 Cerrar sesi\IeC {\'o}n}{92}{section.2.15}
+\contentsline {subsection}{\numberline {2.15.1}Descripci\IeC {\'o}n completa}{92}{subsection.2.15.1}
+\contentsline {subsection}{\numberline {2.15.2}Atributos importantes}{92}{subsection.2.15.2}
+\contentsline {subsection}{\numberline {2.15.3}Trayectorias del Caso de Uso}{92}{subsection.2.15.3}
+\contentsline {section}{\numberline {2.16}CU4.6 Iniciar sesi\IeC {\'o}n}{94}{section.2.16}
+\contentsline {subsection}{\numberline {2.16.1}Descripci\IeC {\'o}n completa}{94}{subsection.2.16.1}
+\contentsline {subsection}{\numberline {2.16.2}Atributos importantes}{94}{subsection.2.16.2}
+\contentsline {subsection}{\numberline {2.16.3}Trayectorias del Caso de Uso}{94}{subsection.2.16.3}
+\contentsline {section}{\numberline {2.17}CU5.1 Generar credencial}{97}{section.2.17}
+\contentsline {subsection}{\numberline {2.17.1}Descripci\IeC {\'o}n completa}{97}{subsection.2.17.1}
+\contentsline {subsection}{\numberline {2.17.2}Atributos importantes}{97}{subsection.2.17.2}
+\contentsline {subsection}{\numberline {2.17.3}Trayectorias del Caso de Uso}{97}{subsection.2.17.3}
+\contentsline {section}{\numberline {2.18}CU5.3 Reponer credencial}{98}{section.2.18}
+\contentsline {subsection}{\numberline {2.18.1}Descripci\IeC {\'o}n completa}{98}{subsection.2.18.1}
+\contentsline {subsection}{\numberline {2.18.2}Atributos importantes}{98}{subsection.2.18.2}
+\contentsline {subsection}{\numberline {2.18.3}Trayectorias del Caso de Uso}{98}{subsection.2.18.3}
+\contentsline {subsection}{\numberline {2.18.4}IU5.00 RegStudent}{99}{subsection.2.18.4}
+\contentsline {subsubsection}{Objetivo}{99}{section*.107}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{99}{section*.108}
+\contentsline {subsubsection}{Salidas}{99}{section*.109}
+\contentsline {subsubsection}{Entradas}{99}{section*.110}
+\contentsline {subsection}{\numberline {2.18.5}IU5.01 creacionCredencial}{99}{subsection.2.18.5}
+\contentsline {subsubsection}{Objetivo}{99}{section*.111}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{99}{section*.112}
+\contentsline {subsubsection}{Salidas}{99}{section*.113}
+\contentsline {subsubsection}{Entradas}{100}{section*.114}
+\contentsline {subsection}{\numberline {2.18.6}IU5.02 Reposici\IeC {\'o}nCredencial}{101}{subsection.2.18.6}
+\contentsline {subsubsection}{Objetivo}{101}{section*.115}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{101}{section*.116}
+\contentsline {subsubsection}{Salidas}{101}{section*.117}
+\contentsline {subsubsection}{Entradas}{101}{section*.118}
+\contentsline {subsection}{\numberline {2.18.7}IU5.01 creacionCredencial}{102}{subsection.2.18.7}
+\contentsline {subsubsection}{Objetivo}{102}{section*.119}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{102}{section*.120}
+\contentsline {subsubsection}{Salidas}{102}{section*.121}
+\contentsline {subsubsection}{Entradas}{102}{section*.122}
+\contentsline {section}{\numberline {2.19}Catalogo de Mensajes}{103}{section.2.19}

@@ -21,34 +21,100 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Descripci\363n completa}{section.2.4}% 21
 \BOOKMARK [2][-]{subsection.2.4.2}{Atributos importantes}{section.2.4}% 22
 \BOOKMARK [2][-]{subsection.2.4.3}{Trayectorias del Caso de Uso}{section.2.4}% 23
-\BOOKMARK [1][-]{section.2.5}{CU3.2 Pr\351stamo Interbibliotecario}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.5}{CU2.B1 Escanear C\363digos de Barras}{chapter.2}% 24
 \BOOKMARK [2][-]{subsection.2.5.1}{Descripci\363n completa}{section.2.5}% 25
 \BOOKMARK [2][-]{subsection.2.5.2}{Atributos importantes}{section.2.5}% 26
 \BOOKMARK [2][-]{subsection.2.5.3}{Trayectorias del Caso de Uso}{section.2.5}% 27
-\BOOKMARK [1][-]{section.2.6}{CU3.4 Consultar Pr\351stamo Interbibliotecario}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.6.1}{Descripci\363n completa}{section.2.6}% 29
-\BOOKMARK [2][-]{subsection.2.6.2}{Atributos importantes}{section.2.6}% 30
-\BOOKMARK [2][-]{subsection.2.6.3}{Trayectorias del Caso de Uso}{section.2.6}% 31
-\BOOKMARK [1][-]{section.2.7}{CU3.8 Generar multa}{chapter.2}% 32
-\BOOKMARK [2][-]{subsection.2.7.1}{Descripci\363n completa}{section.2.7}% 33
-\BOOKMARK [2][-]{subsection.2.7.2}{Atributos importantes}{section.2.7}% 34
-\BOOKMARK [2][-]{subsection.2.7.3}{Trayectorias del Caso de Uso}{section.2.7}% 35
-\BOOKMARK [2][-]{subsection.2.7.4}{IU3.2 Formulario}{section.2.7}% 36
-\BOOKMARK [2][-]{subsection.2.7.5}{IU3.2a Formato}{section.2.7}% 37
-\BOOKMARK [2][-]{subsection.2.7.6}{IU3.4 Consultar Prestamo Interbibliotecario}{section.2.7}% 38
-\BOOKMARK [2][-]{subsection.2.7.7}{IU3.4a Resultado Consulta Pr\351stamo Interbibliotecario}{section.2.7}% 39
-\BOOKMARK [2][-]{subsection.2.7.8}{IU3.8 Generar multa}{section.2.7}% 40
-\BOOKMARK [2][-]{subsection.2.7.9}{IU3.8a Confirmar multa}{section.2.7}% 41
-\BOOKMARK [1][-]{section.2.8}{CU5.1 Generar credencial}{chapter.2}% 42
-\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n completa}{section.2.8}% 43
-\BOOKMARK [2][-]{subsection.2.8.2}{Atributos importantes}{section.2.8}% 44
-\BOOKMARK [2][-]{subsection.2.8.3}{Trayectorias del Caso de Uso}{section.2.8}% 45
-\BOOKMARK [1][-]{section.2.9}{CU5.3 Reponer credencial}{chapter.2}% 46
-\BOOKMARK [2][-]{subsection.2.9.1}{Descripci\363n completa}{section.2.9}% 47
-\BOOKMARK [2][-]{subsection.2.9.2}{Atributos importantes}{section.2.9}% 48
-\BOOKMARK [2][-]{subsection.2.9.3}{Trayectorias del Caso de Uso}{section.2.9}% 49
-\BOOKMARK [2][-]{subsection.2.9.4}{IU5.00 RegStudent}{section.2.9}% 50
-\BOOKMARK [2][-]{subsection.2.9.5}{IU5.01 creacionCredencial}{section.2.9}% 51
-\BOOKMARK [2][-]{subsection.2.9.6}{IU5.02 Reposici\363nCredencial}{section.2.9}% 52
-\BOOKMARK [2][-]{subsection.2.9.7}{IU5.01 creacionCredencial}{section.2.9}% 53
-\BOOKMARK [1][-]{section.2.10}{Catalogo de Mensajes}{chapter.2}% 54
+\BOOKMARK [2][-]{subsection.2.5.4}{UI2.B1.1 Inicio para Empleado de Procesos T\351cnicos}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.5}{UI2.B1.2 Escanear Libro}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.6}{UI2.B1.3 Escanear Material Audiovisual}{section.2.5}% 30
+\BOOKMARK [2][-]{subsection.2.5.7}{UI2.B1.4 Escanear Equipo de c\363mputo}{section.2.5}% 31
+\BOOKMARK [1][-]{section.2.6}{CU2.B2 Generar Reporte de elementos escaneados}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.6.1}{Descripci\363n completa}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.2}{Atributos importantes}{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.3}{Trayectorias del Caso de Uso}{section.2.6}% 35
+\BOOKMARK [2][-]{subsection.2.6.4}{UI2.B2.1 Escanear Libro}{section.2.6}% 36
+\BOOKMARK [2][-]{subsection.2.6.5}{UI2.B2.2 Escanear Material Audiovisual}{section.2.6}% 37
+\BOOKMARK [2][-]{subsection.2.6.6}{UI2.B2.3 Escanear Equipo de c\363mputo}{section.2.6}% 38
+\BOOKMARK [2][-]{subsection.2.6.7}{UI2.B2.4 Reporte de Libros escaneados}{section.2.6}% 39
+\BOOKMARK [2][-]{subsection.2.6.8}{UI2.B2.5 Reporte de Material Audiovisual escaneado}{section.2.6}% 40
+\BOOKMARK [2][-]{subsection.2.6.9}{UI2.B2.6 Reporte de Equipo de C\363mputo escaneado}{section.2.6}% 41
+\BOOKMARK [1][-]{section.2.7}{CU02 Consultar material}{chapter.2}% 42
+\BOOKMARK [2][-]{subsection.2.7.1}{Descripci\363n completa}{section.2.7}% 43
+\BOOKMARK [2][-]{subsection.2.7.2}{Atributos importantes}{section.2.7}% 44
+\BOOKMARK [2][-]{subsection.2.7.3}{Trayectorias del Caso de Uso}{section.2.7}% 45
+\BOOKMARK [2][-]{subsection.2.7.4}{UI2.8 Modificar o eliminar}{section.2.7}% 46
+\BOOKMARK [2][-]{subsection.2.7.5}{UI2.9 Consultar catalogo del libro}{section.2.7}% 47
+\BOOKMARK [2][-]{subsection.2.7.6}{UI2.10 Consultar catalogo de TT}{section.2.7}% 48
+\BOOKMARK [2][-]{subsection.2.7.7}{UI2.11 Consultar catalogo de Material Audiovisual}{section.2.7}% 49
+\BOOKMARK [2][-]{subsection.2.7.8}{UI2.12 Consultar catalogo de Equipo de c\363mputo}{section.2.7}% 50
+\BOOKMARK [1][-]{section.2.8}{CU3.2 Pr\351stamo Interbibliotecario}{chapter.2}% 51
+\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n completa}{section.2.8}% 52
+\BOOKMARK [2][-]{subsection.2.8.2}{Atributos importantes}{section.2.8}% 53
+\BOOKMARK [2][-]{subsection.2.8.3}{Trayectorias del Caso de Uso}{section.2.8}% 54
+\BOOKMARK [1][-]{section.2.9}{CU3.4 Consultar Pr\351stamo Interbibliotecario}{chapter.2}% 55
+\BOOKMARK [2][-]{subsection.2.9.1}{Descripci\363n completa}{section.2.9}% 56
+\BOOKMARK [2][-]{subsection.2.9.2}{Atributos importantes}{section.2.9}% 57
+\BOOKMARK [2][-]{subsection.2.9.3}{Trayectorias del Caso de Uso}{section.2.9}% 58
+\BOOKMARK [1][-]{section.2.10}{CU3.8 Generar multa}{chapter.2}% 59
+\BOOKMARK [2][-]{subsection.2.10.1}{Descripci\363n completa}{section.2.10}% 60
+\BOOKMARK [2][-]{subsection.2.10.2}{Atributos importantes}{section.2.10}% 61
+\BOOKMARK [2][-]{subsection.2.10.3}{Trayectorias del Caso de Uso}{section.2.10}% 62
+\BOOKMARK [2][-]{subsection.2.10.4}{IU3.2 Formulario}{section.2.10}% 63
+\BOOKMARK [2][-]{subsection.2.10.5}{IU3.2a Formato}{section.2.10}% 64
+\BOOKMARK [2][-]{subsection.2.10.6}{IU3.4 Consultar Prestamo Interbibliotecario}{section.2.10}% 65
+\BOOKMARK [2][-]{subsection.2.10.7}{IU3.4a Resultado Consulta Pr\351stamo Interbibliotecario}{section.2.10}% 66
+\BOOKMARK [2][-]{subsection.2.10.8}{IU3.8 Generar multa}{section.2.10}% 67
+\BOOKMARK [2][-]{subsection.2.10.9}{IU3.8a Confirmar multa}{section.2.10}% 68
+\BOOKMARK [1][-]{section.2.11}{CU4.1 Registrar Lector}{chapter.2}% 69
+\BOOKMARK [2][-]{subsection.2.11.1}{Descripci\363n completa}{section.2.11}% 70
+\BOOKMARK [2][-]{subsection.2.11.2}{Atributos importantes}{section.2.11}% 71
+\BOOKMARK [2][-]{subsection.2.11.3}{Trayectorias del Caso de Uso}{section.2.11}% 72
+\BOOKMARK [2][-]{subsection.2.11.4}{IU4.1 Iniciar sesi\363n}{section.2.11}% 73
+\BOOKMARK [2][-]{subsection.2.11.5}{IU4.2 Perfil del bibliotecario}{section.2.11}% 74
+\BOOKMARK [2][-]{subsection.2.11.6}{IU4.4 Men\372 de gesti\363n de usuarios}{section.2.11}% 75
+\BOOKMARK [2][-]{subsection.2.11.7}{IU4.5 Registrar Estudiante}{section.2.11}% 76
+\BOOKMARK [2][-]{subsection.2.11.8}{IU4.6 Listado de Estudiantes}{section.2.11}% 77
+\BOOKMARK [2][-]{subsection.2.11.9}{IU4.7 Registrar Docente}{section.2.11}% 78
+\BOOKMARK [2][-]{subsection.2.11.10}{IU4.8 Listado de Docentes}{section.2.11}% 79
+\BOOKMARK [2][-]{subsection.2.11.11}{IU4.10 Men\372 de gesti\363n de pr\351stamos}{section.2.11}% 80
+\BOOKMARK [2][-]{subsection.2.11.12}{IU4.11 Pr\351stamo Interno}{section.2.11}% 81
+\BOOKMARK [2][-]{subsection.2.11.13}{IU4.12 Pr\351stamo Externo}{section.2.11}% 82
+\BOOKMARK [2][-]{subsection.2.11.14}{IU4.16 Actualizar informacion del estudiante}{section.2.11}% 83
+\BOOKMARK [2][-]{subsection.2.11.15}{IU4.17 Actualizar informaci\363n del docente}{section.2.11}% 84
+\BOOKMARK [2][-]{subsection.2.11.16}{IU4.18 Perfil del Lector}{section.2.11}% 85
+\BOOKMARK [2][-]{subsection.2.11.17}{IU4.30 Perfil del Jefe de biblioteca}{section.2.11}% 86
+\BOOKMARK [2][-]{subsection.2.11.18}{IU4.31 Perfil de Procesos T\351nicos}{section.2.11}% 87
+\BOOKMARK [1][-]{section.2.12}{CU4.2 Actualizar Lector}{chapter.2}% 88
+\BOOKMARK [2][-]{subsection.2.12.1}{Descripci\363n completa}{section.2.12}% 89
+\BOOKMARK [2][-]{subsection.2.12.2}{Atributos importantes}{section.2.12}% 90
+\BOOKMARK [2][-]{subsection.2.12.3}{Trayectorias del Caso de Uso}{section.2.12}% 91
+\BOOKMARK [1][-]{section.2.13}{CU4.3 Eliminar Lector}{chapter.2}% 92
+\BOOKMARK [2][-]{subsection.2.13.1}{Descripci\363n completa}{section.2.13}% 93
+\BOOKMARK [2][-]{subsection.2.13.2}{Atributos importantes}{section.2.13}% 94
+\BOOKMARK [2][-]{subsection.2.13.3}{Trayectorias del Caso de Uso}{section.2.13}% 95
+\BOOKMARK [1][-]{section.2.14}{CU4.4 Consultar Lector}{chapter.2}% 96
+\BOOKMARK [2][-]{subsection.2.14.1}{Descripci\363n completa}{section.2.14}% 97
+\BOOKMARK [2][-]{subsection.2.14.2}{Atributos importantes}{section.2.14}% 98
+\BOOKMARK [2][-]{subsection.2.14.3}{Trayectorias del Caso de Uso}{section.2.14}% 99
+\BOOKMARK [1][-]{section.2.15}{CU4.5 Cerrar sesi\363n}{chapter.2}% 100
+\BOOKMARK [2][-]{subsection.2.15.1}{Descripci\363n completa}{section.2.15}% 101
+\BOOKMARK [2][-]{subsection.2.15.2}{Atributos importantes}{section.2.15}% 102
+\BOOKMARK [2][-]{subsection.2.15.3}{Trayectorias del Caso de Uso}{section.2.15}% 103
+\BOOKMARK [1][-]{section.2.16}{CU4.6 Iniciar sesi\363n}{chapter.2}% 104
+\BOOKMARK [2][-]{subsection.2.16.1}{Descripci\363n completa}{section.2.16}% 105
+\BOOKMARK [2][-]{subsection.2.16.2}{Atributos importantes}{section.2.16}% 106
+\BOOKMARK [2][-]{subsection.2.16.3}{Trayectorias del Caso de Uso}{section.2.16}% 107
+\BOOKMARK [1][-]{section.2.17}{CU5.1 Generar credencial}{chapter.2}% 108
+\BOOKMARK [2][-]{subsection.2.17.1}{Descripci\363n completa}{section.2.17}% 109
+\BOOKMARK [2][-]{subsection.2.17.2}{Atributos importantes}{section.2.17}% 110
+\BOOKMARK [2][-]{subsection.2.17.3}{Trayectorias del Caso de Uso}{section.2.17}% 111
+\BOOKMARK [1][-]{section.2.18}{CU5.3 Reponer credencial}{chapter.2}% 112
+\BOOKMARK [2][-]{subsection.2.18.1}{Descripci\363n completa}{section.2.18}% 113
+\BOOKMARK [2][-]{subsection.2.18.2}{Atributos importantes}{section.2.18}% 114
+\BOOKMARK [2][-]{subsection.2.18.3}{Trayectorias del Caso de Uso}{section.2.18}% 115
+\BOOKMARK [2][-]{subsection.2.18.4}{IU5.00 RegStudent}{section.2.18}% 116
+\BOOKMARK [2][-]{subsection.2.18.5}{IU5.01 creacionCredencial}{section.2.18}% 117
+\BOOKMARK [2][-]{subsection.2.18.6}{IU5.02 Reposici\363nCredencial}{section.2.18}% 118
+\BOOKMARK [2][-]{subsection.2.18.7}{IU5.01 creacionCredencial}{section.2.18}% 119
+\BOOKMARK [1][-]{section.2.19}{Catalogo de Mensajes}{chapter.2}% 120

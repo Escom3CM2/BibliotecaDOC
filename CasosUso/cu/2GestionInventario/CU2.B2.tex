@@ -1,0 +1,101 @@
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+	\begin{UseCase}{CU2.B2}{Generar Reporte de elementos escaneados}{
+	   Permite mostrar la información escaneada a partir del CU2.B1, la cual será usada para generar un reporte con los detalles de cada uno de los elementos contenidos en las listas escaneadas del sistema.
+	}
+		\UCitem{Versión}{1}
+		\UCitem{Actor}{Empleado de Procesos Técnicos}
+		\UCitem{Propósito}{Generar un reporte con los elementos escaneados.}
+		\UCitem{Entradas}{
+			Lista de elementos con los siguientes datos, según sea el caso:
+			\begin{itemize}
+				\item ->LIBRO
+				\item ISBN	
+				\item Titulo	
+				\item Autor(es)	
+				\item Editorial	
+				\item Fecha de Publicación	
+				\item Numero de Páginas	
+				\item Estado
+				\item Precio	
+
+				\item ->TT	
+				\item Número de TT	
+				\item Titulo	
+				\item Autor(es)	
+				\item Fecha de Presentación	
+				\item Director(es)
+	
+				\item ->MATERIAL AUDIOVISUAL
+				\item ID	
+				\item Titulo	
+				\item Autor(es)	
+				\item Duracion	
+				\item Fecha de Publicacion	
+				\item Estado
+				\item Precio
+	
+				\item ->EQUIPO DE CÓMPUTO	
+				\item ID
+				\item Marca
+				\item Modelo
+				\item Estado
+				\item Precio
+		
+			\end{itemize}				
+		}
+		\UCitem{Salidas}{
+		\begin{itemize}
+			\item Reporte de elementos escaneados.
+		\end{itemize}				
+		}
+		\UCitem{Precondiciones}{ 
+			\begin{itemize}
+				\item Ingresar al sistema con una credencial de procesos técnicos.
+				\item Debe existir al menos un elemento escaneado en cada categoría para generar un reporte.
+			\end{itemize}
+		}
+		\UCitem{Postcondiciones}{
+		\begin{itemize}
+		\item El actor/usuario podrá consultar el reporte de manera digital.
+		\end{itemize}				
+		}
+		\UCitem{Autor(es)}{
+		\begin{itemize}
+		 \item Tejeda Martínez José Miguel
+		\end{itemize}		 		 
+		}
+
+	\end{UseCase}
+		%-------------------------------------- COMIENZA descripción Trayectoria Principal
+	\begin{UCtrayectoria}{Principal}
+	\UCpaso[\UCactor] Selecciona el tipo de material (Libro, Audiovisual o Equipo de cómputo) en el menú lateral de la pantalla \IUref{UI2.B1.1}{Inicio}.
+	 \UCpaso[\UCactor]Desde la interfaz \IUref{UI2.B2.1}{Escanear libro}, en el caso de haber elegido Libro, la interfaz \IUref{UI2.B2.2}{Escanear equipo audiovisual} en caso de haber elegido audiovisual o \IUref{UI2.B2.3}{Escanear equipo de cómputo}, en caso de haber elegido equipo de cómputo, el usuario selecciona el botón "Visualizar Reporte".
+	   \UCpaso[\UCsist] Verifica la  \BRref{RN03}{Registros mínimos para reporte}.[Trayectoria A]
+	   \UCpaso[\UCsist]Muestra la interfaz \IUref{UI2.B2.4}{Reporte de Libros escaneados}, en el caso de haber elegido Libro, la interfaz \IUref{UI2.B2.5}{Reporte de material audiovisual} en caso de haber elegido audiovisual o \IUref{UI2.B2.6}{Reporte de equipo de cómputo}, en caso de haber elegido equipo de cómputo.
+	    \UCpaso[\UCactor] Selecciona el botón "Generar y Enviar Reporte". [Trayectoria B][Trayectoria C]
+	    \UCpaso[\UCsist] Muestra el mensaje en pantalla \MSGref{MSJ2.4}{Envío de reporte exitoso}.
+	\end{UCtrayectoria}
+
+			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
+		\begin{UCtrayectoriaA}{A}{Registros insuficientes para el reporte}
+			\UCpaso[\UCsist] Enviara el  mensaje en pantalla \MSGref{MSJ2.5}{No existen suficientes registros para preparar un reporte.}
+			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal.
+		\end{UCtrayectoriaA}
+		
+		
+		\begin{UCtrayectoriaA}{B}{Cancelar reporte}
+			\UCpaso[\UCsist] Enviara el mensaje en pantalla \MSGref{MSJ2.6}{Se ha cancelado la generación del reporte.}
+			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal.
+		\end{UCtrayectoriaA}	
+		
+		\begin{UCtrayectoriaA}{B}{Error de envío}
+			\UCpaso[\UCsist] Enviara el mensaje en pantalla \MSGref{MSJ2.7}{Se ha presentado un error de envío de reporte. Reintente más tarde.}
+			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal.
+		\end{UCtrayectoriaA}			
+		
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
