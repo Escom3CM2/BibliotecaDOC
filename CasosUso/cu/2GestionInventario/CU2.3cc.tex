@@ -2,11 +2,11 @@
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
 \begin{UseCase}{CU2.3cc}{Dar de baja equipo audiovisual}{
-	Se dará de baja un equipo audiovisual cuando asi se requiera
+	Este caso de uso se podrá eliminar un equipo audiovisual que se requiera dar de baja seleccionándolo desde el catálgo, y asi actualizar el numero de existencias
 }
-		\UCitem{Versión}{0.1}
+		\UCitem{Versión}{0.2}
 		\UCitem{Actor}{Procesos Técnicos}
-		\UCitem{Propósito}{La información del equipo audiovisual será eliminada para tener un control de las salidas de equipos audiovisuales del inventario}
+		\UCitem{Propósito}{La información del equipo audiovisual será puesta en un estado de borrado del catálogo para tener un control de las salidas de libros del inventario}
 		\UCitem{Entradas}{
 			\begin{itemize}
 		   		\item Selección del equipo audiovisual deseado
@@ -17,14 +17,14 @@
 				\item Mensajes para el usuario
 				\begin{itemize}
 		   			\item \MSGref{MSJ2.3ca1}{Eliminación existosa}
-		   			\item \MSGref{MSJ2.3cc1}{Eliminación de equipo audiovisual}
+		   			\item \MSGref{MSJ2.3ca2}{Eliminación de material}
 		   			\item \MSGref{MSJ2.1b3}{Error en conexión}
 		   		\end{itemize}
 		  	\end{itemize} 
 		}
 		\UCitem{Precondiciones}{ 
 			\begin{itemize} 
-				\item Se debió haber efectuado el \UCref{CU2.4ac}
+				\item Se debió haber efectuado el \UCref{CU2.3ac}
 				\item El sistema debe de estar conectado a la base de datos
 			\end{itemize}
 		}
@@ -40,12 +40,12 @@
 		}
 		\UCitem{Revisó}{
 			\begin{itemize}
-				\item Ro
+				\item Rodrigo Burciaga
 			\end{itemize}					
 		}
 		\UCitem{Estatus}{
 			\begin{itemize}
-				\item En revisión [21 / Mayo / 2017]
+				\item En revisión [24 / Mayo / 2017]
 			\end{itemize}					
 		}
 \end{UseCase}
@@ -58,7 +58,8 @@
 		\UCpaso[\UCsist] Despliega la pantalla \IUref{IU2.3cc1}{EliminarEqAudio}
 		\UCpaso[\UCsist] Mostrará los datos del libro seleccionado en la pantalla [ID, Titulo, Autores, Estado, Disponibilidad]
 		\UCpaso[\UCactor] Confirma la operación presionando el botón \IUbutton{Confirmar} \Trayref{Cancelar}
-		\UCpaso[\UCactor] Actualiza la base de datos eliminando los datos del equipo audiovisual seleccionado \Trayref{B}
+		\UCpaso[\UCsist] Verifica que se cumpla la regla de negocio \BRref{RN2.3ca1}{Eliminación de material} \Trayref{B}
+		\UCpaso[\UCactor] Actualiza el EstadoBorrado del libro con el valor de 1 \Trayref{A}
 		\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ2.3ca1}{Eliminación existosa}
 		\UCpaso[\UCactor] Confirma operación haciendo click en el botón \IUbutton{Confirmar} en la ventana emergente que muestra
 		\UCpaso[\UCsist] Despliega la pantalla \IUref{IU2.3cc}{ConsultarCatEqAudio}
@@ -71,18 +72,18 @@
 
 \begin{UCtrayectoriaA}{A}{Falló la conexion en la base de datos}
 			\UCpaso[\UCsist] El sistema mostrará el mensaje \MSGref{MSJ2.1b3}{Error en conexión}
-			\UCpaso[\UCsist] Regresa a un paso atrás de la trayectoria principal \Trayref{Principal}
+			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal \Trayref{Principal}
 \end{UCtrayectoriaA}
 
 %---------- TRAYECTORIA B
 
-\begin{UCtrayectoriaA}{B}{Se viola la regla de negocio \BRref{RN2.3cc1}{Eliminación de equipo audiovisual}}	
-			\UCpaso[\UCsist] Informa al actor mostrando el mensaje de error \MSGref{MSJ2.3cc2}{Eliminación de equipo audiovisual}
-			\UCpaso[\UCsist] Continúa trayectoria con un paso anterior de la trayectoria principal \Trayref{Principal}
+\begin{UCtrayectoriaA}{B}{Se viola la regla de negocio \BRref{RN2.3ca1}{Eliminación de material}}	
+			\UCpaso[\UCsist] Informa al actor mostrando el mensaje de error \MSGref{MSJ2.3ca2}{Eliminación de material}
+			\UCpaso[\UCsist] Regresa al paso 4 de la trayectoria principal \Trayref{Principal}
 \end{UCtrayectoriaA}
 
 %---------- TRAYECTORIA Cancelar
 
 \begin{UCtrayectoriaA}{Cancelar}{El actor presiona el botón \IUbutton{Cancelar}}
-			\UCpaso[\UCsist] Despliega la pantalla \IUref{IU2.3cc}{ConsultarCatEqAudio}
+			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal \Trayref{Principal} 
 \end{UCtrayectoriaA}
