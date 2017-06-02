@@ -1,0 +1,28 @@
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+	\begin{UseCase}{CU3.1}{Gestionar Prestamos Bibliotecarios}{
+		El bibliotecario desde su perfil accede a la sección de prestamos bibliotecarios donde dado el caso, el bibliotecario elegira si es prestamo interno externo.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Bibliotecario}
+		\UCitem{Propósito}{Acceder a la sección de prestamos de la biblioteca.}
+		\UCitem{Entradas}{Seleccionar una de las siguientes opciones:
+			\begin{itemize}
+				\item Interno
+				\item Externo
+			\end{itemize}
+		}
+		\UCitem{Salidas}{Ninguna.}
+		\UCitem{Precondiciones}{Ninguna}
+		\UCitem{Postcondiciones}{Ninguna}
+		\UCitem{Autor}{Cortés Pérez Edy}
+		\UCitem{Estatus}{Revisión}
+	\end{UseCase}
+		%-------------------------------------- COMIENZA descripción Trayectoria Principal
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Gestión de Prestamos} del menú lateral del perfil del Bibliotecario de la \IUref{IU3.1}{GestionPrestamos}
+		\UCpaso[\UCactor]Pulsa una de las dos opciones \IUbutton{Interno} o \IUbutton{Externo}.
+		\UCpaso[\UCsist]Redirecciona a al bibliotecario a la pantalla correspondiente a cada botón \UCref{CU3.2} o \UCref{CU3.3}.
+	\end{UCtrayectoria}
+		

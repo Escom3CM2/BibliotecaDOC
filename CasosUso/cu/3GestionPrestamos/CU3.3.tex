@@ -1,0 +1,112 @@
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+	\begin{UseCase}{CU3.3}{Verificar si el lector es apto para realizar algun proceso interno}{
+		El Bibliotecario corroborará y determinará si el lector externo es apto para realizar cualquier proceso que la biblioteca ofrece para los lectores. Si el lector externo cumple con todos los requisitos, se podrá proceder a dichos procesos
+	}
+		\UCitem{Versión}{0.3}
+		\UCitem{Actor}{Bibliotecario}
+		\UCitem{Propósito}{Comparar el estatus del lector para verificar que sea apto para poder realizar algun proceso interno de la biblioteca.}
+		\UCitem{Entradas}{
+			\begin{itemize}
+		   		\item Nombre del Lector
+		   		\item Boleta del Lector
+		   		\item Escuela de Procedencia del Lector
+		  	\end{itemize}					
+		}
+		\UCitem{Salidas}{Actualizacion de la Base de Datos}
+		\UCitem{Precondiciones}{Ninguna}
+		\UCitem{Postcondiciones}{Ninguna}
+		\UCitem{Autor}{Vega Camacho Enrique A.}
+		\UCitem{Estatus}{Revisión}
+	\end{UseCase}
+		%-------------------------------------- COMIENZA descripción Trayectoria Principal
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Clic en botón \IUbutton{Externo} de la \IUref{IU3.1}{GestionPrestamos}
+		\UCpaso[\UCsist] Muestra la \IUref{IU3.3}{InicioExterno}
+		\UCpaso[\UCactor] Ingresa los datos del lector externo que realizara alguna operación dentro de la biblioteca
+		\UCpaso[\UCactor] Pulsar el botón \IUbutton{Verificar}
+		\UCpaso[\UCsist] Verifica la conexión a la base de datos \Trayref{A}
+		\UCpaso[\UCsist] Verifica la \BRref{RN3.32}{Registro Lector Externo} \Trayref{B}
+		\UCpaso[\UCsist] Busca en la BD los prestamos asociados al lector
+		\UCpaso[\UCsist] Verifica la fecha de Devolución de Cada Material Prestado
+		\UCpaso[\UCsist] Verifica la \BRref{RN3.3}{Devoluciones atrasadas} \Trayref{C}
+		\UCpaso[\UCsist] Verifica la \BRref{RN3.2}{Lector con Multas} \Trayref{D}
+		\UCpaso[\UCsist] Verifica la \BRref{RN3.17}{Limite de Préstamos a Lector Externo} \Trayref{H}
+		\UCpaso[\UCsist] Muestra la \IUref{IU3.3.1}{LectorExternoApto}
+		\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.16}{Lector Apto}
+		\UCpaso[\UCactor] Pulsa el botón \IUbutton{OK} 
+ 
+	\end{UCtrayectoria}
+
+			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
+
+		\begin{UCtrayectoriaA}{A}{No se realizó una conexión a la base de datos con éxito.}
+			\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.1}{Error al conectar a la BD}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{OK}
+			\UCpaso[\UCsist] Regresa al punto 3 de la Trayectoria Principal
+		\end{UCtrayectoriaA}
+
+%-------------------------------------		
+
+	
+		\begin{UCtrayectoriaA}{B}{No se encontró un lector externo relacionado a los datos introducidos}
+			\UCpaso[\UCsist] Registra al lector externo en la BD
+			\UCpaso[\UCsist]	Muestra el mensaje \MSGref{MSJ3.17}{Lector Nuevo}
+			\UCpaso[\UCactor] Presiona el botón \IUbutton{OK}
+			\UCpaso[\UCsist] Regresa al punto 10 de la Trayectoria Principal
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- 
+		\begin{UCtrayectoriaA}{C}{El lector tiene devoluciones atrasadas}
+			\UCpaso[\UCsist] Los prestamos que tengan una Fecha de Devolución expirada se hara una diferencia con la Fecha actual y se iran sumando para al final sacar un dia total de atrasos
+			\UCpaso[\UCsist] Los días de atraso que de como resultado se multiplicaran por 6
+			\UCpaso[\UCsist] Muestra la \IUref{IU3.3.2}{LectorDevolucionesPendientes} donde se mostrara una tabla todos los materiales prestamos que tiene el lector, los materiales que tengan atraso seran sombreados en rojo y debajo de la tabla se mostrara un total parcial de la multa por Devolución Atrasada
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.6}{Lector con Devoluciones Atrasadas}
+			\UCpaso[\UCactor] Se presiona el botón \IUbutton{OK}
+			\UCpaso[\UCactor]	Selecciona los materiales que se regresarán
+			\UCpaso[\UCactor]	Pulsa el botón \IUbutton{Generar Multa}
+			\UCpaso[\UCsist]	Registra la devolución de los Materiales en la BD
+			\UCpaso[\UCsist]	Redirige al C.U. Generar Multa.
+		\end{UCtrayectoriaA}	
+%-------------------------------------- 
+		\begin{UCtrayectoriaA}{D}{El usuario tiene multas Sin Pagar}
+			\UCpaso[\UCsist] Busca en la BD las multas asociadas al Lector
+			\UCpaso[\UCsist] Muestra la \IUref{IU3.3.3}{LectorMultasPendientes}, donde se muestran en una tabla las multas Sin pagar que tiene el lector en cuestión
+			\UCpaso[\UCsist] Se muestra el \MSGref{MSJ3.5}{Lector con Multas}
+			\UCpaso[\UCactor] Se presiona el botón \IUbutton{OK}
+			\UCpaso[\UCactor] Selecciona las multas que se desea hacer una operación con ellas
+			\UCpaso[\UCactor] Pulsa alguno de los 3 botones \IUbutton{Pagar Multa} paso 7 Trayectoria Principal, \IUbutton{Cancelar Multa} \Trayref{E}, \IUbutton{Imprimir} \Trayref{F}
+			\UCpaso[\UCsist] Cambia el estado de la multa a Pagada
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.12}{Pago de Multa Exitoso}
+			\UCpaso[\UCactor] Pulsa el \IUbutton{OK}
+			\UCpaso[\UCsist] Si ya no ahi multas sin pagar asociadas al usuario regresa a Paso 11 de la Trayectoria Principal, si no quita la Multa de la Tabla de Multas Pendientes Paso 5 de la Trayectoria D
+		\end{UCtrayectoriaA}
+%--------------------------------------
+		\begin{UCtrayectoriaA}{E}{Pulso el \IUbutton{Cancelar Multa} en la tabla de Multas Pendientes}
+			\UCpaso[\UCsist] Verifica la \BRref{RN3.27}{Cancelar Multa}\Trayref{G}
+			\UCpaso[\UCsist] Al total de la multa se le resta el costo total del material que genero la multa por Perdida
+			\UCpaso[\UCsist] Se verifica la fecha que se tenia que hacer la Devolución del Material en Cuestión y se hace la diferencia con la fecha actual, multiplicando el resultado por 6
+			\UCpaso[\UCsist] Al total de la multa que previamente se le resto el costo del material se le suma el total que arrojo el paso anterior y se guarda
+			\UCpaso[\UCsist] Se modifica el total de la multa en la tabla y se quita el concepto de Perdida en su lugar se pone el concepto de Devolución Tardía
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.18}{Cancelacion de Multa Exitosa}
+			\UCpaso[\UCactor] Pulsa el \IUbutton{OK}, paso 5 Trayectoria D
+		\end{UCtrayectoriaA}
+%--------------------------------------
+		\begin{UCtrayectoriaA}{F}{Pulso el \IUbutton{Imprimir} en la tabla de Multas Pendientes}
+			\UCpaso[\UCsist] Se manda a la cola de impresión las multas seleccionadas con el formato \IUref{IU3.3.3.1}{FormatoMultas}
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.19}{Impresion de Multa}
+			\UCpaso[\UCactor] Pulsa el \IUbutton{OK}, paso 5 Trayectoria D
+		\end{UCtrayectoriaA}
+		%--------------------------------------
+		\begin{UCtrayectoriaA}{G}{Se selecciona una multa con concepto de multa diferente de Perdida}
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.20}{Error Cancelacion de Multa}
+			\UCpaso[\UCactor] Pulsa el \IUbutton{OK}, paso 5 Trayectoria D
+		\end{UCtrayectoriaA}
+		%--------------------------------------
+		\begin{UCtrayectoriaA}{H}{El Lector Alcanzo el limite de prestamos permitidos}
+			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.14}{Limite de préstamos alcanzado}
+			\UCpaso[\UCactor] Pulsa el \IUbutton{OK}, Redirecciona al CU Devolución de Material
+		\end{UCtrayectoriaA}
+		%--------------------------------------
+		
+TERMINA descripción del caso de uso.

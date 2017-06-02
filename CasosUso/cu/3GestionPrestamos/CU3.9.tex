@@ -1,22 +1,22 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-	\begin{UseCase}{CU3.8}{Buscar Libro Externo}{
-		El lector hara un busqueda avanzada de el libro que desea sacar de otra biblitoeca en calidad de prestamo Interbibliotecario, con el fin de saber todos los datos para posteriormente llenar el formato de Prestamo Interbibliotecario.
+	\begin{UseCase}{CU3.9}{Consultar Préstamos de Material}{
+		El jefe de Biblioteca podrá realizar una búsqueda de prestamos de Material, para obtener información del préstamo y lo hará por medio de filtros de busqueda.
 	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Actor}{Lector}
-		\UCitem{Propósito}{Obtener la información de el libro que se desea sacar de otra biblioteca.}
+		\UCitem{Actor}{Jefe de biblioteca}
+		\UCitem{Propósito}{Obtener la información de los prestamos de material que fueron realizados dentro de la biblioteca de ESCOM.}
 		\UCitem{Entradas}{Seleccionar una de las siguientes opciones:
 			\begin{itemize}
+				\item ID material
 				\item Titulo
-				\item Autor
-				\item Editorial
-				\item Año
+				\item Usuario
+				\item Tipo de Material
+				\item Fecha
 			\end{itemize}
-			Introduce los datos respecto al filtro seleccionado
 		}
-		\UCitem{Salidas}{Una tabla con los datos del libro y las escuelas donde se encuentra.}
+		\UCitem{Salidas}{Una tabla con los datos del préstamo.}
 		\UCitem{Precondiciones}{Ninguna}
 		\UCitem{Postcondiciones}{Ninguna}
 		\UCitem{Autor}{Cortés Pérez Edy}
@@ -24,18 +24,17 @@
 	\end{UseCase}
 		%-------------------------------------- COMIENZA descripción Trayectoria Principal
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Busqueda de Libro} del menú de acción del perfil del Lector.
-		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.8}{Consulta}.
+		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Consulta Prestamos} del menú de acción del perfil del Jefe de biblioteca.
+		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.9}{ConsultaPres}.
 		\UCpaso[\UCactor]Selecciona uno de los filtros de búsqueda.
 		\UCpaso[\UCactor]Ingresa los datos adecuados de la busqueda, correspondiente al tipo de filtro que selecciono.
 		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Buscar}
 		\UCpaso[\UCsist]Verifica la conexion con la Base de Datos \Trayref{B}
 		\UCpaso[\UCsist]Verifica la \BRref{R1.1}{Campos no nulos} \Trayref{A}
 		\UCpaso[\UCsist]Verifica la \BRref{RN3.28}{Datos de la Consulta} \Trayref{C}
-		\UCpaso[\UCsist]Busca en la BD todos los libros correspondientes a la busqueda que desea el Lector.
-		\UCpaso[\UCsist] Muestra la pantalla \IUref{IU3.8a}{ResultadoCon}, la cual contiene la información de los libros que desea el usuario y en que biblioteca se encuentran asi como cuantos ejemplares en existencia ahi.
+		\UCpaso[\UCsist]Busca en la BD en la tabla de prestamos todos los prestamos que concuerden con los datos que a metido el usuario, dependiendo de el filtro que se selecciono.
+		\UCpaso[\UCsist] Muestra la pantalla \IUref{IU3.9a}{ResultadoPres}, la cual contiene la información de los resultados de la busqueda.
 		\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.9}{Busqueda Satisfactoria}
-		\UCpaso[\UCactor] Pulsa el botón \IUbutton{OK}
 	\end{UCtrayectoria}
 			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
 		\begin{UCtrayectoriaA}{A}{Hay Campos Vacios}
