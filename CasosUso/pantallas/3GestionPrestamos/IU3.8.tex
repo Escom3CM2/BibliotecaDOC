@@ -1,40 +1,41 @@
 \newpage
-\subsection{IU3.8 Generar multa}
+\subsection{IU3.8 Buscar Libro Externo}
 
 \subsubsection{Objetivo}
-	desde aquí se seleccionara el estado de los libros para sumar a la multa actual
+	Desde aquí se ingresaran una búsqueda y se muestra los resultados de esa búsqueda.
 
 \subsubsection{Diseño}
-	En esta pantalla se ven cuatro opciones para escoger: Perdido, Rayado, mutilado o manchado  .  \\\\
+	En esta pantalla muestra el botón \IUbutton{Buscar} y opciones de busqueda: Titulo, Autor, Editorial y Año.  \\\\
 
-\IUfig[.7]{3GestionPrestamos/GUI3_8}{IU3.8}{Generar multa.}
+\IUfig[.7]{3GestionPrestamos/GUI3_8}{IU3.8}{Consulta}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item generara la pantalla \IUref{IU3.8a}{Confirmar multa}. 
+		\item Generara la pantalla \IUref{IU3.8a}{ResultadoCon}. 
 	\end{Citemize}
 	
 \subsubsection{Entradas}
 	\begin{Citemize}
-		\item El bibliotecario dará clic en el botón \IUbutton{Confirmar}
+		\item El lector introducira el dato de el libro que desea buscar
+		\item El lector dará clic en el botón \IUbutton{Buscar}
 	\end{Citemize}
 
 
 
 
-\subsection{IU3.8a Confirmar multa}
+\subsection{IU3.8a Resultado Buscar Libro Externo}
 
 \subsubsection{Objetivo}
-	Pantalla donde se visualiza los datos de la multa así como el usuario de multa
+	Pantalla donde se visualiza los resultado de la consulta de busqueda de libro externo
 
 \subsubsection{Diseño}
-	Se muestran los datos: nombre del usuario completo, boleta del usuario, fecha de expedicion, id de multa, concepto de multa, total a pagar  \\\\
+	Se muestra una tabla con: Titulo, Autor, Editorial, Año, Biblioteca y No. Ejemplares  \\\\
 
-\IUfig[.7]{3GestionPrestamos/GUI3_8a}{IU3.4a}{Confirmar multa}
+\IUfig[.7]{3GestionPrestamos/GUI3_8a}{IU3.8a}{ResultadoCon}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item impresión del ticket de multa. 
+		\item Ninguna
 	\end{Citemize}
 	
 \subsubsection{Entradas}

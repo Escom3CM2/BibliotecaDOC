@@ -1,0 +1,113 @@
+\newpage
+\subsection{IU3.3 Inicio Externo}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza el inicio para acceder a los procesos que se pueden manejar con los Lectores Externos. 
+
+\subsubsection{Diseño}
+	Esta pantalla contiene el boton \IUbutton{Verificar}, se muestran los campos: Nombre del Alumno, Boleta del Alumno y una lista Desplegable con las Escuelas Integradas al IPN
+
+\IUfig[.7]{3GestionPrestamos/GUI3_3}{IU3.3}{InicioExterno}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item Muestra el \MSGref{MSJ3.1}{Error al conectar a la BD}
+		\item Muestra el \MSGref{MSJ3.17}{Lector Nuevo}
+		\item Muestra el \MSGref{MSJ3.14}{Limite de prestamos alcanzado}
+		\item Redireccionamiento a \IUref{IU3.3.1}{Lector Externo Apto}
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item El bibliotecario ingresara los campos: Nombre del Alumno, Boleta del Alumno y Elegira la Escuela de Procedencia
+	\end{Citemize}
+	
+\newpage
+\subsection{IU3.3.1 Lector Externo Apto}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza el Menu de los procesos que el lector externo puede realizar. 
+
+\subsubsection{Diseño}
+	Esta pantalla contiene los botones \IUbutton{Verificar}, \IUbutton{Prestamos}, \IUbutton{Devoluciones}, se muestran los campos: Nombre del Alumno, Boleta del Alumno y una lista Desplegable con las Escuelas Integradas al IPN  \\\\
+
+\IUfig[.7]{3GestionPrestamos/GUI3_3_1}{IU3.3.1}{LectorExternoApto}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item El \MSGref{MSG3.16}{Lector Apto}
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item El bibliotecario dara clic en los botones \IUbutton{Verificar},\IUbutton{Prestamos},\IUbutton{Devoluciones}
+	\end{Citemize}
+
+\newpage
+\subsection{IU3.3.2 Lector con Devoluciones Pendientes}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza una tabla con todos los prestamos asociados al lector externo y los prestamos con Devoluciones tardas sombreados de color rojo. 
+
+\subsubsection{Diseño}
+	Esta pantalla contiene los botones \IUbutton{Verificar}, \IUbutton{Generar Multa}, una tabla con los prestamos por devolver asociados al Lector y donde las Devoluciones con Estado Tardo se sombrearan en rojo, una columna donde podemos seleccionar las devoluciones que se haran y un monto Parcial de la multa que se ha generado por Devolucion Tarda \\\\
+
+\IUfig[.7]{3GestionPrestamos/GUI3_3_2}{IU3.3.2}{LectorDevolucionesPendientes}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item El \MSGref{MSJ3.6}{Lector con Devoluciones Atrasadas}
+		\item Redireccion al CU Generar Multa
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Seleccion de la columna Devolver, para seleccionar los materiales que se estan regresando
+		\item El bibliotecario dara clic en los botones \IUbutton{Verificar},\IUbutton{Generar Multa}
+	\end{Citemize}
+
+\newpage
+\subsection{IU3.3.3 Lector con Multas Pendientes}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza una tabla con todos las multas asociadas al lector externo que no hayan pagado y los datos referentes a estas y realizar las operaciones adecuadas a estas.
+
+\subsubsection{Diseño}
+	Esta pantalla contiene los botones \IUbutton{Imprimir}, \IUbutton{Cancelar Multa}, \IUbutton{Registrar Multa}, una tabla con las multas que no se hayan pagado asociadas al lector, una columna donde podemos seleccionar las multas con las que se quiere realizar algun aoperacion \\\\
+
+\IUfig[.7]{3GestionPrestamos/GUI3_3_3}{IU3.3.3}{LectorMultasPendientes}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item El \MSGref{MSJ3.5}{Lector con Multas}
+		\item El \MSGref{MSJ3.12}{Pago de Multa}
+		\item El \MSGref{MSJ3.18}{Cancelacion de Multa Exitosa}
+		\item El \MSGref{MSJ3.19}{Impresion de Multa}
+		\item EL \MSGref{MSJ3.20}{Error Cancelacion de Multa}
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Seleccion de la columna Pago, para seleccionar las multas con la que se haga alguna operacion
+	\end{Citemize}
+
+\newpage
+\subsection{IU3.3.3a Tickets de Multas}
+
+\subsubsection{Objetivo}
+	Se muestra el formato de los tickets de multas y los datos asociados a esta 
+
+\subsubsection{Diseño}
+	Se muestra el formato de los tickets de multa
+
+\IUfig[.5]{3GestionPrestamos/TicketMulta}{IU3.3.3a}{FormatoMultas}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item Ninguna
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Ninguna
+	\end{Citemize}
