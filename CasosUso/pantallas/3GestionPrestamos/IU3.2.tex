@@ -1,43 +1,93 @@
 \newpage
-\subsection{IU3.2 Formulario}
+\subsection{IU3.2 Inicio Interno}
 
 \subsubsection{Objetivo}
-	Pantalla de Formulario, Desde aqui se ingresaran los datos del libro para solicitar un préstamo interbibliotecario.  
+	Pantalla donde se visualiza el inicio para acceder a los procesos que se pueden manejar con los Lectores Externos. 
 
 \subsubsection{Diseño}
-	En esta pantalla muestra el botón \IUbutton{Guardar}.  \\\\
+	Esta pantalla contiene el boton \IUbutton{Verificar}, se muestran los campos: Nombre del Alumno, Boleta del Alumno y una lista Desplegable con las Escuelas Integradas al IPN
 
-\IUfig[.7]{3GestionPrestamos/GUI3_2}{IU3.2}{Pantalla de Formulario.}
+\IUfig[.7]{3GestionPrestamos/GUI3_2}{IU3.2}{InicioInterno}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item generara el formato \IUref{IU3.2a}{Formato}. 
+		\item Muestra el \MSGref{MSJ3.1}{Error al conectar a la BD}
+		\item Muestra el \MSGref{MSJ3.2}{Lector Inexistente}
+		\item Muestra el \MSGref{MSJ3.21}{Credencial no vigente}
+		\item Muestra el \MSGref{MSJ3.14}{Limite de prestamos alcanzado}
+		\item Redireccionamiento a \IUref{IU3.2.1}{Lector Interno Apto}
 	\end{Citemize}
 	
 \subsubsection{Entradas}
 	\begin{Citemize}
-		\item El bibliotecario dará clic en el botón \IUbutton{Guardar}
+		\item El bibliotecario ingresara los campos: Id del Lector
 	\end{Citemize}
-
-
-
-
-\subsection{IU3.2a Formato}
+	
+\newpage
+\subsection{IU3.2.1 Lector Interno Apto}
 
 \subsubsection{Objetivo}
-	Pantalla donde se visualiza el formato de préstamo interbibliotecario para poder imprimirlo 
+	Pantalla donde se visualiza el Menu de los procesos que el lector interno puede realizar. 
 
 \subsubsection{Diseño}
-	Esta pantalla contiene el botones \IUbutton{Imprimir}, se muestran los datos del libro, quien lo solicita, a que escuela se le solicita, nombre del jefe de la biblioteca y el folio  \\\\
+	Esta pantalla contiene los botones \IUbutton{Verificar}, \IUbutton{Prestamos}, \IUbutton{Devoluciones}, \IUbutton{Prestamo Interbibliotecario}, se muestran los campos: ID del Usuario en cuestion  \\\\
 
-\IUfig[.7]{3GestionPrestamos/GUI3_2a}{IU3.2a}{Formato.}
+\IUfig[.7]{3GestionPrestamos/GUI3_2a}{IU3.2.1}{LectorInternoApto}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item El formato impreso %\IUref{UI21.1} , \IUref{UI22.1} y \IUref{UI23.1}. 
+		\item El \MSGref{MSG3.16}{Lector Apto}
 	\end{Citemize}
 	
 \subsubsection{Entradas}
 	\begin{Citemize}
-		\item El administrador dará clic en algún botón \IUbutton{Impremir}
+		\item El bibliotecario dara clic en los botones \IUbutton{Prestamos},\IUbutton{Devoluciones},\IUbutton{Prestamo Interbibliotecario}
+	\end{Citemize}
+
+\newpage
+\subsection{IU3.2.2 Lector con Devoluciones Pendientes}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza una tabla con todos los prestamos asociados al lector interno y los prestamos con Devoluciones tardias sombreados de color rojo. 
+
+\subsubsection{Diseño}
+	Esta pantalla contiene los botones \IUbutton{Verificar}, \IUbutton{Generar Multa}, una tabla con los prestamos por devolver asociados al Lector y donde las Devoluciones con Estado Tardo se sombrearan en rojo, una columna donde podemos seleccionar las devoluciones que se haran y un monto Parcial de la multa que se ha generado por Devolucion Tarda \\\\
+
+\IUfig[.7]{3GestionPrestamos/GUI3_2b}{IU3.2.2}{LectorDevolucionesPendientes}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item El \MSGref{MSJ3.6}{Lector con Devoluciones Atrasadas}
+		\item Redireccion al CU Generar Multa
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Seleccion de la columna Devolver, para seleccionar los materiales que se estan regresando
+		\item El bibliotecario dara clic en el boton \IUbutton{Generar Multa}
+	\end{Citemize}
+
+\newpage
+\subsection{IU3.2.3 Lector con Multas Pendientes}
+
+\subsubsection{Objetivo}
+	Pantalla donde se visualiza una tabla con todos las multas asociadas al lector interno que no hayan pagado y los datos referentes a estas y realizar las operaciones adecuadas a estas.
+
+\subsubsection{Diseño}
+	Esta pantalla contiene los botones \IUbutton{Imprimir}, \IUbutton{Cancelar Multa}, \IUbutton{Registrar Multa}, una tabla con las multas que no se hayan pagado asociadas al lector, una columna donde podemos seleccionar las multas con las que se quiere realizar alguna operacion \\\\
+
+\IUfig[.7]{3GestionPrestamos/GUI3_2c}{IU3.2.3}{LectorMultasPendientes}
+
+\subsubsection{Salidas}
+	\begin{Citemize}
+		\item El \MSGref{MSJ3.5}{Lector con Multas}
+		\item El \MSGref{MSJ3.12}{Pago de Multa}
+		\item El \MSGref{MSJ3.18}{Cancelacion de Multa Exitosa}
+		\item El \MSGref{MSJ3.19}{Impresion de Multa}
+		\item EL \MSGref{MSJ3.20}{Error Cancelacion de Multa}
+	\end{Citemize}
+	
+\subsubsection{Entradas}
+	\begin{Citemize}
+		\item Seleccion de la columna Pago, para seleccionar las multas con la que se haga alguna operacion
 	\end{Citemize}
