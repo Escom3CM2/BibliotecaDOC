@@ -34,13 +34,13 @@
 	\begin{UCtrayectoria}{Principal}
 		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Generar multa} de la pantalla Devolución Interna
 		\UCpaso[\UCsist]Busca en la BD los costos de los materiales que estan ligados al usuario [Trayectoria A], guarda los costos.
-		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.7}{General Multa}
+		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.7}{General Multa}, donde se muestra una tabla con las posibles opciones que el bibliotecario tiene para seleccionar y debajo de la tabla en caso de que haya multa previa por devoluciín tardía se mostrara el monto total de la multa
 		\UCpaso[\UCactor]Selecciona las caracteristicas fisicas del libro que estan generando la multa.
 		\UCpaso[\UCsist]Si selecciona perdido solo se tomara en cuenta esta caracteristica para el monto de la multa final
 		\UCpaso[\UCsist]Calcula en tiempo real la suma a pagar dependiendo del botón seleccionado y el porcentaje que corresponda al tipo de multa, dependiendo del costo del material y lo muestra en pantalla.
 		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Confirmar} 
 		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.7a}{Confirmar Multa} con los datos de la multa
-		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Imprimir}
+		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Imprimir Multa}
 		\UCpaso[\UCsist]Manda el ticket a la cola de impresiones \IUref{IU3.3.3a}{TicketMulta}
 	\end{UCtrayectoria}
 			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
