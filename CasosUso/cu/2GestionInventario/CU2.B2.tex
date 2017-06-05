@@ -47,6 +47,11 @@
 		}
 		\UCitem{Salidas}{
 		\begin{itemize}
+			\item Mensajes para el usuario:
+				\MSGref{MSJ2.4}{Envío de reporte exitoso}
+				\MSGref{MSJ2.5}{Registros insuficientes.}
+				\MSGref{MSJ2.6}{Reporte cancelado.}
+				\MSGref{MSJ2.7}{Error de envío.}
 			\item Reporte de elementos escaneados.
 		\end{itemize}				
 		}
@@ -90,7 +95,7 @@
 			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal.
 		\end{UCtrayectoriaA}	
 		
-		\begin{UCtrayectoriaA}{B}{Error de envío}
+		\begin{UCtrayectoriaA}{C}{Error de envío}
 			\UCpaso[\UCsist] Enviara el mensaje en pantalla \MSGref{MSJ2.7}{Se ha presentado un error de envío de reporte. Reintente más tarde.}
 			\UCpaso[\UCsist] Regresa al paso 1 de la trayectoria principal.
 		\end{UCtrayectoriaA}			
