@@ -1,0 +1,45 @@
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+	\begin{UseCase}{CU3.5}{Devolver Material}{
+		El Bibliotecario podrá registrar las devoluciones de los materiales que el lector tanto interno como externo hagan, asi como las observaciones fisicas y en dado caso las multas que estos generen
+		}
+		\UCitem{Actor}{Bibliotecario}
+		\UCitem{Propósito}{Registrar las devoluciones que hagan los lectores}
+		\UCitem{Entradas}{Ninguna}
+		\UCitem{Salidas}{Actualización de la BD}
+		\UCitem{Precondiciones}{Ninguna}
+		\UCitem{Postcondiciones}{Ninguna}
+		\UCitem{Autor}{Omar Patrón y Cortés Pérez Edy}
+		\UCitem{Estatus}{Revision}
+	\end{UseCase}
+		%-------------------------------------- COMIENZA descripción Trayectoria Principal
+		\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Pulsa \IUbutton{Devoluciones} del menú del \UCref{CU3.2} o \UCref{CU3.3}
+		\UCpaso[\UCsist] Busca en la BD los prestamos en estado de Pendiente asociados al Lector [Trayectoria A].
+		\UCpaso[\UCsist] Muestra la pantalla \IUref{IU3.5}{Devoluciones}
+		\UCpaso[\UCactor] Selecciona los materiales a devolver, en caso de que el material tenga maltrato fisico pulsa \IUbutton{Editar Observaciones} \Trayref{B}
+		\UCpaso[\UCactor] Pulsa \IUbutton{Devolver}
+		\UCpaso[\UCsist] Registra las devoluciones en la BD y cambia el estado de los materiales a Disponible
+		\UCpaso[\UCsist] Elimina los materiales de la tabla de devoluciones, si la tabla ya no tiene elementos nos regresa al menu de acción del \UCref{CU3.2} o \UCref{CU3.3} segun sea el caso
+			\end{UCtrayectoria}
+			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
+			
+		\begin{UCtrayectoriaA}{A}{Error al conectar a la base de datos}
+			\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.1}{Error al conectar a la BD}
+			\UCpaso[\UCactor] Pulsa \IUbutton{OK}
+			\UCpaso[\UCsist] Regresa al paso 2 de la trayectoria principal.
+		\end{UCtrayectoriaA}
+%-------------------------------------- 
+		\begin{UCtrayectoriaA}{B}{Pulso el boton \IUbutton{Editar Observaciones} de la tabla Devoluciones}
+			\UCpaso[\UCsist] Muestra en pantalla el cuadro de Observaciones.
+			\UCpaso[\UCactor] Anota las observaciones de acuerdo a las caracteristicas fisicas que tenga el material en cuestión
+			\UCpaso[\UCsist] Pulsa el \IUbutton{Aceptar}
+			\UCpaso[\UCsist] Cambia las Observaciones de los materiales que fueron editadas por el lector
+			\UCpaso[\UCactor] Pulsa \IUbutton{Generar Multa}
+			\UCpaso[\UCsist] Registra las devoluciones en la BD y cambia el estado de los materiales a Disponible
+			\UCpaso[\UCsist]	Redirige al \UCref{CU3.7}.
+		\end{UCtrayectoriaA}
+		TERMINA descripción del caso de uso.
+
+
