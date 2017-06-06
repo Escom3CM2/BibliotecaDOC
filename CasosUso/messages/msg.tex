@@ -2,33 +2,53 @@
 %%%%MENSAJES GENERALES
 
 %Control de inventario
-	\begin{Citemize}
-	\item {\bf [MSJ2.1]} El registro se ha realizado exitosamente.
-\end{Citemize}
+\begin{Message}{MSJ2.1}{Registro Exitoso}
+	\MSGitem[Tipo:] Notificación	
+	\MSGitem[Objetivo: ] Notificar cuando se ha realizado un registro de manera exitosa en el sistema
+	\MSGitem[Redacción: ] El registro se ha realizado exitosamente.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.2]} Datos incompletos. No se han ingresado todos los datos requeridos para continuar la operación.
-\end{Citemize}
+\begin{Message}{MSJ2.2}{Datos incompletos}
+	\MSGitem[Tipo:] Error	
+	\MSGitem[Objetivo: ] Notificar cuando no se han proporcionado todos los datos que el sistema necesita ára una operación.
+	\MSGitem[Redacción: ] No se han ingresado todos los datos requeridos para continuar la operación.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.3]} Registro no encontrado.
-\end{Citemize}
+\begin{Message}{MSJ2.3}{Registro no encontrado}
+	\MSGitem[Tipo:] Error	
+	\MSGitem[Objetivo: ] Notificar cuando se realiza una consulta y no se obtienen registros que cumplan con las condiciones de validación proporcionadas.
+	\MSGitem[Redacción: ] No se ha encontrado registro. Favor de verificar datos.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.4]} El reporte se ha enviado exitosamente.
-\end{Citemize}
+\begin{Message}{MSJ2.4}{Envío de reporte exitoso}
+	\MSGitem[Tipo:] Notificación
+	\MSGitem[Objetivo: ] Notificar cuando el reporte generado por el sistema se envía de manera exitosa.
+	\MSGitem[Redacción: ] El reporte generado se ha enviado exitosamente.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.5]} No existen suficientes registros para preparar un reporte.
-\end{Citemize}
+\begin{Message}{MSJ2.5}{Registros insuficientes para reporte}
+	\MSGitem[Tipo:] Error
+	\MSGitem[Objetivo: ] Informar al usuario la falta de registros para generar un reporte.
+	\MSGitem[Redacción: ] No existen registros sufiecientes para generar un reporte.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.6]} Se ha cancelado la generación del reporte.
-\end{Citemize}
+\begin{Message}{MSJ2.6}{Reporte cancelado}
+	\MSGitem[Tipo:] Notificación
+	\MSGitem[Objetivo: ] Corroborar la cancelación de la generación de un reporte.
+	\MSGitem[Redacción: ] El reporte a generar ha sido cancelado.
+\end{Message}
 
-\begin{Citemize}
-	\item {\bf [MSJ2.7]} Se ha presentado un error de envío de reporte. Reintente más tarde.
-\end{Citemize}
+\begin{Message}{MSJ2.7}{Error en envío de reporte}
+	\MSGitem[Tipo:] Error
+	\MSGitem[Objetivo: ] Notificar al usuario cuando se presenta un error en el envío de un reporte.
+	\MSGitem[Redacción: ] Se ha presentado un error de envío de reporte. Reintente más tarde.
+\end{Message}
+
+\begin{Message}{MSJ2.8}{Error de generación de reporte}
+	\MSGitem[Tipo:] Error
+	\MSGitem[Objetivo: ] Notificar al usuario cuando existe algún problema en el sistema al generar un reporte.
+	\MSGitem[Redacción: ] El sistema no ha podido generar el reporte. Por favor verifique los requisitos necesarios.
+\end{Message}
 
 
 \begin{Message}{MSJ2.1b1}{Campos Incompletos}
