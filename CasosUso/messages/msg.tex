@@ -2,80 +2,60 @@
 %%%%MENSAJES GENERALES
 
 %Control de inventario
-\begin{Message}{MSJ2.1}{Registro Exitoso}
-	\MSGitem[Tipo:] Notificación	
-	\MSGitem[Objetivo: ] Notificar cuando se ha realizado un registro de manera exitosa en el sistema
-	\MSGitem[Redacción: ] El registro se ha realizado exitosamente.
-\end{Message}
+	\begin{Citemize}
+	\item {\bf [MSJ2.1]} El registro se ha realizado exitosamente.
+\end{Citemize}
 
-\begin{Message}{MSJ2.2}{Datos incompletos}
-	\MSGitem[Tipo:] Error	
-	\MSGitem[Objetivo: ] Notificar cuando no se han proporcionado todos los datos que el sistema necesita ára una operación.
-	\MSGitem[Redacción: ] No se han ingresado todos los datos requeridos para continuar la operación.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.2]} Datos incompletos. No se han ingresado todos los datos requeridos para continuar la operación.
+\end{Citemize}
 
-\begin{Message}{MSJ2.3}{Registro no encontrado}
-	\MSGitem[Tipo:] Error	
-	\MSGitem[Objetivo: ] Notificar cuando se realiza una consulta y no se obtienen registros que cumplan con las condiciones de validación proporcionadas.
-	\MSGitem[Redacción: ] No se ha encontrado registro. Favor de verificar datos.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.3]} Registro no encontrado.
+\end{Citemize}
 
-\begin{Message}{MSJ2.4}{Envío de reporte exitoso}
-	\MSGitem[Tipo:] Notificación
-	\MSGitem[Objetivo: ] Notificar cuando el reporte generado por el sistema se envía de manera exitosa.
-	\MSGitem[Redacción: ] El reporte generado se ha enviado exitosamente.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.4]} El reporte se ha enviado exitosamente.
+\end{Citemize}
 
-\begin{Message}{MSJ2.5}{Registros insuficientes para reporte}
-	\MSGitem[Tipo:] Error
-	\MSGitem[Objetivo: ] Informar al usuario la falta de registros para generar un reporte.
-	\MSGitem[Redacción: ] No existen registros sufiecientes para generar un reporte.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.5]} No existen suficientes registros para preparar un reporte.
+\end{Citemize}
 
-\begin{Message}{MSJ2.6}{Reporte cancelado}
-	\MSGitem[Tipo:] Notificación
-	\MSGitem[Objetivo: ] Corroborar la cancelación de la generación de un reporte.
-	\MSGitem[Redacción: ] El reporte a generar ha sido cancelado.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.6]} Se ha cancelado la generación del reporte.
+\end{Citemize}
 
-\begin{Message}{MSJ2.7}{Error en envío de reporte}
-	\MSGitem[Tipo:] Error
-	\MSGitem[Objetivo: ] Notificar al usuario cuando se presenta un error en el envío de un reporte.
-	\MSGitem[Redacción: ] Se ha presentado un error de envío de reporte. Reintente más tarde.
-\end{Message}
-
-\begin{Message}{MSJ2.8}{Error de generación de reporte}
-	\MSGitem[Tipo:] Error
-	\MSGitem[Objetivo: ] Notificar al usuario cuando existe algún problema en el sistema al generar un reporte.
-	\MSGitem[Redacción: ] El sistema no ha podido generar el reporte. Por favor verifique los requisitos necesarios.
-\end{Message}
+\begin{Citemize}
+	\item {\bf [MSJ2.7]} Se ha presentado un error de envío de reporte. Reintente más tarde.
+\end{Citemize}
 
 
-\begin{Message}{MSJ2.1b1}{Campos Incompletos}
+\begin{Message}{MSJ2.01}{Campos Incompletos}
 		\MSGitem[Tipo:] Error	
 		\MSGitem[Objetivo: ] Notificar al actor que debe llenar todos los campos
 		\MSGitem[Redacción: ] Error. Debes llenar todos los campos
 	\end{Message}
 	
-	\begin{Message}{MSJ2.1b2}{Formato Inválido}
+	\begin{Message}{MSJ2.02}{Formato Inválido}
 		\MSGitem[Tipo:] Error	
 		\MSGitem[Objetivo: ] Notificar al actor que hay formatos incorrectos
 		\MSGitem[Redacción: ] Error. Debes introducir el formato correspondiente
 	\end{Message}
 	
-	\begin{Message}{MSJ2.1b3}{Error en conexion}
+	\begin{Message}{MSJ2.03}{Error en conexion}
 		\MSGitem[Tipo:] Error	
 		\MSGitem[Objetivo: ] Notificar al actor que no hay conexión en ese momento con la base de datos
 		\MSGitem[Redacción: ] Error con la conexión a la base de datos
 	\end{Message}
 	
-	\begin{Message}{MSJ2.1b4}{Registro exitoso}
+	\begin{Message}{MSJ2.04}{Registro exitoso}
 		\MSGitem[Tipo:] Confirmación	
 		\MSGitem[Objetivo: ] Notificar al actor que la operación de registro fue exitosa
 		\MSGitem[Redacción: ] Se registró exitosamente
 	\end{Message}
 	
-	\begin{Message}{MSJ2.1b5}{Registro con anterioridad}
+	\begin{Message}{MSJ2.05}{Registro con anterioridad}
 		\MSGitem[Tipo:] Error	
 		\MSGitem[Objetivo: ] Notificar al actor que ya ha registrado ese dato
 		\MSGitem[Redacción: ] Error. Has realizado el registro con anterioridad
@@ -99,230 +79,3 @@
 		\MSGitem[Redacción: ] Error. No puedes eliminar ese equipo porque se encuentra en préstamo
 	\end{Message}
 	
-
-MENSAJES GENERALES
-	\begin{Citemize}
-	\item {\bf MSG1.1} Se registró exitosamente.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.2} ERROR. Completa todos los campos de entrada.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.3} ERROR. Valor no valido.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.4} ERROR. Solo se aceptan letras.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.5} ERROR. Solo se aceptan numeros.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.6} ERROR. Deben ser 10 digitos.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.7} ERROR. Selecciona un rol.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.8} ERROR. La contraseña debe ser mayor a 8 caracteres y menor a 16 caracteres.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.9} ADVERTENCIA. No coincide la contraseña.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.10} ERROR. Registro ya existente.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.11} ERROR. Contraseña usada recientemente.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.12} Se actualizo exitosamente.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.13} ADVERTENCIA. ¿Estas seguro? Al eliminarlo ya no podra acceder al sistema.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.14} Correcto! Se ha eliminado exitosamente.
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf MSJ1.15} !Contraseña incorrecta!, ingresa de nuevo tu contraseña.
-	\end{Citemize}
-
-	\begin{Citemize}
-	\item {\bf [MSJ3.1]} Error al conectar a la BD
-	\end{Citemize}
-
-	\begin{Citemize}
-	\item {\bf [MSJ3.2]} Lector Inexistente
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.3]} Préstamo Exitoso
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.4]} Devolución Exitosa
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.5]} Lector con Multas
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.6]} Lector con Devoluciones Atrasadas
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.7]} Campos Vacios
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.8]} Biblioteca Inexistente
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.9]} Búsqueda Satisfactoria
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.10]} Datos Erróneos
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.11]} Generación de Multa Exitosa
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.12]} Pago de Multa Exitoso
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.13]} Impresion de Formato Interbibliotecario
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.14]} Limite de Préstamos Alcanzado
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.15]} Usuario no va en 5 semestre o superior
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.16]} Lector Apto
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.17]} Lector Nuevo
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.18]} Cancelacion de Multa Exitosa
-	\end{Citemize}
-
-	\begin{Citemize}
-	\item {\bf [MSJ3.19]} Impresion de Multa
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.20]} Error Cancelacion de Multa
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.21]} Credencial no vigente
-	\end{Citemize}
-	
-	\begin{Citemize}
-	\item {\bf [MSJ3.22]} Numero de ejemplares
-	\end{Citemize}
-%--------------------------------------------------------------------------------------------------------
-%Mensajes Celula4
-%--------------------------------------------------------------------------------------------------------
-\begin{Citemize}
-	\item Mensaje \MSGref{MSJ4.1}{Se registro exitosamente.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.2}{Error. datos incompletos. Favor de completar todos los campos de entrada.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.3}{Advertencia. Confirma que los datos ingresados sean correctos.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.4}{Error. Registro de lector ya existente en el catálogo.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.5}{Error. Falló al conectarse a la BD.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.6}{Se actualizo exitosamente.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.7}{Se elimino exitosamente.}
-\end{Citemize}
-
-\begin{Citemize}
-	\item Mensaje \MSGref{MSJ4.8}{Advertencia. El lector se eliminara del sistema.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.9}{Error. El lector tiene multas pendientes.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.10}{Error. El lector tiene material adeudado.}
-\end{Citemize}
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.11}{Advertencia. Constraseña incorrecta.}
-\end{Citemize}	
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.12}{Error. Contraseña o correo inválido.},
-\end{Citemize}	
-
-\begin{Citemize}		
-	\item Mensaje \MSGref{MSJ4.13}{Se inicio sesión exitosamente.},
-\end{Citemize}	
-
-\begin{Citemize}		
-	\item Mensaje \MSGref{MSJ4.14}{Error. Contraseña o correo incorrectos.}
-\end{Citemize}	
-
-\begin{Citemize}	
-	\item Mensaje \MSGref{MSJ4.15}{Advertencia. Quiere salir del sistema y cerrar sesión actual.}
-\end{Citemize}
-
-%--------------------------------------------------------------------------------------------------------
-%Mensajes Celula5
-%--------------------------------------------------------------------------------------------------------
-\begin{Citemize}
-	\item Mensaje \MSGref{MSG5.1}{Credencial Lista.}
-\end{Citemize}
-
-\begin{Citemize}
-	\item Mensaje \MSGref{MSG5.2}{Desea renovar credencial?.}
-\end{Citemize}
-
-\begin{Citemize}
-	\item Mensaje \MSGref{MSG5.3}{Error al conectar con la Base de Datos.}
-\end{Citemize}
-

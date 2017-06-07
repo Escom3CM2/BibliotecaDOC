@@ -1,239 +1,97 @@
 \BOOKMARK [0][-]{chapter.1}{Modelo de negocios}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Reglas de Negocio}{chapter.1}% 2
 \BOOKMARK [0][-]{chapter.2}{Modelo de comportamiento}{}% 3
-\BOOKMARK [1][-]{section.2.1}{CU1.1 Registro de personal}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.1}{CU2.1 Registrar material}{chapter.2}% 4
 \BOOKMARK [2][-]{subsection.2.1.1}{Descripci\363n completa}{section.2.1}% 5
 \BOOKMARK [2][-]{subsection.2.1.2}{Atributos importantes}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.3}{Trayectorias del Caso de Uso}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.4}{IU1.0 Pantalla inicial}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.5}{IU1.1 Pantalla registrar}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{CU1.2 Consultar de personal}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{Descripci\363n completa}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.2}{Atributos importantes}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.3}{Trayectorias del Caso de Uso}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.4}{IU1.2 Listado de Empleados}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{CU1.3 Modificar Personal}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{Descripci\363n completa}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Atributos importantes}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.3}{Trayectorias del Caso de Uso}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.4}{IU1.3 Pantalla Modificar}{section.2.3}% 19
-\BOOKMARK [1][-]{section.2.4}{CU1.4 Eliminar personal}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.4.1}{Descripci\363n completa}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.2}{Atributos importantes}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.3}{Trayectorias del Caso de Uso}{section.2.4}% 23
-\BOOKMARK [1][-]{section.2.5}{CU2.1b Registrar material}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.5.1}{Descripci\363n completa}{section.2.5}% 25
-\BOOKMARK [2][-]{subsection.2.5.2}{Atributos importantes}{section.2.5}% 26
-\BOOKMARK [2][-]{subsection.2.5.3}{Trayectorias del Caso de Uso}{section.2.5}% 27
-\BOOKMARK [2][-]{subsection.2.5.4}{IU2 Pantalla Principal de Control de Inventario}{section.2.5}% 28
-\BOOKMARK [2][-]{subsection.2.5.5}{IU2.1ba Pantalla de Consultar Libros}{section.2.5}% 29
-\BOOKMARK [2][-]{subsection.2.5.6}{IU2.1bb Pantalla de Consultar TT}{section.2.5}% 30
-\BOOKMARK [2][-]{subsection.2.5.7}{IU2.1bc Pantalla de Registrar Equipo audiovisual}{section.2.5}% 31
-\BOOKMARK [2][-]{subsection.2.5.8}{IU2.1bd Pantalla de Registrar Equipo de computo}{section.2.5}% 32
-\BOOKMARK [1][-]{section.2.6}{CU2.1ba Registrar libro}{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.6.1}{Descripci\363n completa}{section.2.6}% 34
-\BOOKMARK [2][-]{subsection.2.6.2}{Atributos importantes}{section.2.6}% 35
-\BOOKMARK [2][-]{subsection.2.6.3}{Trayectorias del Caso de Uso}{section.2.6}% 36
-\BOOKMARK [2][-]{subsection.2.6.4}{IU2.1ba1 Pantalla de Registrar Libro}{section.2.6}% 37
-\BOOKMARK [1][-]{section.2.7}{CU2.1bb Registrar TT}{chapter.2}% 38
-\BOOKMARK [2][-]{subsection.2.7.1}{Descripci\363n completa}{section.2.7}% 39
-\BOOKMARK [2][-]{subsection.2.7.2}{Atributos importantes}{section.2.7}% 40
-\BOOKMARK [2][-]{subsection.2.7.3}{Trayectorias del Caso de Uso}{section.2.7}% 41
-\BOOKMARK [2][-]{subsection.2.7.4}{IU2.1bb1 Pantalla de Registrar TT}{section.2.7}% 42
-\BOOKMARK [1][-]{section.2.8}{CU2.1bc Registrar Equipo Audiovisual}{chapter.2}% 43
-\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n completa}{section.2.8}% 44
-\BOOKMARK [2][-]{subsection.2.8.2}{Atributos importantes}{section.2.8}% 45
-\BOOKMARK [2][-]{subsection.2.8.3}{Trayectorias del Caso de Uso}{section.2.8}% 46
-\BOOKMARK [1][-]{section.2.9}{CU2.B1 Escanear C\363digos de Barras}{chapter.2}% 47
-\BOOKMARK [2][-]{subsection.2.9.1}{Descripci\363n completa}{section.2.9}% 48
-\BOOKMARK [2][-]{subsection.2.9.2}{Atributos importantes}{section.2.9}% 49
-\BOOKMARK [2][-]{subsection.2.9.3}{Trayectorias del Caso de Uso}{section.2.9}% 50
-\BOOKMARK [2][-]{subsection.2.9.4}{UI2.B1.1 Inicio para Empleado de Procesos T\351cnicos}{section.2.9}% 51
-\BOOKMARK [2][-]{subsection.2.9.5}{UI2.B1.2 Escanear Libro}{section.2.9}% 52
-\BOOKMARK [2][-]{subsection.2.9.6}{UI2.B1.3 Escanear Material Audiovisual}{section.2.9}% 53
-\BOOKMARK [2][-]{subsection.2.9.7}{UI2.B1.4 Escanear Equipo de c\363mputo}{section.2.9}% 54
-\BOOKMARK [1][-]{section.2.10}{CU2.B2 Generar Reporte de elementos escaneados}{chapter.2}% 55
-\BOOKMARK [2][-]{subsection.2.10.1}{Descripci\363n completa}{section.2.10}% 56
-\BOOKMARK [2][-]{subsection.2.10.2}{Atributos importantes}{section.2.10}% 57
-\BOOKMARK [2][-]{subsection.2.10.3}{Trayectorias del Caso de Uso}{section.2.10}% 58
-\BOOKMARK [2][-]{subsection.2.10.4}{UI2.B2.1 Escanear Libro}{section.2.10}% 59
-\BOOKMARK [2][-]{subsection.2.10.5}{UI2.B2.2 Escanear Material Audiovisual}{section.2.10}% 60
-\BOOKMARK [2][-]{subsection.2.10.6}{UI2.B2.3 Escanear Equipo de c\363mputo}{section.2.10}% 61
-\BOOKMARK [2][-]{subsection.2.10.7}{UI2.B2.4 Reporte de Libros escaneados}{section.2.10}% 62
-\BOOKMARK [2][-]{subsection.2.10.8}{UI2.B2.5 Reporte de Material Audiovisual escaneado}{section.2.10}% 63
-\BOOKMARK [2][-]{subsection.2.10.9}{UI2.B2.6 Reporte de Equipo de C\363mputo escaneado}{section.2.10}% 64
-\BOOKMARK [1][-]{section.2.11}{CU02 Consultar material}{chapter.2}% 65
-\BOOKMARK [2][-]{subsection.2.11.1}{Descripci\363n completa}{section.2.11}% 66
-\BOOKMARK [2][-]{subsection.2.11.2}{Atributos importantes}{section.2.11}% 67
-\BOOKMARK [2][-]{subsection.2.11.3}{Trayectorias del Caso de Uso}{section.2.11}% 68
-\BOOKMARK [2][-]{subsection.2.11.4}{UI2.8 Modificar o eliminar}{section.2.11}% 69
-\BOOKMARK [2][-]{subsection.2.11.5}{UI2.9 Consultar catalogo del libro}{section.2.11}% 70
-\BOOKMARK [2][-]{subsection.2.11.6}{UI2.10 Consultar catalogo de TT}{section.2.11}% 71
-\BOOKMARK [2][-]{subsection.2.11.7}{UI2.11 Consultar catalogo de Material Audiovisual}{section.2.11}% 72
-\BOOKMARK [2][-]{subsection.2.11.8}{UI2.12 Consultar catalogo de Equipo de c\363mputo}{section.2.11}% 73
-\BOOKMARK [1][-]{section.2.12}{CU2.3 Enviar reporte de elementos escaneados}{chapter.2}% 74
-\BOOKMARK [2][-]{subsection.2.12.1}{Descripci\363n completa}{section.2.12}% 75
-\BOOKMARK [2][-]{subsection.2.12.2}{Atributos importantes}{section.2.12}% 76
-\BOOKMARK [2][-]{subsection.2.12.3}{Trayectorias del Caso de Uso}{section.2.12}% 77
-\BOOKMARK [2][-]{subsection.2.12.4}{UI2.3 Enviar reporte}{section.2.12}% 78
-\BOOKMARK [2][-]{subsection.2.12.5}{.}{section.2.12}% 79
-\BOOKMARK [1][-]{section.2.13}{CU2.1bd Registrar equipo de Computo}{chapter.2}% 80
-\BOOKMARK [2][-]{subsection.2.13.1}{Descripci\363n completa}{section.2.13}% 81
-\BOOKMARK [2][-]{subsection.2.13.2}{Atributos importantes}{section.2.13}% 82
-\BOOKMARK [2][-]{subsection.2.13.3}{Trayectorias del Caso de Uso}{section.2.13}% 83
-\BOOKMARK [1][-]{section.2.14}{CU2.3.a Consultar material}{chapter.2}% 84
-\BOOKMARK [2][-]{subsection.2.14.1}{Descripci\363n completa}{section.2.14}% 85
-\BOOKMARK [2][-]{subsection.2.14.2}{Atributos importantes}{section.2.14}% 86
-\BOOKMARK [2][-]{subsection.2.14.3}{Trayectorias del Caso de Uso}{section.2.14}% 87
-\BOOKMARK [1][-]{section.2.15}{CU2.1ba Consultar libro}{chapter.2}% 88
-\BOOKMARK [2][-]{subsection.2.15.1}{Descripci\363n completa}{section.2.15}% 89
-\BOOKMARK [2][-]{subsection.2.15.2}{Atributos importantes}{section.2.15}% 90
-\BOOKMARK [2][-]{subsection.2.15.3}{Trayectorias del Caso de Uso}{section.2.15}% 91
-\BOOKMARK [1][-]{section.2.16}{CU2.1ba Consultar TT}{chapter.2}% 92
-\BOOKMARK [2][-]{subsection.2.16.1}{Descripci\363n completa}{section.2.16}% 93
-\BOOKMARK [2][-]{subsection.2.16.2}{Atributos importantes}{section.2.16}% 94
-\BOOKMARK [2][-]{subsection.2.16.3}{Trayectorias del Caso de Uso}{section.2.16}% 95
-\BOOKMARK [1][-]{section.2.17}{CU2.1ba Consultar Equipo Audiovisual}{chapter.2}% 96
-\BOOKMARK [2][-]{subsection.2.17.1}{Descripci\363n completa}{section.2.17}% 97
-\BOOKMARK [2][-]{subsection.2.17.2}{Atributos importantes}{section.2.17}% 98
-\BOOKMARK [2][-]{subsection.2.17.3}{Trayectorias del Caso de Uso}{section.2.17}% 99
-\BOOKMARK [1][-]{section.2.18}{CU2.1ba Consultar Equipo de C\363mputo}{chapter.2}% 100
-\BOOKMARK [2][-]{subsection.2.18.1}{Descripci\363n completa}{section.2.18}% 101
-\BOOKMARK [2][-]{subsection.2.18.2}{Atributos importantes}{section.2.18}% 102
-\BOOKMARK [2][-]{subsection.2.18.3}{Trayectorias del Caso de Uso}{section.2.18}% 103
-\BOOKMARK [1][-]{section.2.19}{CU2.3.a Consultar material}{chapter.2}% 104
-\BOOKMARK [2][-]{subsection.2.19.1}{Descripci\363n completa}{section.2.19}% 105
-\BOOKMARK [2][-]{subsection.2.19.2}{Atributos importantes}{section.2.19}% 106
-\BOOKMARK [2][-]{subsection.2.19.3}{Trayectorias del Caso de Uso}{section.2.19}% 107
-\BOOKMARK [2][-]{subsection.2.19.4}{UI2.x Modificar o eliminar}{section.2.19}% 108
-\BOOKMARK [2][-]{subsection.2.19.5}{UI2.x Consultar catalogo del libro}{section.2.19}% 109
-\BOOKMARK [2][-]{subsection.2.19.6}{UI2.x Consultar catalogo de TT}{section.2.19}% 110
-\BOOKMARK [2][-]{subsection.2.19.7}{UI2.x Consultar catalogo de Material Audiovisual}{section.2.19}% 111
-\BOOKMARK [2][-]{subsection.2.19.8}{UI2.x Consultar catalogo de Equipo de c\363mputo}{section.2.19}% 112
-\BOOKMARK [1][-]{section.2.20}{CU2.3ca Dar de baja libro}{chapter.2}% 113
-\BOOKMARK [2][-]{subsection.2.20.1}{Descripci\363n completa}{section.2.20}% 114
-\BOOKMARK [2][-]{subsection.2.20.2}{Atributos importantes}{section.2.20}% 115
-\BOOKMARK [2][-]{subsection.2.20.3}{Trayectorias del Caso de Uso}{section.2.20}% 116
-\BOOKMARK [2][-]{subsection.2.20.4}{IU2.3ca Pantalla de Consultar Libros}{section.2.20}% 117
-\BOOKMARK [2][-]{subsection.2.20.5}{IU2.3ca1 Pantalla de Eliminar Libro}{section.2.20}% 118
-\BOOKMARK [1][-]{section.2.21}{CU2.3cc Dar de baja equipo audiovisual}{chapter.2}% 119
-\BOOKMARK [2][-]{subsection.2.21.1}{Descripci\363n completa}{section.2.21}% 120
-\BOOKMARK [2][-]{subsection.2.21.2}{Atributos importantes}{section.2.21}% 121
-\BOOKMARK [2][-]{subsection.2.21.3}{Trayectorias del Caso de Uso}{section.2.21}% 122
-\BOOKMARK [2][-]{subsection.2.21.4}{IU2.3cc Pantalla de Consultar Equipo audiovisual}{section.2.21}% 123
-\BOOKMARK [2][-]{subsection.2.21.5}{IU2.3cc1 Pantalla de Eliminar Equipo Audiovisual}{section.2.21}% 124
-\BOOKMARK [1][-]{section.2.22}{CU3.1 Gestionar Prestamos Bibliotecarios}{chapter.2}% 125
-\BOOKMARK [2][-]{subsection.2.22.1}{Descripci\363n completa}{section.2.22}% 126
-\BOOKMARK [2][-]{subsection.2.22.2}{Atributos importantes}{section.2.22}% 127
-\BOOKMARK [2][-]{subsection.2.22.3}{Trayectorias del Caso de Uso}{section.2.22}% 128
-\BOOKMARK [1][-]{section.2.23}{CU3.2 Verificar Lector Interno}{chapter.2}% 129
-\BOOKMARK [2][-]{subsection.2.23.1}{Descripci\363n completa}{section.2.23}% 130
-\BOOKMARK [2][-]{subsection.2.23.2}{Atributos importantes}{section.2.23}% 131
-\BOOKMARK [2][-]{subsection.2.23.3}{Trayectorias del Caso de Uso}{section.2.23}% 132
-\BOOKMARK [1][-]{section.2.24}{CU3.3 Verificar Lector Externo}{chapter.2}% 133
-\BOOKMARK [2][-]{subsection.2.24.1}{Descripci\363n completa}{section.2.24}% 134
-\BOOKMARK [2][-]{subsection.2.24.2}{Atributos importantes}{section.2.24}% 135
-\BOOKMARK [2][-]{subsection.2.24.3}{Trayectorias del Caso de Uso}{section.2.24}% 136
-\BOOKMARK [1][-]{section.2.25}{CU3.4 Registrar Prestamo de Material}{chapter.2}% 137
-\BOOKMARK [2][-]{subsection.2.25.1}{Descripci\363n completa}{section.2.25}% 138
-\BOOKMARK [2][-]{subsection.2.25.2}{Atributos importantes}{section.2.25}% 139
-\BOOKMARK [2][-]{subsection.2.25.3}{Trayectorias del Caso de Uso}{section.2.25}% 140
-\BOOKMARK [1][-]{section.2.26}{CU3.5 Devolver Material}{chapter.2}% 141
-\BOOKMARK [2][-]{subsection.2.26.1}{Descripci\363n completa}{section.2.26}% 142
-\BOOKMARK [2][-]{subsection.2.26.2}{Atributos importantes}{section.2.26}% 143
-\BOOKMARK [2][-]{subsection.2.26.3}{Trayectorias del Caso de Uso}{section.2.26}% 144
-\BOOKMARK [1][-]{section.2.27}{CU3.6 Pr\351stamo Interbibliotecario}{chapter.2}% 145
-\BOOKMARK [2][-]{subsection.2.27.1}{Descripci\363n completa}{section.2.27}% 146
-\BOOKMARK [2][-]{subsection.2.27.2}{Atributos importantes}{section.2.27}% 147
-\BOOKMARK [2][-]{subsection.2.27.3}{Trayectorias del Caso de Uso}{section.2.27}% 148
-\BOOKMARK [1][-]{section.2.28}{CU3.7 Generar multa}{chapter.2}% 149
-\BOOKMARK [2][-]{subsection.2.28.1}{Descripci\363n completa}{section.2.28}% 150
-\BOOKMARK [2][-]{subsection.2.28.2}{Atributos importantes}{section.2.28}% 151
-\BOOKMARK [2][-]{subsection.2.28.3}{Trayectorias del Caso de Uso}{section.2.28}% 152
-\BOOKMARK [1][-]{section.2.29}{CU3.8 Buscar Libro Externo}{chapter.2}% 153
-\BOOKMARK [2][-]{subsection.2.29.1}{Descripci\363n completa}{section.2.29}% 154
-\BOOKMARK [2][-]{subsection.2.29.2}{Atributos importantes}{section.2.29}% 155
-\BOOKMARK [2][-]{subsection.2.29.3}{Trayectorias del Caso de Uso}{section.2.29}% 156
-\BOOKMARK [1][-]{section.2.30}{CU3.9 Consultar Pr\351stamos de Material}{chapter.2}% 157
-\BOOKMARK [2][-]{subsection.2.30.1}{Descripci\363n completa}{section.2.30}% 158
-\BOOKMARK [2][-]{subsection.2.30.2}{Atributos importantes}{section.2.30}% 159
-\BOOKMARK [2][-]{subsection.2.30.3}{Trayectorias del Caso de Uso}{section.2.30}% 160
-\BOOKMARK [1][-]{section.2.31}{CU3.10 Consultar Pr\351stamo Interbibliotecario}{chapter.2}% 161
-\BOOKMARK [2][-]{subsection.2.31.1}{Descripci\363n completa}{section.2.31}% 162
-\BOOKMARK [2][-]{subsection.2.31.2}{Atributos importantes}{section.2.31}% 163
-\BOOKMARK [2][-]{subsection.2.31.3}{Trayectorias del Caso de Uso}{section.2.31}% 164
-\BOOKMARK [2][-]{subsection.2.31.4}{IU3.1 Gestion de Prestamos}{section.2.31}% 165
-\BOOKMARK [2][-]{subsection.2.31.5}{IU3.2 Inicio Interno}{section.2.31}% 166
-\BOOKMARK [2][-]{subsection.2.31.6}{IU3.2.1 Lector Interno Apto}{section.2.31}% 167
-\BOOKMARK [2][-]{subsection.2.31.7}{IU3.2.2 Lector con Devoluciones Pendientes}{section.2.31}% 168
-\BOOKMARK [2][-]{subsection.2.31.8}{IU3.2.3 Lector con Multas Pendientes}{section.2.31}% 169
-\BOOKMARK [2][-]{subsection.2.31.9}{IU3.3 Inicio Externo}{section.2.31}% 170
-\BOOKMARK [2][-]{subsection.2.31.10}{IU3.3.1 Lector Externo Apto}{section.2.31}% 171
-\BOOKMARK [2][-]{subsection.2.31.11}{IU3.3.2 Lector con Devoluciones Pendientes}{section.2.31}% 172
-\BOOKMARK [2][-]{subsection.2.31.12}{IU3.3.3 Lector con Multas Pendientes}{section.2.31}% 173
-\BOOKMARK [2][-]{subsection.2.31.13}{IU3.3.3a Tickets de Multas}{section.2.31}% 174
-\BOOKMARK [2][-]{subsection.2.31.14}{IU3.4 Registrar Prestamo de Material}{section.2.31}% 175
-\BOOKMARK [2][-]{subsection.2.31.15}{IU3.4a Prestamo Externo}{section.2.31}% 176
-\BOOKMARK [2][-]{subsection.2.31.16}{IU3.5 Devoluciones}{section.2.31}% 177
-\BOOKMARK [2][-]{subsection.2.31.17}{IU3.6 Formulario}{section.2.31}% 178
-\BOOKMARK [2][-]{subsection.2.31.18}{IU3.2a Formato}{section.2.31}% 179
-\BOOKMARK [2][-]{subsection.2.31.19}{IU3.7 Generar multa}{section.2.31}% 180
-\BOOKMARK [2][-]{subsection.2.31.20}{IU3.7a Confirmar multa}{section.2.31}% 181
-\BOOKMARK [2][-]{subsection.2.31.21}{IU3.8 Buscar Libro Externo}{section.2.31}% 182
-\BOOKMARK [2][-]{subsection.2.31.22}{IU3.8a Resultado Buscar Libro Externo}{section.2.31}% 183
-\BOOKMARK [2][-]{subsection.2.31.23}{IU3.9 Consultar Prestamos de Material}{section.2.31}% 184
-\BOOKMARK [2][-]{subsection.2.31.24}{IU3.9a Resultado Consultar Pr\351stamos de Material}{section.2.31}% 185
-\BOOKMARK [2][-]{subsection.2.31.25}{IU3.10 Consultar Prestamo Interbibliotecario}{section.2.31}% 186
-\BOOKMARK [2][-]{subsection.2.31.26}{IU3.4a Resultado Consulta Pr\351stamo Interbibliotecario}{section.2.31}% 187
-\BOOKMARK [1][-]{section.2.32}{CU4.1 Registrar Lector}{chapter.2}% 188
-\BOOKMARK [2][-]{subsection.2.32.1}{Descripci\363n completa}{section.2.32}% 189
-\BOOKMARK [2][-]{subsection.2.32.2}{Atributos importantes}{section.2.32}% 190
-\BOOKMARK [2][-]{subsection.2.32.3}{Trayectorias del Caso de Uso}{section.2.32}% 191
-\BOOKMARK [2][-]{subsection.2.32.4}{IU4.1 Iniciar sesi\363n}{section.2.32}% 192
-\BOOKMARK [2][-]{subsection.2.32.5}{IU4.2 Perfil del bibliotecario}{section.2.32}% 193
-\BOOKMARK [2][-]{subsection.2.32.6}{IU4.4 Men\372 de gesti\363n de usuarios}{section.2.32}% 194
-\BOOKMARK [2][-]{subsection.2.32.7}{IU4.5 Registrar Estudiante}{section.2.32}% 195
-\BOOKMARK [2][-]{subsection.2.32.8}{IU4.6 Listado de Estudiantes}{section.2.32}% 196
-\BOOKMARK [2][-]{subsection.2.32.9}{IU4.7 Registrar Docente}{section.2.32}% 197
-\BOOKMARK [2][-]{subsection.2.32.10}{IU4.8 Listado de Docentes}{section.2.32}% 198
-\BOOKMARK [2][-]{subsection.2.32.11}{IU4.10 Men\372 de gesti\363n de pr\351stamos}{section.2.32}% 199
-\BOOKMARK [2][-]{subsection.2.32.12}{IU4.11 Pr\351stamo Interno}{section.2.32}% 200
-\BOOKMARK [2][-]{subsection.2.32.13}{IU4.12 Pr\351stamo Externo}{section.2.32}% 201
-\BOOKMARK [2][-]{subsection.2.32.14}{IU4.16 Actualizar informacion del estudiante}{section.2.32}% 202
-\BOOKMARK [2][-]{subsection.2.32.15}{IU4.17 Actualizar informaci\363n del docente}{section.2.32}% 203
-\BOOKMARK [2][-]{subsection.2.32.16}{IU4.18 Perfil del Lector}{section.2.32}% 204
-\BOOKMARK [2][-]{subsection.2.32.17}{IU4.30 Perfil del Jefe de biblioteca}{section.2.32}% 205
-\BOOKMARK [2][-]{subsection.2.32.18}{IU4.31 Perfil de Procesos T\351nicos}{section.2.32}% 206
-\BOOKMARK [1][-]{section.2.33}{CU4.2 Actualizar Lector}{chapter.2}% 207
-\BOOKMARK [2][-]{subsection.2.33.1}{Descripci\363n completa}{section.2.33}% 208
-\BOOKMARK [2][-]{subsection.2.33.2}{Atributos importantes}{section.2.33}% 209
-\BOOKMARK [2][-]{subsection.2.33.3}{Trayectorias del Caso de Uso}{section.2.33}% 210
-\BOOKMARK [1][-]{section.2.34}{CU4.3 Eliminar Lector}{chapter.2}% 211
-\BOOKMARK [2][-]{subsection.2.34.1}{Descripci\363n completa}{section.2.34}% 212
-\BOOKMARK [2][-]{subsection.2.34.2}{Atributos importantes}{section.2.34}% 213
-\BOOKMARK [2][-]{subsection.2.34.3}{Trayectorias del Caso de Uso}{section.2.34}% 214
-\BOOKMARK [1][-]{section.2.35}{CU4.4 Consultar Lector}{chapter.2}% 215
-\BOOKMARK [2][-]{subsection.2.35.1}{Descripci\363n completa}{section.2.35}% 216
-\BOOKMARK [2][-]{subsection.2.35.2}{Atributos importantes}{section.2.35}% 217
-\BOOKMARK [2][-]{subsection.2.35.3}{Trayectorias del Caso de Uso}{section.2.35}% 218
-\BOOKMARK [1][-]{section.2.36}{CU4.5 Cerrar sesi\363n}{chapter.2}% 219
-\BOOKMARK [2][-]{subsection.2.36.1}{Descripci\363n completa}{section.2.36}% 220
-\BOOKMARK [2][-]{subsection.2.36.2}{Atributos importantes}{section.2.36}% 221
-\BOOKMARK [2][-]{subsection.2.36.3}{Trayectorias del Caso de Uso}{section.2.36}% 222
-\BOOKMARK [1][-]{section.2.37}{CU4.6 Iniciar sesi\363n}{chapter.2}% 223
-\BOOKMARK [2][-]{subsection.2.37.1}{Descripci\363n completa}{section.2.37}% 224
-\BOOKMARK [2][-]{subsection.2.37.2}{Atributos importantes}{section.2.37}% 225
-\BOOKMARK [2][-]{subsection.2.37.3}{Trayectorias del Caso de Uso}{section.2.37}% 226
-\BOOKMARK [1][-]{section.2.38}{CU5.1 Generar credencial}{chapter.2}% 227
-\BOOKMARK [2][-]{subsection.2.38.1}{Descripci\363n completa}{section.2.38}% 228
-\BOOKMARK [2][-]{subsection.2.38.2}{Atributos importantes}{section.2.38}% 229
-\BOOKMARK [2][-]{subsection.2.38.3}{Trayectorias del Caso de Uso}{section.2.38}% 230
-\BOOKMARK [1][-]{section.2.39}{CU5.3 Reponer credencial}{chapter.2}% 231
-\BOOKMARK [2][-]{subsection.2.39.1}{Descripci\363n completa}{section.2.39}% 232
-\BOOKMARK [2][-]{subsection.2.39.2}{Atributos importantes}{section.2.39}% 233
-\BOOKMARK [2][-]{subsection.2.39.3}{Trayectorias del Caso de Uso}{section.2.39}% 234
-\BOOKMARK [2][-]{subsection.2.39.4}{IU5.00 RegStudent}{section.2.39}% 235
-\BOOKMARK [2][-]{subsection.2.39.5}{IU5.01 creacionCredencial}{section.2.39}% 236
-\BOOKMARK [2][-]{subsection.2.39.6}{IU5.02 Reposici\363nCredencial}{section.2.39}% 237
-\BOOKMARK [2][-]{subsection.2.39.7}{IU5.01 creacionCredencial}{section.2.39}% 238
-\BOOKMARK [1][-]{section.2.40}{Catalogo de Mensajes}{chapter.2}% 239
+\BOOKMARK [1][-]{section.2.2}{CU2.1A Registrar libro}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{Descripci\363n completa}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Atributos importantes}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{Trayectorias del Caso de Uso}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{CU2.1B Registrar TT}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{Descripci\363n completa}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{Atributos importantes}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{Trayectorias del Caso de Uso}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{CU2.1C Registrar Equipo Audiovisual}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Descripci\363n completa}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Atributos importantes}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.3}{Trayectorias del Caso de Uso}{section.2.4}% 19
+\BOOKMARK [1][-]{section.2.5}{CU2.1D Registrar equipo de Computo}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.5.1}{Descripci\363n completa}{section.2.5}% 21
+\BOOKMARK [2][-]{subsection.2.5.2}{Atributos importantes}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.3}{Trayectorias del Caso de Uso}{section.2.5}% 23
+\BOOKMARK [1][-]{section.2.6}{CU2.4 Consultar material}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.6.1}{Descripci\363n completa}{section.2.6}% 25
+\BOOKMARK [2][-]{subsection.2.6.2}{Atributos importantes}{section.2.6}% 26
+\BOOKMARK [2][-]{subsection.2.6.3}{Trayectorias del Caso de Uso}{section.2.6}% 27
+\BOOKMARK [1][-]{section.2.7}{CU2.4A Consultar libro}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.7.1}{Descripci\363n completa}{section.2.7}% 29
+\BOOKMARK [2][-]{subsection.2.7.2}{Atributos importantes}{section.2.7}% 30
+\BOOKMARK [2][-]{subsection.2.7.3}{Trayectorias del Caso de Uso}{section.2.7}% 31
+\BOOKMARK [1][-]{section.2.8}{CU2.4B Consultar TT}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n completa}{section.2.8}% 33
+\BOOKMARK [2][-]{subsection.2.8.2}{Atributos importantes}{section.2.8}% 34
+\BOOKMARK [2][-]{subsection.2.8.3}{Trayectorias del Caso de Uso}{section.2.8}% 35
+\BOOKMARK [1][-]{section.2.9}{CU2.4C Consultar Equipo Audiovisual}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.9.1}{Descripci\363n completa}{section.2.9}% 37
+\BOOKMARK [2][-]{subsection.2.9.2}{Atributos importantes}{section.2.9}% 38
+\BOOKMARK [2][-]{subsection.2.9.3}{Trayectorias del Caso de Uso}{section.2.9}% 39
+\BOOKMARK [1][-]{section.2.10}{CU2.4D Consultar Equipo de C\363mputo}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.10.1}{Descripci\363n completa}{section.2.10}% 41
+\BOOKMARK [2][-]{subsection.2.10.2}{Atributos importantes}{section.2.10}% 42
+\BOOKMARK [2][-]{subsection.2.10.3}{Trayectorias del Caso de Uso}{section.2.10}% 43
+\BOOKMARK [1][-]{section.2.11}{CU2.1 Eliminar material}{chapter.2}% 44
+\BOOKMARK [2][-]{subsection.2.11.1}{Descripci\363n completa}{section.2.11}% 45
+\BOOKMARK [2][-]{subsection.2.11.2}{Atributos importantes}{section.2.11}% 46
+\BOOKMARK [2][-]{subsection.2.11.3}{Trayectorias del Caso de Uso}{section.2.11}% 47
+\BOOKMARK [1][-]{section.2.12}{CU2.5A Eliminar libro}{chapter.2}% 48
+\BOOKMARK [2][-]{subsection.2.12.1}{Descripci\363n completa}{section.2.12}% 49
+\BOOKMARK [2][-]{subsection.2.12.2}{Atributos importantes}{section.2.12}% 50
+\BOOKMARK [2][-]{subsection.2.12.3}{Trayectorias del Caso de Uso}{section.2.12}% 51
+\BOOKMARK [1][-]{section.2.13}{CU2.5B Eliminar TT}{chapter.2}% 52
+\BOOKMARK [2][-]{subsection.2.13.1}{Descripci\363n completa}{section.2.13}% 53
+\BOOKMARK [2][-]{subsection.2.13.2}{Atributos importantes}{section.2.13}% 54
+\BOOKMARK [2][-]{subsection.2.13.3}{Trayectorias del Caso de Uso}{section.2.13}% 55
+\BOOKMARK [1][-]{section.2.14}{CU2.5C Eliminar equipo audiovisual}{chapter.2}% 56
+\BOOKMARK [2][-]{subsection.2.14.1}{Descripci\363n completa}{section.2.14}% 57
+\BOOKMARK [2][-]{subsection.2.14.2}{Atributos importantes}{section.2.14}% 58
+\BOOKMARK [2][-]{subsection.2.14.3}{Trayectorias del Caso de Uso}{section.2.14}% 59
+\BOOKMARK [1][-]{section.2.15}{CU2.5D Eliminar Equipo de C\363mputo}{chapter.2}% 60
+\BOOKMARK [2][-]{subsection.2.15.1}{Descripci\363n completa}{section.2.15}% 61
+\BOOKMARK [2][-]{subsection.2.15.2}{Atributos importantes}{section.2.15}% 62
+\BOOKMARK [2][-]{subsection.2.15.3}{Trayectorias del Caso de Uso}{section.2.15}% 63
+\BOOKMARK [1][-]{section.2.16}{CU2.6 Modificar material}{chapter.2}% 64
+\BOOKMARK [2][-]{subsection.2.16.1}{Descripci\363n completa}{section.2.16}% 65
+\BOOKMARK [2][-]{subsection.2.16.2}{Atributos importantes}{section.2.16}% 66
+\BOOKMARK [2][-]{subsection.2.16.3}{Trayectorias del Caso de Uso}{section.2.16}% 67
+\BOOKMARK [1][-]{section.2.17}{CU2.6A Modificar libro}{chapter.2}% 68
+\BOOKMARK [2][-]{subsection.2.17.1}{Descripci\363n completa}{section.2.17}% 69
+\BOOKMARK [2][-]{subsection.2.17.2}{Atributos importantes}{section.2.17}% 70
+\BOOKMARK [2][-]{subsection.2.17.3}{Trayectorias del Caso de Uso}{section.2.17}% 71
+\BOOKMARK [1][-]{section.2.18}{CU2.6B Modificar material}{chapter.2}% 72
+\BOOKMARK [2][-]{subsection.2.18.1}{Descripci\363n completa}{section.2.18}% 73
+\BOOKMARK [2][-]{subsection.2.18.2}{Atributos importantes}{section.2.18}% 74
+\BOOKMARK [2][-]{subsection.2.18.3}{Trayectorias del Caso de Uso}{section.2.18}% 75
+\BOOKMARK [1][-]{section.2.19}{CU2.1C Modificar Equipo Audiovisual}{chapter.2}% 76
+\BOOKMARK [2][-]{subsection.2.19.1}{Descripci\363n completa}{section.2.19}% 77
+\BOOKMARK [2][-]{subsection.2.19.2}{Atributos importantes}{section.2.19}% 78
+\BOOKMARK [2][-]{subsection.2.19.3}{Trayectorias del Caso de Uso}{section.2.19}% 79
+\BOOKMARK [1][-]{section.2.20}{CU2.6D Modificar equipo de Computo}{chapter.2}% 80
+\BOOKMARK [2][-]{subsection.2.20.1}{Descripci\363n completa}{section.2.20}% 81
+\BOOKMARK [2][-]{subsection.2.20.2}{Atributos importantes}{section.2.20}% 82
+\BOOKMARK [2][-]{subsection.2.20.3}{Trayectorias del Caso de Uso}{section.2.20}% 83
+\BOOKMARK [2][-]{subsection.2.20.4}{IU2 Pantalla Principal de Control de Inventario}{section.2.20}% 84
+\BOOKMARK [2][-]{subsection.2.20.5}{IU2.1A Pantalla de Consultar Libros}{section.2.20}% 85
+\BOOKMARK [2][-]{subsection.2.20.6}{IU2.1B Pantalla de Consultar TT}{section.2.20}% 86
+\BOOKMARK [2][-]{subsection.2.20.7}{IU2.1C Pantalla de Registrar Equipo audiovisual}{section.2.20}% 87
+\BOOKMARK [2][-]{subsection.2.20.8}{IU2.1D Pantalla de Registrar Equipo de computo}{section.2.20}% 88
+\BOOKMARK [2][-]{subsection.2.20.9}{IU2.1A1 Pantalla de Registrar Libro}{section.2.20}% 89
+\BOOKMARK [2][-]{subsection.2.20.10}{IU2.1B1 Pantalla de Registrar TT}{section.2.20}% 90
+\BOOKMARK [2][-]{subsection.2.20.11}{UI2.x Modificar o eliminar}{section.2.20}% 91
+\BOOKMARK [2][-]{subsection.2.20.12}{UI2.x Consultar catalogo del libro}{section.2.20}% 92
+\BOOKMARK [2][-]{subsection.2.20.13}{IU2.3ca Pantalla de Consultar Libros}{section.2.20}% 93
+\BOOKMARK [2][-]{subsection.2.20.14}{IU2.3ca1 Pantalla de Eliminar Libro}{section.2.20}% 94
+\BOOKMARK [2][-]{subsection.2.20.15}{IU2.3cc Pantalla de Consultar Equipo audiovisual}{section.2.20}% 95
+\BOOKMARK [2][-]{subsection.2.20.16}{IU2.3cc1 Pantalla de Eliminar Equipo Audiovisual}{section.2.20}% 96
+\BOOKMARK [1][-]{section.2.21}{Catalogo de Mensajes}{chapter.2}% 97

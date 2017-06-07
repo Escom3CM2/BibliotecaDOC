@@ -1,14 +1,20 @@
 % Copie este bloque por cada caso de uso:
 %-------------------------------------- COMIENZA descripción del caso de uso.
 
-	\begin{UseCase}{CU3.4}{Registrar Prestamo de Material}{
-		El Bibliotecario podrá registrar en el sistema los prestamos que se hagan en la biblioteca tanto a lectores internos como a lectores externos.
+	\begin{UseCase}{CU3.4}{Consultar Préstamo Interbibliotecario}{
+		El jefe de Biblioteca podrá realizar una búsqueda de prestamos interbibliotecarios, para obtener información del préstamo y lo hará con un filtro: por Lector, folio o titulo del libro
 	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Actor}{Bibliotecario}
-		\UCitem{Propósito}{Registrar los Prestamos que se hagan en la biblioteca.}
-		\UCitem{Entradas}{El ID del material, o el ID y el folio del lector Externo}
-		\UCitem{Salidas}{Actualización de la BD}
+		\UCitem{Actor}{Jefe de biblioteca}
+		\UCitem{Propósito}{Obtener la información de los prestamos interbibliotecarios que fueron realizados dentro de la biblioteca de ESCOM.}
+		\UCitem{Entradas}{Seleccionar una de las siguientes opciones:
+			\begin{itemize}
+				\item Usuario
+				\item Folio
+				\item Titulo del libro
+			\end{itemize}
+		}
+		\UCitem{Salidas}{Una tabla con los datos del préstamo.}
 		\UCitem{Precondiciones}{Ninguna}
 		\UCitem{Postcondiciones}{Ninguna}
 		\UCitem{Autor}{Rodriguez Cervantes Arturo.}
@@ -16,71 +22,29 @@
 	\end{UseCase}
 		%-------------------------------------- COMIENZA descripción Trayectoria Principal
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Prestamo} del menú de acción del \UCref{CU3.2} o del \UCref{CU3.3}
-		\UCpaso[\UCsist] Verifica si la solicitud es de un Lector Externo o Interno
-		\UCpaso[\UCsist] Muestra la \IUref{IU3.4}{PrestamoInterno} si es lector interno, si es lector externo \Trayref{A}
-		\UCpaso[\UCactor] Introduce el ID del material que se va a prestar.
-		\UCpaso[\UCactor] Selecciona el tipo de material que es: CD, LIBRO o TT.
-		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Registrar Material}
-		\UCpaso[\UCsist] Verifica la \BRref{RN3.6}{Numero de Prestamos} \Trayref{B}
-		\UCpaso[\UCsist] Verifica la \BRref{RN3.10}{Numero de Ejemplares} \Trayref{F}
-		\UCpaso[\UCsist] Busca el material en la BD y jala los datos requeridos
-		\UCpaso[\UCsist] Verifica el tipo de material que se esta prestando, si el material es un TT \Trayref{C}.
-		\UCpaso[\UCsist] Establecera la Fecha de Devolución como 5 habiles posteriores a la fecha actual.
-		\UCpaso[\UCsist] Pondra los datos del prestamo en la tabla de Registro de Material.
-		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Registrar} paso 11 \Trayref{Principal} o selecciona algun Material de la Tabla de Registro de Material \Trayref{D}
-		\UCpaso[\UCsist] Registra el Prestamo generando el ID del Prestamo y asociando los materiales que aparezcan en la tabla al lector y la fecha y hora de devolución
-		\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.3}{Préstamo Exitoso}
-		\UCpaso[\UCactor] Presiona el botón \IUbutton{OK}
-		\UCpaso[\UCsist] Paso 12 \UCref{CU3.2}.
+		\UCpaso[\UCactor] Pulsa el botón \IUbutton{Consulta prestamo interbibliotecar} del menú de acción de Gestión de préstamo
+		\UCpaso[\UCsist]Muestra la pantalla \IUref{IU3.4}{ConsultaPresInt}.
+		\UCpaso[\UCactor]Selecciona uno de los métodos de búsqueda.
+		\UCpaso[\UCactor]Ingresa el texto en la búsqueda.
+		\UCpaso[\UCactor]Pulsa el botón \IUbutton{Buscar}
+		\UCpaso[\UCactor]Verifica la \BRref{RN3.13}{Llenado formulario de préstamo interbibliotecario} [trayectoria A] [trayectoria B]
+		\UCpaso[\UCsist] Muestra la pantalla \IUref{IU3.4a}{ResultadoPresInt} con los datos del préstamo
 	\end{UCtrayectoria}
 			%-------------------------------------- COMIENZA descripción Trayectoria Alternativa.
-		\begin{UCtrayectoriaA}{A}{El lector que hara la solicitud es un lector externo}
-			\UCpaso[\UCsist] Verifica la \BRref{RN3.17}{Limite de Préstamos Interbibliotecarios a Lector} \Trayref{G}
-			\UCpaso[\UCsist] Muestra \IUref{IU3.4a}{PrestamoExterno}
-			\UCpaso[\UCactor] Introduce el Folio del formato y el ID del libro
-			\UCpaso[\UCsist] Registra el prestamo generando un ID de prestamo, asociando el libro al lector externo en cuestión y la fecha de devolución
-			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.3}{Préstamo Exitoso}
+		\begin{UCtrayectoriaA}{A}{Los datos introducidos son erróneos en su formato}
+			\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.10}{Datos Erróneos.}
 			\UCpaso[\UCactor] Presiona el botón \IUbutton{OK}
-			\UCpaso[\UCsist] Paso 12 \UCref{CU3.3}.
+			\UCpaso[\UCsist] Regresa al paso 2 de la trayectoria principal.
 		\end{UCtrayectoriaA}
-%-------------------------------------- 
-		\begin{UCtrayectoriaA}{B}{El lector tiene en calidad de prestamo el limite de un tipo de material}
-			\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.14}{Limite de préstamos alcanzado.}
+
+
+%--------------------------------------
+		\begin{UCtrayectoriaA}{B}{Erro al conectar a la base de datos}
+			\UCpaso[\UCsist] Muestra el mensaje \MSGref{MSJ3.1}{Error al conectar en la BD.}
 			\UCpaso[\UCactor] Presiona el botón \IUbutton{OK}
-			\UCpaso[\UCsist] Paso 3 de la \Trayref{Principal}.
-		\end{UCtrayectoriaA}
-%--------------------------------------
-		\begin{UCtrayectoriaA}{C}{El material a registrar en un TT}
-			\UCpaso[\UCsist] Establece la Fecha y hora de devolución como un hora posterior a la fecha y hora actual
-			\UCpaso[\UCsist] Paso 11 de la \Trayref{Principal}.
-		\end{UCtrayectoriaA}
-%--------------------------------------
-		\begin{UCtrayectoriaA}{D}{El lector selecciono un material de la tabla}
-			\UCpaso[\UCsist] Pulsa el \IUbutton{Editar Observaciones} o el \IUbutton{Remover}
-			\UCpaso[\UCsist] Abre el cuadro de edicion y donde se encuentran escritas las caracteristicas fisicas que tiene el material que se selecciono
-			\UCpaso[\UCactor] Edita las observaciones respecto a las caracteristicas fisicas del material seleccionado
-			\UCpaso[\UCactor] Pulsa el \IUbutton{Aceptar}
-			\UCpaso[\UCsist] Guarda las nuevas observaciones relacionadas al Material
-			\UCpaso[\UCsist] Paso 11 \Trayref{Principal}.
+			\UCpaso[\UCsist] Regresa al paso 2 de la trayectoria principal.
 		\end{UCtrayectoriaA}
 		
-		\begin{UCtrayectoriaA}{E}{Pulso el \IUbutton{Remover} de la tabla de Registro de Material}
-			\UCpaso[\UCsist] Quita el Material seleccionado de la tabla Registro de material
-			\UCpaso[\UCsist] Paso 11 \Trayref{Principal}.
-		\end{UCtrayectoriaA}
-			
-		\begin{UCtrayectoriaA}{F}{El lector ya registro otro mismo ejemplar en prestamo, o el lector ya tenia previamente el ejemplar en calidad de prestamo}
-			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.22}{Numero de Ejemplares}
-			\UCpaso[\UCactor] Pulsa \IUbutton{OK}
-			\UCpaso[\UCsist] Paso 2 \UCref{CU3.5}.
-		\end{UCtrayectoriaA}
-			
-		\begin{UCtrayectoriaA}{G}{El lector tiene el limite permitido de prestamos interbibliotecarios}
-			\UCpaso[\UCsist] Muestra el \MSGref{MSJ3.14}{Limite de Préstamos Alcanzado}
-			\UCpaso[\UCactor] Pulsa \IUbutton{OK}
-			\UCpaso[\UCsist] Paso 2 \UCref{CU3.5}.
-		\end{UCtrayectoriaA}
 TERMINA descripción del caso de uso.
 
 

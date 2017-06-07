@@ -1,42 +1,43 @@
 \newpage
-\subsection{IU3.4 Registrar Prestamo de Material}
+\subsection{IU3.4 Consultar Prestamo Interbibliotecario}
 
 \subsubsection{Objetivo}
-	Pantalla de Registro de Material donde el bibliotecario podra editar las observaciones del material si asi lo requiere, removerlo en caso de que se haya equivocado al introducir el ID del material y lo mas importante registrar el prestamo que se esta haciendo a un lector interno.  
+	Desde aquí se ingresaran una búsqueda y se muestra los resultados de esa búsqueda
 
 \subsubsection{Diseño}
-	Tenemos los botones: \IUbutton{Registrar}, \IUbutton{Modificar Observaciones}, \IUbutton{Remover} y \IUbutton{Regresar} y una lista desplegable donde seleccionara el tipo de material, por ultimo la tabla donde iran apareciendo los materiales que se quieren prestar y donde apareceran sus datos de estos.  \\\\
+	En esta pantalla muestra el botón \IUbutton{Buscar} y tres opciones de busqueda: usuario,folio o Titulo del libro .  \\\\
 
-\IUfig[.7]{3GestionPrestamos/GUI3_4}{IU3.4}{PrestamoInterno}
+\IUfig[.7]{3GestionPrestamos/GUI3_4}{IU3.4}{Consulta Prestamo Interbibliotecario.}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item Actualizacion de la BD 
+		\item generara la pantalla \IUref{IU3.4a}{ResultadoConInt}. 
 	\end{Citemize}
 	
 \subsubsection{Entradas}
 	\begin{Citemize}
-		\item El ID del material que se quiere prestar
+		\item El bibliotecario dará clic en el botón \IUbutton{Buscar}
 	\end{Citemize}
 
-\newpage
-\subsection{IU3.4a Prestamo Externo}
+
+
+
+\subsection{IU3.4a Resultado Consulta Préstamo Interbibliotecario}
 
 \subsubsection{Objetivo}
-	Pantalla donde se visualiza los datos que se requieren para poder prestar un libro a un lector externo 
+	Pantalla donde se visualiza los resultado de la consulta de prestamos interbibliotecarios
 
 \subsubsection{Diseño}
-	Esta pantalla contiene los campos: Folio y ID de material que son los necesarios para que el bibliotecario pueda hacer el proceso de prestamo a un lector externo.  \\\\
+	Se muestra una tabla con: titulo del libro, IDPrestamo, tipo de material, usuario y fecha  \\\\
 
-\IUfig[.7]{3GestionPrestamos/GUI3_4a}{IU3.4a}{PrestamoExterno}
+\IUfig[.7]{3GestionPrestamos/GUI3_4a}{IU3.4a}{Resultado Prestamo Interbibliotecario}
 
 \subsubsection{Salidas}
 	\begin{Citemize}
-		\item Actualizacion de la BD 
+		\item Ninguna. 
 	\end{Citemize}
 	
 \subsubsection{Entradas}
 	\begin{Citemize}
-		\item El Folio del formato fisico para el prestamo interbibliotecario
-		\item El ID del material para identificar que libro se esta prestando
+		\item Ninguna
 	\end{Citemize}

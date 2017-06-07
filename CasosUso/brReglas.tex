@@ -163,7 +163,7 @@
 
 \begin{BussinesRule}{RN3.1}{Lector acreedor a Prestamo a Domicilio} 
 	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]El préstamo a domicilio solo será para lector internos (alumnos, docentes, egresados) registrados en el sistema bibliotecario.
+	\BRitem[Descripción:]El préstamo a domicilio solo será para lector internos (alumnos, docentes, egresados) registrados en el sistema bibliotecario y para lectores externos que cuenten con su formato firmado y sellado por la biblioteca correspondiente.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN3.2}{Lector con Multas} 
@@ -178,7 +178,7 @@
 
 \begin{BussinesRule}{RN3.4}{Credencial Vigente} 
 	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]El lector interno que desee realizar algún proceso de la biblioteca (prestamos, devoluciones, prestamos interbibliotecarios) debe de contar con su credencial vigente (no mas de 3 meses de expedición) y actualizada, de lo contrario no podrá hacerlas.
+	\BRitem[Descripción:]El lector interno que desee realizar algún proceso de la biblioteca (prestamos, devoluciones, prestamos interbibliotecarios) debe de contar con su credencial vigente y actualizada, de lo contrario no podrá hacerlas.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN3.5}{Duración del Préstamo} 
@@ -188,7 +188,7 @@
 
 \begin{BussinesRule}{RN3.6}{Numero de Prestamos} 
 	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]El número de material por préstamo está limitado a 3 libros, 2 CDs y un CD de TT, el lector interno puede seguir pidiendo Material si es que no ha llegado al límite antes dicho y si no tiene multas o devoluciones pendientes.
+	\BRitem[Descripción:]El número de material por préstamo está limitado a 3 libros, 2 CDs y un CD de TT, el usuario interno puede seguir pidiendo Material si es que no ha llegado al límite antes dicho y si no tiene multas o devoluciones pendientes.
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN3.7}{Prestamo de TT} 
@@ -241,7 +241,7 @@
 	\BRitem[Descripción:]El lector externo solo se le permite pedir “libros” en calidad de préstamo.
 \end{BussinesRule}
 
-\begin{BussinesRule}{RN3.17}{Limite de Préstamos Interbibliotecarios a Lector} 
+\begin{BussinesRule}{RN3.17}{Limite de Préstamos Interbibliotecarios a Lector } 
 	\BRitem[Tipo:] Restricción (validación).
 	\BRitem[Descripción:]El lector se le permite solo 2 préstamos.
 \end{BussinesRule}
@@ -279,6 +279,8 @@
 \begin{BussinesRule}{RN3.24}{ID Multas} 
 	\BRitem[Tipo:] Restricción (validación).
 	\BRitem[Descripción:]La multa contara con un ID propio e irrepetible, fecha de expedición, los datos del usuario acreedor y el concepto de la multa.
+
+
 \end{BussinesRule}
 
 \begin{BussinesRule}{RN3.25}{Multa Pagada} 
@@ -296,42 +298,40 @@
 	\BRitem[Descripción:]El jefe de la biblioteca es el único que puede consultar los préstamos que se han hecho y los prestamos interbibliotecarios que se han pedido.
 \end{BussinesRule}
 
-\begin{BussinesRule}{RN3.28}{Datos de la Consulta} 
-	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]Los datos introducidos para la consulta de préstamos internos e interbibliotecarios deben de existir en la Base de Datos.
-\end{BussinesRule}
-
-\begin{BussinesRule}{RN3.30}{Limite de prestamos interbibliotecarios.} 
-	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]El Usuario interno podrá tener máximo dos prestamos interbibliotecarios
-\end{BussinesRule}
-
-\begin{BussinesRule}{RN3.31}{Semestre del Usuario.} 
-	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]Para solicitar un préstamo interbibliotecario el usuario debe estar en 5 semestre o superior.
-\end{BussinesRule}
-
-\begin{BussinesRule}{RN3.32}{Registro Lector Externo} 
-	\BRitem[Tipo:] Restricción (validación).
-	\BRitem[Descripción:]Si el lector externo no está registrado en la BD, se anexara su registro en la BD.
-\end{BussinesRule}
-
 
 %%%%  Control de inventario
 
-\begin{BussinesRule}{RN2.1b1}{Campos incompletos} 
+\begin{BussinesRule}{RN2.01}{Campos incompletos} 
 	\BRitem[Tipo:] Restricción (validación).
 	\BRitem[Descripción:] Todos los campos de cada formulario deben ser llenados
 \end{BussinesRule}
 
 
-\begin{BussinesRule}{RN2.1b2}{Formato inválido} 
+\begin{BussinesRule}{RN2.02}{Formato inválido} 
 	\BRitem[Tipo:] Restricción (validación).
 	\BRitem[Descripción:] Cada campo de texto debe cumplir con el formato establecido
+	\begin{itemize}
+		\item Formato de ISBN de libro: cadena caracteres [3 numeros] - [2 a 3 numeros] - [3 numeros] - [1 a 2 numeros]
+		\item Formato de Numero de TT: cadena de caracteres representando numeros
+		\item Formato de Numero de serie: cadena de caracteres representando numeros
+		\item Formato ID Libro: ISBN + numero
+		\item Formato ID Equipo audiovisual: cadena de caracteres representando numeros
+		\item Formato ID Equipo de computo: cadena de caracteres representando numeros
+		
+		\item Formato de Titulos: máx 100 Cadena de carácteres
+		\item Formato de Autores: máx 100 Cadena de carácteres
+		\item Formato de Editoriales: máx 50 Cadena de carácteres
+		\item Formato de Número de paginas: número entero positivo, mínimo valor 1
+		\item Formato de Edicion: número entero positivo, mínimo valor 1
+		\item Formato de Precios: número decimal positivo, mínimo valor 1.00
+		\item Formato de Cantidades a registrar: número entero positivo, mínimo valor
+		\item Formato de Fechas: [DD/MM/AAAA] 
+		\item Formato de Duracion: numero entero positivo, minimo valor de 1
+	\end{itemize}
 \end{BussinesRule}
 
 
-\begin{BussinesRule}{RN2.1b3}{Duplicidad de registro} 
+\begin{BussinesRule}{RN2.03}{Duplicidad de registro} 
 	\BRitem[Tipo:] Restricción (validación).
 	\BRitem[Descripción:] No debe existir duplicidad de datos almacenados
 \end{BussinesRule}
@@ -346,6 +346,22 @@
 	\BRitem[Descripción:] No se puede eliminar un equipo audiovisual en estado de préstamo
 \end{BussinesRule}
 
+
+
+\begin{BussinesRule}{RN3.28}{Datos de la Consulta} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:]Los datos introducidos para la consulta de préstamos internos e interbibliotecarios deben de existir en la Base de Datos.
+\end{BussinesRule}
+
+\begin{BussinesRule}{RN3.30}{Limite de prestamos interbibliotecarios.} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:]El Usuario interno podrá tener máximo dos prestamos interbibliotecarios
+\end{BussinesRule}
+
+\begin{BussinesRule}{RN3.31}{Semestre del Usuario.} 
+	\BRitem[Tipo:] Restricción (validación).
+	\BRitem[Descripción:]Para solicitar un préstamo interbibliotecario el usuario debe estar en 5 semestre o superior.
+\end{BussinesRule}
 
 %---------------------------------------------------------
 %Reglas de Negocio Celula 4
